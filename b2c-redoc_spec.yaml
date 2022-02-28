@@ -10994,7 +10994,7 @@ tags:
         <hr>
 
 ############### x-tags: what to show, where
-x-tagGroups:
+# x-tagGroups:
 #   - name: Quickstart
 #     tags:
 #       - Before You Start
@@ -11020,11 +11020,11 @@ x-tagGroups:
 #       - Web Messaging Integration
 #       - APIs
 
-  - name: APIs
-      - direct-controller
+#   - name: APIs
+#       - direct-controller
       
-  - name: In addition
-    tags:      
-      - Sandbox
-      - Security
+#   - name: In addition
+#     tags:      
+#       - Sandbox
+#       - Security
 
