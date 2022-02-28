@@ -10987,7 +10987,6 @@ tags:
           <br>
         <br>
         </li>
-        
         <h4><li>CUSTOMER REFRESH TOKEN (GET)</h4>
         <p>/direct/refresh-token</p>
           <p>
@@ -11000,39 +10999,31 @@ tags:
           When the token expires, use /direct/refresh-token?token={refresh} to get a new token
           </p>
         </li>
-        
         <h4><li>REGISTER NEW USER (POST)</h4>
         <p>/direct/user-reg</p>
         <p>Creates a new user with unique <strong>userId</strong> and <strong>preauth token</strong>.<br></p>
         <p>When a user logs back in, use <strong>/direct/preauth-token/{userId}</strong> to generate that user a new <strong>preauth token</strong> and a new <strong>userId</strong> (refer to <strong>Returning User</strong>)</p>
         <p>Don't store the token across sessions. Use the userId from the previous session to generate a new userId and a new preauth token.</p>
         </li>
-        
         <h4><li>NEW USER TOKEN (GET)</h4>
         <p>/direct/preauth-token/{userId}</p>
         </li>
-        
         <h4><li>CLOSE USER ACCOUNT (POST)</h4>
         <p>/direct/close-account/{userId}</p>
         </li>
-        
         <h4><li>CHANGE USER EMAIL (POST)</h4>
         <p>/direct/change-email/{userId}</p>
         </li>
-        
         <h4><li>CHANGE USER PHONE (POST)</h4>
         <p>/direct/change-mobile/{userId}</p>
         </li>
-        
         <h4><li>CHANGE USER HOST (POST)</h4>
         <p>/direct/change-host/{userId}</p>
         </li>
-        
         <h4><li>UPDATE USER REFRESH DATA (POST)</h4>
         <p>/direct/update-refresh/{userId}</p>
         <p><strong>*Premium Feature - May Require Additional Access</strong></p>
         </li>
-        
         <h4><li>GET ALERT DETAIL (GET)</h4>
         <p>/direct/efx-alert/{alertId}</p>
         <p><strong>*Premium Feature - May Require Additional Access</strong></p>
