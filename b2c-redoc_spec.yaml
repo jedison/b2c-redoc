@@ -11103,30 +11103,30 @@ tags:
 
 ############### x-tags: what to show, where
 x-tagGroups:
-  - name: Quickstart
-    tags:
-      - Before You Start
-      - How it Works
-      - Getting Started
-      - Which Integration Options is Right For You
-      - Next Steps
+#   - name: Quickstart
+#     tags:
+#       - Before You Start
+#       - How it Works
+#       - Getting Started
+#       - Which Integration Options is Right For You
+#       - Next Steps
       
-  - name: Developer Tools
-    tags:
-      - Overview of Developer Tools
-      - Web Widget with Integrated Authentication
-      - Web Integration with Custom Authentication
-      - API Integration for Custom Web or Mobile App
-      - SDKs (under development)
-      - Consumer Credit API Setup
-      - Postman Collections
+#   - name: Developer Tools
+#     tags:
+#       - Overview of Developer Tools
+#       - Web Widget with Integrated Authentication
+#       - Web Integration with Custom Authentication
+#       - API Integration for Custom Web or Mobile App
+#       - SDKs (under development)
+#       - Consumer Credit API Setup
+#       - Postman Collections
       
-  - name: Integration Methods
-    tags:      
-      - Overview of Integration Methods
-      - Webhook Integration
-      - Web Messaging Integration
-      - APIs
+#   - name: Integration Methods
+#     tags:      
+#       - Overview of Integration Methods
+#       - Webhook Integration
+#       - Web Messaging Integration
+#       - APIs
 
   - name: APIs
       - direct-controller
