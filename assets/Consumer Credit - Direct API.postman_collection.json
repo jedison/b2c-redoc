@@ -1,0 +1,585 @@
+{
+	"info": {
+		"_postman_id": "1e3be246-0e2d-472e-8d8b-462f00852568",
+		"name": "StitchCredit - Direct API",
+		"description": "Direct API calls must originate from your server\r\n\r\nA token from /direct/login is required for all other Direct API end-points. It is a bearer authorization token.\r\n\r\nOnce you have a preauth token, returned from /direct/user-reg or /direct/preauth-token, pass it to the Web UI entry point in the embedded iFrame.\r\n\r\nBe sure to save the ID returned from /direct/user-reg or you won’t be able to reauthorize the user when they return.\r\n\r\n**The preauth token is only valid for 30 seconds\r\n\r\nThe Consumer Credit - Direct API.postman_collection.json will walk you through using the Direct API collection",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Customer Login",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "c7ffe89c-fa8a-4891-9231-e69679dc2259",
+						"exec": [
+							"var data = pm.response.json();",
+							"if(data) {",
+							"    if(data.token) pm.environment.set(\"dtoken\",data.token);",
+							"    if(data.refresh) pm.environment.set(\"rdtoken\",data.refresh);",
+							"}"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"secret\": \"{{SECRET}}\",\n    \"apikey\": \"{{API_KEY}}\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{PROTOCOL}}://{{HOST}}:{{PORT}}{{BASE_URL}}/direct/login",
+					"protocol": "{{PROTOCOL}}",
+					"host": [
+						"{{HOST}}"
+					],
+					"port": "{{PORT}}{{BASE_URL}}",
+					"path": [
+						"direct",
+						"login"
+					]
+				},
+				"description": "Using your credentials in the request body (\"apikey\" and \"secret\"), the response will contain the token and refresh token.  \r\nThese tokens are required for completing the other requests to Direct API endpoints.\r\n\r\nThis token will be valid for approximately one hour. After the one hour, the refresh token will become valid.\r\n\r\nIf the token expires, use /direct/refresh-token?token={refresh} to get a new token"
+			},
+			"response": []
+		},
+		{
+			"name": "Customer Refresh Token",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "c3d8c071-4aa5-4622-ac58-0a2597c34f87",
+						"exec": [
+							"var data = pm.response.json();",
+							"if(data) {",
+							"    if(data.token) pm.environment.set(\"dtoken\",data.token);",
+							"    if(data.refresh) pm.environment.set(\"rdtoken\",data.refresh);",
+							"}"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"type": "text",
+						"value": "application/json"
+					},
+					{
+						"key": "",
+						"type": "text",
+						"value": "",
+						"disabled": true
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{PROTOCOL}}://{{HOST}}:{{PORT}}{{BASE_URL}}/direct/refresh-token?token={{rdtoken}}",
+					"protocol": "{{PROTOCOL}}",
+					"host": [
+						"{{HOST}}"
+					],
+					"port": "{{PORT}}{{BASE_URL}}",
+					"path": [
+						"direct",
+						"refresh-token"
+					],
+					"query": [
+						{
+							"key": "token",
+							"value": "{{rdtoken}}"
+						}
+					]
+				},
+				"description": "Token and refresh tokes are required for completing the other requests to Direct API endpoints.\r\n\r\nThe token will be valid for approximately one hour. After the one hour, the refresh token will become valid.\r\n\r\nWhen the token expires, use /direct/refresh-token?token={refresh} to get a new token"
+			},
+			"response": []
+		},
+		{
+			"name": "Register New User",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "550c9d9e-0719-4eea-9ee8-dbc634154585",
+						"exec": [
+							"var data = pm.response.json();",
+							"if (data) {",
+							"    if (data.token) pm.environment.set(\"paToken\", data.token);",
+							"    if (data.userId) pm.environment.set(\"userId\", data.userId);",
+							"}"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "{{dtoken}}",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"type": "text",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"email\":\"{{USER_EMAIL}}\",\"fname\":\"{{USER_FNAME}}\",\"lname\":\"{{USER_LNAME}}\",\"mobile\":\"{{USER_MOBILE}}\"}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{PROTOCOL}}://{{HOST}}:{{PORT}}{{BASE_URL}}/direct/user-reg",
+					"protocol": "{{PROTOCOL}}",
+					"host": [
+						"{{HOST}}"
+					],
+					"port": "{{PORT}}{{BASE_URL}}",
+					"path": [
+						"direct",
+						"user-reg"
+					]
+				},
+				"description": "Creates a new user with unique userId and preauth token.\r\n\r\nWhen a user logs back in, use /direct/preauth-token/{userId} to generate that user a new preauth token and a new userId (refer to Returning User)\r\n\r\nDon't store the token across sessions. Use the userId from the previous session to generate a new userId and a new preauth token."
+			},
+			"response": []
+		},
+		{
+			"name": "New User Token",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "ceca0cf9-2f98-4dce-9c20-ec51795e6aa1",
+						"exec": [
+							"var data = pm.response.json();",
+							"if (data) {",
+							"    if (data.token) pm.environment.set(\"paToken\", data.token);",
+							"    if (data.userId) pm.environment.set(\"userId\", data.userId);",
+							"}"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "{{dtoken}}",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"type": "text",
+						"value": "application/json"
+					}
+				],
+				"url": {
+					"raw": "{{PROTOCOL}}://{{HOST}}:{{PORT}}{{BASE_URL}}/direct/preauth-token/{{userId}}",
+					"protocol": "{{PROTOCOL}}",
+					"host": [
+						"{{HOST}}"
+					],
+					"port": "{{PORT}}{{BASE_URL}}",
+					"path": [
+						"direct",
+						"preauth-token",
+						"{{userId}}"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Close User Account",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "c3d8c071-4aa5-4622-ac58-0a2597c34f87",
+						"exec": [
+							""
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "{{dtoken}}",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"type": "text",
+						"value": "application/json"
+					}
+				],
+				"url": {
+					"raw": "{{PROTOCOL}}://{{HOST}}:{{PORT}}{{BASE_URL}}/direct/close-account/{{userId}}",
+					"protocol": "{{PROTOCOL}}",
+					"host": [
+						"{{HOST}}"
+					],
+					"port": "{{PORT}}{{BASE_URL}}",
+					"path": [
+						"direct",
+						"close-account",
+						"{{userId}}"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Change User Email",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "c3d8c071-4aa5-4622-ac58-0a2597c34f87",
+						"exec": [
+							""
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "{{dtoken}}",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"type": "text",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"email\": \"test@test.com\"}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{PROTOCOL}}://{{HOST}}:{{PORT}}{{BASE_URL}}/direct/change-email/{{userId}}",
+					"protocol": "{{PROTOCOL}}",
+					"host": [
+						"{{HOST}}"
+					],
+					"port": "{{PORT}}{{BASE_URL}}",
+					"path": [
+						"direct",
+						"change-email",
+						"{{userId}}"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Change User Phone",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "870bd1c5-5348-49ad-9fc1-7e05469b2ef9",
+						"exec": [
+							""
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "{{dtoken}}",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"type": "text",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"mobile\": \"1234567890\"}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{PROTOCOL}}://{{HOST}}:{{PORT}}{{BASE_URL}}/direct/change-mobile/{{userId}}",
+					"protocol": "{{PROTOCOL}}",
+					"host": [
+						"{{HOST}}"
+					],
+					"port": "{{PORT}}{{BASE_URL}}",
+					"path": [
+						"direct",
+						"change-mobile",
+						"{{userId}}"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Change User Host",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "e93f5174-f782-4c38-8a95-5dfb4e336521",
+						"exec": [
+							""
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "{{dtoken}}",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"type": "text",
+						"value": "application/json"
+					}
+				],
+				"url": {
+					"raw": "{{PROTOCOL}}://{{HOST}}:{{PORT}}{{BASE_URL}}/direct/change-host/{{userId}}?host={{HOST_ID}}",
+					"protocol": "{{PROTOCOL}}",
+					"host": [
+						"{{HOST}}"
+					],
+					"port": "{{PORT}}{{BASE_URL}}",
+					"path": [
+						"direct",
+						"change-host",
+						"{{userId}}"
+					],
+					"query": [
+						{
+							"key": "host",
+							"value": "{{HOST_ID}}"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Update User Refresh Date",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "04ee5e00-2b02-429f-b7bb-dcfcc9451d13",
+						"exec": [
+							""
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "{{dtoken}}",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"type": "text",
+						"value": "application/json"
+					}
+				],
+				"url": {
+					"raw": "{{PROTOCOL}}://{{HOST}}:{{PORT}}{{BASE_URL}}/direct/update-refresh/{{userId}}?rmonly=false",
+					"protocol": "{{PROTOCOL}}",
+					"host": [
+						"{{HOST}}"
+					],
+					"port": "{{PORT}}{{BASE_URL}}",
+					"path": [
+						"direct",
+						"update-refresh",
+						"{{userId}}"
+					],
+					"query": [
+						{
+							"key": "rmonly",
+							"value": "false"
+						}
+					]
+				},
+				"description": "*Premium Feature - May Require Additional Access"
+			},
+			"response": []
+		},
+		{
+			"name": "Get Alert Detail",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "50689d78-4a1f-4f41-9eb3-698257f83698",
+						"exec": [
+							"var data = pm.response.json();",
+							"if (data) {",
+							"    if (data.token) pm.environment.set(\"paToken\", data.token);",
+							"    if (data.userId) pm.environment.set(\"userId\", data.userId);",
+							"}"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "{{dtoken}}",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"type": "text",
+						"value": "application/json"
+					}
+				],
+				"url": {
+					"raw": "{{PROTOCOL}}://{{HOST}}:{{PORT}}{{BASE_URL}}/direct/efx-alert/{{alertId}}",
+					"protocol": "{{PROTOCOL}}",
+					"host": [
+						"{{HOST}}"
+					],
+					"port": "{{PORT}}{{BASE_URL}}",
+					"path": [
+						"direct",
+						"efx-alert",
+						"{{alertId}}"
+					]
+				},
+				"description": "*Premium Feature - May Require Additional Access"
+			},
+			"response": []
+		}
+	],
+	"protocolProfileBehavior": {}
+}
