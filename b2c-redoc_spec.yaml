@@ -10923,105 +10923,105 @@ tags:
 
 - name: Quickstart
   description: |
-						<h2>Before you start</h2>
-						<p>
-						We provide you with a host configuration for our development server and a demo user's identity in a <a href="https://www.postman.com/">Postman</a> environment.
-						</p>
-						<p>
-						To quickly grasp the token flow and sequence of API calls, download and import the "Getting Started" <a href="/tag/Postman-Collections">Postman Collections</a> from the <a href="https://drive.google.com/drive/folders/1VU0awRVnOswE1e9srB_tJ7nBxqUZFN2-?usp=sharing" target="_blank">Google Drive</a> and the Postman environment we provided to you.<br>
-						The <a href="https://drive.google.com/drive/folders/1VU0awRVnOswE1e9srB_tJ7nBxqUZFN2-?usp=sharing" target="_blank">Google Drive</a> and this documentation contain <a href="/tag/Postman-Collections">Postman Collections</a> for each API.
-						</p>
-						<p>
-						<ul>
-							<li><em><strong><a href="/tag/Direct-API">Direct API</a></strong> calls must originate from your server</em> </li>
-							<li><em><strong><a href="/tag/Direct-API">User API</a></strong> calls must originate from the end-client</em> </li>
-							<li><em><strong><a href="/tag/Equifax-API">Equifax API</a></strong> calls must originate from the end-client</em> </li>
-						</ul>
-						Equifax end-points are accessible by first using the <a href="/tag/Direct-API">User API</a> <strong>/users/efx-config</strong> response data, and then the Equifax <strong>/oauth/token</strong> call. As mentioned above, <strong><a href="/tag/Direct-API">User API</a></strong> and <strong><a href="/tag/Equifax-API">Equifax API</a></strong> calls are intended to be called from the end-client/user's device.
-						</p>
-						<p>
-						It is not acceptable to pass any of the data to these calls or responses from these calls to your server. Do not save any data. Short term caching is fine, but long-term storage is not. 
-						</p>
-            <hr>
-						<h2>How it works</h2>
-						<p>
-						With StitchCredit's Consumer Credit API, you can offer Consumer Credit Scores and Credit Monitoring directly as part of your web or mobile experience.
-						</p>
-						<p>
-						It's easy to add Credit Score & Reports to your existing customer experience by embedding our code into your HTML doc, page or website.
-						</p>
-            <hr>
-						<h2>Getting started</h2>
-						<p>First, let's determine the way in which you will interact with the consumer credit APIs. This will determine the type of integration that you require and how to implement the integration pattern.</p>
-            <hr>
-						<h2>Which Integration Option is right for you</h2>
-						<p>
-						This guide is to help you choose the integration option for the Consumer Credit widget, web integration and/or API. 
-						</p>
-						<ol>
-							<li>Usage of credit reporting on a web page with user authentication managed by StitchCredit%#58; <a href="/tag/Web-Widget-with-Integrated-Authentication">Web Widget with Integrated Authentication</a></li>
-							<li>Usage of credit reporting on a web page with user authentication managed by you%#58; <a href="/tag/Web-Integration-with-Custom Authentication">Web Integration with Custom Authentication</a></li>
-							<li>Usage of credit reporting on a custom UI such as a website or mobile app with authentication managed on the website/in the app%#58; <a href="/tag/API-Integration-for-Custom-Web-or-Mobile-App">API Integration for Custom Web or Mobile App</a></li>
-						</ol>
-						<p>
-						<strong>FIRST</strong>%#58; Are you integrating the StitchCredit widget into a web page?
-						</p>
-						<p>
-						Either we can manage users or you can.
-						</p>
-						<ul>
-						<li>
-						If we are managing users, then your users register for a StitchCredit account through the widget's registration and identity verification screens. Then, users log into the widget with an email and password after having already logged into your service. (Option 1 - <a href="/tag/Web-Widget-with-Integrated-Authentication">Web Widget with Integrated Authentication</a>).
-						</li>
-						<li>
-						If you are managing users, then they do not log in through the widget. Instead, you create your own registration screen utilizing our API. You can also create your own screens for the identity verification process (SMS one-time-code and identity quiz questions). You can merge the StitchCredit registration & identity process with your own service's registration, but you have to adhere to the compliance guide for screens. (Option 2 - <a href="/tag/Web-Integration-with-Custom Authentication">Web Integration with Custom Authentication</a>)
-						</li>
-						</ul>
-						<p>
-						<strong>OTHERWISE</strong>%#58; The 3rd Integration option is for customers who want to create their own UI, such as a website or mobile app, entirely using the StitchCredit Consumer Credit API. User authentication is managed by the website or in the app.
-						</p>
-						<p>
-						All custom screens created using the API require Equifax approval (see the compliance guide for approval guidelines). (Option 3 - <a href="/tag/API-Integration-for-Custom-Web-or-Mobile-App>API Integration for Custom Web or Mobile App"</a>)<br>
-						</p>
-						<h3>Web Widget with Integrated Authentication</h3>
-							<p>
-							For this option, you embed an iframe and configure the Host URL where you will be loading the widget. The StitchCredit widget can be customized to represent your look and feel in order to strengthen your relationship with customers.
-							</p>
-							<p>
-							For testing, StitchCredit can configure that any Host URL to load the widget (including localhost); this allows you to try this integration option by locally serving an html file with the following iframe. For production, the URL must be locked down so that the widget can only be rendered from that host. 
-							</p>
-							<p>
-							More information can be found in section <a href="/tag/Web-Widget-with-Integrated-Authentication">Web Widget with Integrated Authentication</a>.
-							</p>
-						<h3>Web Integration with Custom Authentication</h3>
-							<p>
-							This option does not require users to log in through the widget. Instead, you create a registration screen utilizing the StitchCredit Consumer Credit API. 
-							</p>
-							<p>
-							You can have screens for the identity verification process  for SMS one-time-code and identity quiz questions. Also, it is possible to merge the StitchCredit registration/identity process with your own service's registration, as long as you follow the compliance guide for these screens. 
-							</p>
-							<p>
-							The html <a href="#item-3-3-9">Sample files</a> in the documentation demonstrate the different views for this integration option. 
-							</p>
-							<p>
-							More information can be found in section <a href="/tag/Web-Integration-with-Custom Authentication">Web Integration with Custom Authentication</a>.
-							</p>
-						<h3>API Integration for Custom Web or Mobile App</h3>
-							<p>
-							The 3rd Integration option is for customers who want to create their own UI, such as a website or mobile app, entirely using the StitchCredit Consumer Credit API. User authentication is managed by the website or in the app.
-							</p>
-							<p>
-							With this option, you can create your own user experience for connecting your users to their credit data by leveraging the same B2C API that the widget is utilizing.
-							</p>
-							<p>
-							More information can be found in section <a href="/tag/API-Integration-for-Custom-Web-or-Mobile-App">API Integration for Custom Web or Mobile App</a>.
-							</p>
-            <hr>
-						<h2>Next Steps</h2>
-						<p>
-						Once you've decide on <a href="#item-2-4">which integration option</a> is right for your use case, then it's a question of understanding how to implement the integration by looking at our samples and API guides below.
-						</p>
-            <hr>
+        <h2>Before you start</h2>
+        <p>
+        We provide you with a host configuration for our development server and a demo user's identity in a <a href="https://www.postman.com/">Postman</a> environment.
+        </p>
+        <p>
+        To quickly grasp the token flow and sequence of API calls, download and import the "Getting Started" <a href="/tag/Postman-Collections">Postman Collections</a> from the <a href="https://drive.google.com/drive/folders/1VU0awRVnOswE1e9srB_tJ7nBxqUZFN2-?usp=sharing" target="_blank">Google Drive</a> and the Postman environment we provided to you.<br>
+        The <a href="https://drive.google.com/drive/folders/1VU0awRVnOswE1e9srB_tJ7nBxqUZFN2-?usp=sharing" target="_blank">Google Drive</a> and this documentation contain <a href="/tag/Postman-Collections">Postman Collections</a> for each API.
+        </p>
+        <p>
+        <ul>
+          <li><em><strong><a href="/tag/Direct-API">Direct API</a></strong> calls must originate from your server</em> </li>
+          <li><em><strong><a href="/tag/Direct-API">User API</a></strong> calls must originate from the end-client</em> </li>
+          <li><em><strong><a href="/tag/Equifax-API">Equifax API</a></strong> calls must originate from the end-client</em> </li>
+        </ul>
+        Equifax end-points are accessible by first using the <a href="/tag/Direct-API">User API</a> <strong>/users/efx-config</strong> response data, and then the Equifax <strong>/oauth/token</strong> call. As mentioned above, <strong><a href="/tag/Direct-API">User API</a></strong> and <strong><a href="/tag/Equifax-API">Equifax API</a></strong> calls are intended to be called from the end-client/user's device.
+        </p>
+        <p>
+        It is not acceptable to pass any of the data to these calls or responses from these calls to your server. Do not save any data. Short term caching is fine, but long-term storage is not. 
+        </p>
+        <hr>
+        <h2>How it works</h2>
+        <p>
+        With StitchCredit's Consumer Credit API, you can offer Consumer Credit Scores and Credit Monitoring directly as part of your web or mobile experience.
+        </p>
+        <p>
+        It's easy to add Credit Score & Reports to your existing customer experience by embedding our code into your HTML doc, page or website.
+        </p>
+        <hr>
+        <h2>Getting started</h2>
+        <p>First, let's determine the way in which you will interact with the consumer credit APIs. This will determine the type of integration that you require and how to implement the integration pattern.</p>
+        <hr>
+        <h2>Which Integration Option is right for you</h2>
+        <p>
+        This guide is to help you choose the integration option for the Consumer Credit widget, web integration and/or API. 
+        </p>
+        <ol>
+          <li>Usage of credit reporting on a web page with user authentication managed by StitchCredit%#58; <a href="/tag/Web-Widget-with-Integrated-Authentication">Web Widget with Integrated Authentication</a></li>
+          <li>Usage of credit reporting on a web page with user authentication managed by you%#58; <a href="/tag/Web-Integration-with-Custom Authentication">Web Integration with Custom Authentication</a></li>
+          <li>Usage of credit reporting on a custom UI such as a website or mobile app with authentication managed on the website/in the app%#58; <a href="/tag/API-Integration-for-Custom-Web-or-Mobile-App">API Integration for Custom Web or Mobile App</a></li>
+        </ol>
+        <p>
+        <strong>FIRST</strong>%#58; Are you integrating the StitchCredit widget into a web page?
+        </p>
+        <p>
+        Either we can manage users or you can.
+        </p>
+        <ul>
+        <li>
+        If we are managing users, then your users register for a StitchCredit account through the widget's registration and identity verification screens. Then, users log into the widget with an email and password after having already logged into your service. (Option 1 - <a href="/tag/Web-Widget-with-Integrated-Authentication">Web Widget with Integrated Authentication</a>).
+        </li>
+        <li>
+        If you are managing users, then they do not log in through the widget. Instead, you create your own registration screen utilizing our API. You can also create your own screens for the identity verification process (SMS one-time-code and identity quiz questions). You can merge the StitchCredit registration & identity process with your own service's registration, but you have to adhere to the compliance guide for screens. (Option 2 - <a href="/tag/Web-Integration-with-Custom Authentication">Web Integration with Custom Authentication</a>)
+        </li>
+        </ul>
+        <p>
+        <strong>OTHERWISE</strong>%#58; The 3rd Integration option is for customers who want to create their own UI, such as a website or mobile app, entirely using the StitchCredit Consumer Credit API. User authentication is managed by the website or in the app.
+        </p>
+        <p>
+        All custom screens created using the API require Equifax approval (see the compliance guide for approval guidelines). (Option 3 - <a href="/tag/API-Integration-for-Custom-Web-or-Mobile-App>API Integration for Custom Web or Mobile App"</a>)<br>
+        </p>
+        <h3>Web Widget with Integrated Authentication</h3>
+          <p>
+          For this option, you embed an iframe and configure the Host URL where you will be loading the widget. The StitchCredit widget can be customized to represent your look and feel in order to strengthen your relationship with customers.
+          </p>
+          <p>
+          For testing, StitchCredit can configure that any Host URL to load the widget (including localhost); this allows you to try this integration option by locally serving an html file with the following iframe. For production, the URL must be locked down so that the widget can only be rendered from that host. 
+          </p>
+          <p>
+          More information can be found in section <a href="/tag/Web-Widget-with-Integrated-Authentication">Web Widget with Integrated Authentication</a>.
+          </p>
+        <h3>Web Integration with Custom Authentication</h3>
+          <p>
+          This option does not require users to log in through the widget. Instead, you create a registration screen utilizing the StitchCredit Consumer Credit API. 
+          </p>
+          <p>
+          You can have screens for the identity verification process  for SMS one-time-code and identity quiz questions. Also, it is possible to merge the StitchCredit registration/identity process with your own service's registration, as long as you follow the compliance guide for these screens. 
+          </p>
+          <p>
+          The html <a href="#item-3-3-9">Sample files</a> in the documentation demonstrate the different views for this integration option. 
+          </p>
+          <p>
+          More information can be found in section <a href="/tag/Web-Integration-with-Custom Authentication">Web Integration with Custom Authentication</a>.
+          </p>
+        <h3>API Integration for Custom Web or Mobile App</h3>
+          <p>
+          The 3rd Integration option is for customers who want to create their own UI, such as a website or mobile app, entirely using the StitchCredit Consumer Credit API. User authentication is managed by the website or in the app.
+          </p>
+          <p>
+          With this option, you can create your own user experience for connecting your users to their credit data by leveraging the same B2C API that the widget is utilizing.
+          </p>
+          <p>
+          More information can be found in section <a href="/tag/API-Integration-for-Custom-Web-or-Mobile-App">API Integration for Custom Web or Mobile App</a>.
+          </p>
+        <hr>
+        <h2>Next Steps</h2>
+        <p>
+        Once you've decide on <a href="#item-2-4">which integration option</a> is right for your use case, then it's a question of understanding how to implement the integration by looking at our samples and API guides below.
+        </p>
+        <hr>
 
 
 - name: direct-controller
