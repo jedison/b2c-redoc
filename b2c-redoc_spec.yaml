@@ -11025,6 +11025,7 @@ tags:
 
 
 - name: direct-controller
+  x-displayName: Direct API
   description: |
         <p>
         <em><strong>Direct API</strong> calls must originate from your server</em>
