@@ -11234,13 +11234,12 @@ x-tagGroups:
       - Web Messaging Integration
       - APIs
 
-   - name: APIs
-     tags:  
-       - Overview of APIs
-       - direct-controller
+  - name: APIs
+    tags:  
+      - Overview of APIs
+      - direct-controller
       
   - name: In addition
     tags:      
       - Sandbox
       - Security
-
