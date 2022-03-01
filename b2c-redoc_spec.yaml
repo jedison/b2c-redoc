@@ -11257,17 +11257,17 @@ tags:
           <div class="row" style="display: flex; padding-bottom: 10px;">
             <h5>Registration</h5>
             <div class="column" style="flex: 50%; padding: 5px;padding-bottom: 10px;">
-              <img src="assets/images/registration.png" alt="Image of page example for registration" style="width:100%"/>
+              <img src="https://api.redoc.ly/registry/assets/crs-group/B2C/v2/assets%2Fregistration.png" alt="Image of page example for registration" style="width:100%"/>
             </div>
             <div class="column" style="flex: 50%; padding: 5px;">
-              <img src="assets/images/registration_content.png" alt="Image of page example for registration content" style="width:100%"/>
+              <img src="https://api.redoc.ly/registry/assets/crs-group/B2C/v2/assets%2Fregistration_content.png" alt="Image of page example for registration content" style="width:100%"/>
             </div>
           </div>
 
           <div class="row" style="display: flex; padding-bottom: 10px;">
             <h5>Login</h5>
             <div class="column" style="flex: 50%; padding: 5px; padding-bottom: 10px;">
-              <img src="assets/images/login.png" alt="Image of page example for Sign Up" style="width:100%"/>
+              <img src=https://api.redoc.ly/registry/assets/crs-group/B2C/v2/assets%2Flogin.png" alt="Image of page example for Sign Up" style="width:100%"/>
             </div>
             <div class="column" style="flex: 50%; padding: 5px;">
             </div>
@@ -11276,36 +11276,36 @@ tags:
           <div class="row" style="display: flex; padding-bottom: 10px;">
             <h5>Identity</h5>
             <div class="column" style="flex: 50%; padding: 5px; padding-bottom: 10px;">
-              <img src="assets/images/identity.png" alt="Image of page example for identity verification" style="width:100%"/>
+              <img src="https://api.redoc.ly/registry/assets/crs-group/B2C/v2/assets%2Fidentity.png" alt="Image of page example for identity verification" style="width:100%"/>
             </div>
             <div class="column" style="flex: 50%; padding: 5px;">
-              <img src="assets/images/identity_content.png" alt="Image of page example for identity verification content" style="width:100%"/>
+              <img src="https://api.redoc.ly/registry/assets/crs-group/B2C/v2/assets%2Fidentity_content.png" alt="Image of page example for identity verification content" style="width:100%"/>
             </div>
           </div>
 
           <div class="row" style="display: flex; padding-bottom: 10px;">
             <h5>Mobile identification (option 1)</h5>
             <div class="column" style="flex: 50%; padding: 5px; padding-bottom: 10px;">
-              <img src="assets/images/mobile_identification_1.png" alt="Image of page example for mobile identification (option 1)" style="width:100%"/>
+              <img src="https://api.redoc.ly/registry/assets/crs-group/B2C/v2/assets%2Fmobile_identification_1.png" alt="Image of page example for mobile identification (option 1)" style="width:100%"/>
             </div>
             <div class="column" style="flex: 50%; padding: 5px;">
-              <img src="assets/images/mobile_identification_1_content.png" alt="Image of page example for mobile identification (option 1) content" style="width:100%"/>
+              <img src="https://api.redoc.ly/registry/assets/crs-group/B2C/v2/assets%2Fmobile_identification_1_content.png" alt="Image of page example for mobile identification (option 1) content" style="width:100%"/>
             </div>
           </div>
 
           <div class="row" style="display: flex; padding-bottom: 10px;">
             <h5>Identity quiz (option 2) and enrollment success</h5>
             <div class="column" style="flex: 50%; padding: 5px; padding-bottom: 10px;">
-              <img src="assets/images/identity_quiz_2.png" alt="Image of page example for identity quiz (option 2)" style="width:100%"/>
+              <img src="https://api.redoc.ly/registry/assets/crs-group/B2C/v2/assets%2Fidentity_quiz_2.png" alt="Image of page example for identity quiz (option 2)" style="width:100%"/>
             </div>
             <div class="column" style="flex: 50%; padding: 5px;">
-              <img src="assets/images/enrollment_success.png" alt="Image of page example for enrollment success" style="width:100%"/>
+              <img src="https://api.redoc.ly/registry/assets/crs-group/B2C/v2/assets%2Fenrollment_success.png" alt="Image of page example for enrollment success" style="width:100%"/>
             </div>
           </div>
           <div class="row" style="display: flex; padding-bottom: 10px;">
             <h5>Credit Score Dashboard</h5>
             <div class="column" style="flex: 50%; padding: 5px; padding-bottom: 10px;">
-              <img src="assets/images/credit_score_dashboard.png" alt="Image of page example for credit score" style="width:100%"/>
+              <img src="https://api.redoc.ly/registry/assets/crs-group/B2C/v2/assets%2Fcredit_score_dashboard.png" alt="Image of page example for credit score" style="width:100%"/>
             </div>
             <div class="column" style="flex: 50%; padding: 5px;">
             </div>
@@ -11314,17 +11314,17 @@ tags:
           <div class="row" style="display: flex; padding-bottom: 10px;">
             <h5>Credit Report</h5>
             <div class="column" style="flex: 50%; padding: 5px; padding-bottom: 10px;">
-              <img src="assets/images/credit_report.png" alt="Image of page example for credit report" style="width:100%"/>
+              <img src="https://api.redoc.ly/registry/assets/crs-group/B2C/v2/assets%2Fcredit_report.png" alt="Image of page example for credit report" style="width:100%"/>
             </div>
             <div class="column" style="flex: 50%; padding: 5px; padding-bottom: 10px;">
-              <img src="assets/images/credit_report_2.png" alt="Image of page example for credit report (continued)" style="width:100%"/>
+              <img src="https://api.redoc.ly/registry/assets/crs-group/B2C/v2/assets%2Fcredit_report_2.png" alt="Image of page example for credit report (continued)" style="width:100%"/>
             </div>
           </div>
 
           <div class="row" style="display: flex; padding-bottom: 10px;">
             <h5>Credit Monitoring</h5>
             <div class="column" style="flex: 50%; padding: 5px; padding-bottom: 10px;">
-              <img src="assets/images/credit_monitoring.png" alt="Image of page example for credit report" style="width:100%"/>
+              <img src="  https://api.redoc.ly/registry/assets/crs-group/B2C/v2/assets%2F/credit_monitoring.png" alt="Image of page example for credit report" style="width:100%"/>
             </div>
             <div class="column" style="flex: 50%; padding: 5px;">
             </div>
@@ -11333,7 +11333,7 @@ tags:
           <div class="row" style="display: flex; padding-bottom: 10px;">
             <h5>Identity Restoration</h5>
             <div class="column" style="flex: 50%; padding: 5px; padding-bottom: 10px;">
-              <img src="assets/images/identity_restoration.png" alt="Image of page example for credit report" style="width:100%"/>
+              <img src="  https://api.redoc.ly/registry/assets/crs-group/B2C/v2/assets%2F/identity_restoration.png" alt="Image of page example for credit report" style="width:100%"/>
             </div>
             <div class="column" style="flex: 50%; padding: 5px;">
             </div>
@@ -11400,14 +11400,14 @@ tags:
         The Web Widget must perform the necessary exchange of information via the corresponding APIs. This diagram shows the API process flow.
         </p>
         <p>
-        <img src="assets/images/api_process_flow.png" style="display:flex; margin:auto; max-width: 45vw;"/>
+        <img src="https://api.redoc.ly/registry/assets/crs-group/B2C/v2/assets%2Fapi_process_flow.png" style="display:flex; margin:auto; max-width: 45vw;"/>
         </p>
         <h3 class="section-heading">B2C Communication & Token Flow</h3>
         <p>
         The diagram shows the communication exchange that must occur between the consumer, your servers (marked Customer Servers), StitchCredit servers (marked CRS Tech Servers) and the Equifax Servers.
         </p>
         <p>
-        <img src="assets/images/b2c_communcation_and_token_flow.png" style="display:flex; margin:auto; max-width: 45vw;"/>
+        <img src="https://api.redoc.ly/registry/assets/crs-group/B2C/v2/assets%2Fb2c_communcation_and_token_flow.png" style="display:flex; margin:auto; max-width: 45vw;"/>
         </p>
         <h3 class="section-heading">Webhook Integration</h3>
         <p>
@@ -12071,7 +12071,7 @@ tags:
         Your custom application must perform the necessary exchange of information via the corresponding APIs. This diagram shows the API process flow.
         </p>
         <p>
-        <img src="assets/images/api_process_flow.png" style="display:flex; margin:auto; max-width: 45vw;"/>
+        <img src="https://api.redoc.ly/registry/assets/crs-group/B2C/v2/assets%2Fapi_process_flow.png" style="display:flex; margin:auto; max-width: 45vw;"/>
         </p>
 
         <h3 class="section-heading">B2C Communication & Token Flow</h3>
@@ -12079,7 +12079,7 @@ tags:
         The diagram shows the communication exchange that must occur between the consumer, your servers (marked Customer Servers), StitchCredit servers (marked CRS Tech Servers) and the Equifax Servers.
         </p>
         <p>
-        <img src="assets/images/b2c_communcation_and_token_flow.png" style="display:flex; margin:auto; max-width: 45vw;"/>
+        <img src="https://api.redoc.ly/registry/assets/crs-group/B2C/v2/assets%2Fb2c_communcation_and_token_flow.png" style="display:flex; margin:auto; max-width: 45vw;"/>
         </p>
 
         <h3 class="section-heading">Compliance</h3>
