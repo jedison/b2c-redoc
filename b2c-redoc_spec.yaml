@@ -11126,7 +11126,7 @@ tags:
         </p>
         <p>
         Here is an embedded example:
-        <div onload="doHighlight();"> 
+        <!-- div onload="doHighlight();" --> 
         <pre><code data-language="html">
         &lt;html>
           &lt;head>
@@ -11144,7 +11144,7 @@ tags:
           &lt;/body>
         &lt;/html>
         </code></pre>
-        </div>
+        <!-- /div -->
         <hr>
 
         <h4 class="section-heading">Responsiveness Breakpoints</h4>
@@ -11160,184 +11160,184 @@ tags:
           </p>
         <hr>
 
-          <h4 class="section-heading">Web Widget in mobile mode</h4>
-            <p>
-            Here are examples of the screens from the Web Widget when viewed in small (mobile) mode:
-            </p>
-            
-            <div class="row crop" style="display: flex">
-              <div class="column" style="flex: 50%; padding: 5px;">
-                <img src="https://user-images.githubusercontent.com/76128486/105094648-96573000-5a72-11eb-9429-6b84ba036804.png" alt="Image of page example for Sign Up" style="width:100%" class="crop" />
-              </div>
-              <div class="column" style="flex: 50%; padding: 5px;">
-                <img src="https://user-images.githubusercontent.com/76128486/105094606-83446000-5a72-11eb-83c7-df5d4ba541ae.png" alt="Image of page example for Registering Terms of Use" style="width:100%" class="crop" />
-              </div>
-            </div>
+        <h4 class="section-heading">Web Widget in mobile mode</h4>
+        <p>
+        Here are examples of the screens from the Web Widget when viewed in small (mobile) mode:
+        </p>
+        
+        <div class="row crop" style="display: flex">
+          <div class="column" style="flex: 50%; padding: 5px;">
+            <img src="https://user-images.githubusercontent.com/76128486/105094648-96573000-5a72-11eb-9429-6b84ba036804.png" alt="Image of page example for Sign Up" style="width:100%" class="crop" />
+          </div>
+          <div class="column" style="flex: 50%; padding: 5px;">
+            <img src="https://user-images.githubusercontent.com/76128486/105094606-83446000-5a72-11eb-83c7-df5d4ba541ae.png" alt="Image of page example for Registering Terms of Use" style="width:100%" class="crop" />
+          </div>
+        </div>
 
-            <h4>Login</h4>
+        <h4>Login</h4>
 
-            <div class="row crop" style="display: flex">
-              <div class="column" style="flex: 50%; padding: 5px;">
-                <img src="https://user-images.githubusercontent.com/76128486/105094441-4aa48680-5a72-11eb-86c9-9a9e7a64ed90.png" alt="Image of credit report page example" style="width:50%; margin-top: -12%;" class="crop" />
-              </div>
-            </div>
+        <div class="row crop" style="display: flex">
+          <div class="column" style="flex: 50%; padding: 5px;">
+            <img src="https://user-images.githubusercontent.com/76128486/105094441-4aa48680-5a72-11eb-86c9-9a9e7a64ed90.png" alt="Image of credit report page example" style="width:50%; margin-top: -12%;" class="crop" />
+          </div>
+        </div>
 
-            <h4>Identity</h4>
+        <h4>Identity</h4>
 
-            <div class="row crop" style="display: flex" class="crop">
-            <div class="column" style="flex: 50%; padding: 5px;">
-              <img src="https://user-images.githubusercontent.com/76128486/105093444-c0a7ee00-5a70-11eb-85ef-b4a17e4c2b45.png" alt="Image of identity page example" style="width:100%" class="crop" />
-            </div>
-            <div class="column" style="flex: 50%; padding: 5px;">
-              <img src="https://user-images.githubusercontent.com/76128486/105093564-edf49c00-5a70-11eb-8d03-c46d83010b07.png" alt="Image of page example for consumer consent language" style="width:100%" class="crop" />
-            </div>
-            </div>
+        <div class="row crop" style="display: flex" class="crop">
+        <div class="column" style="flex: 50%; padding: 5px;">
+          <img src="https://user-images.githubusercontent.com/76128486/105093444-c0a7ee00-5a70-11eb-85ef-b4a17e4c2b45.png" alt="Image of identity page example" style="width:100%" class="crop" />
+        </div>
+        <div class="column" style="flex: 50%; padding: 5px;">
+          <img src="https://user-images.githubusercontent.com/76128486/105093564-edf49c00-5a70-11eb-8d03-c46d83010b07.png" alt="Image of page example for consumer consent language" style="width:100%" class="crop" />
+        </div>
+        </div>
 
-            <h4>Identification (option 1): mobile</h4>
+        <h4>Identification (option 1): mobile</h4>
 
-            <div class="row crop" style="display: flex">
-              <div class="column" style="flex: 50%; padding: 5px;">
-                <img src="https://user-images.githubusercontent.com/76128486/105093896-6f4c2e80-5a71-11eb-9185-1a2b78596470.png" alt="Image of page for sending code via SMS to verify identity" style="width:100%" class="crop" />
-              </div>
-              <div class="column" style="flex: 50%; padding: 5px;">
-                <img src="https://user-images.githubusercontent.com/76128486/105093817-504d9c80-5a71-11eb-8334-7e2ecb8d0129.png" alt="Image of page for entering identity verifying code via SMS" style="width:100%" class="crop" />
-              </div>
-            </div>
+        <div class="row crop" style="display: flex">
+          <div class="column" style="flex: 50%; padding: 5px;">
+            <img src="https://user-images.githubusercontent.com/76128486/105093896-6f4c2e80-5a71-11eb-9185-1a2b78596470.png" alt="Image of page for sending code via SMS to verify identity" style="width:100%" class="crop" />
+          </div>
+          <div class="column" style="flex: 50%; padding: 5px;">
+            <img src="https://user-images.githubusercontent.com/76128486/105093817-504d9c80-5a71-11eb-8334-7e2ecb8d0129.png" alt="Image of page for entering identity verifying code via SMS" style="width:100%" class="crop" />
+          </div>
+        </div>
 
-            <h4>Identification (option 2): quiz</h4>
-            <div class="row crop" style="display: flex">
-              <div class="column" style="flex: 50%; padding: 5px;">
-                <img src="https://user-images.githubusercontent.com/76128486/105093707-2ac09300-5a71-11eb-9abd-8c89bd399057.png" alt="Image of page for identification quiz" style="width:100%" class="crop" />
-              </div>
-              <div class="column" style="flex: 50%; padding: 5px;">
-                <img src="https://user-images.githubusercontent.com/76128486/105093655-17adc300-5a71-11eb-96e3-d8a3162a2349.png" alt="Image of page for successful sign up as a result of successful identification" style="width:100%" class="crop" />
-              </div>
-            </div>
+        <h4>Identification (option 2): quiz</h4>
+        <div class="row crop" style="display: flex">
+          <div class="column" style="flex: 50%; padding: 5px;">
+            <img src="https://user-images.githubusercontent.com/76128486/105093707-2ac09300-5a71-11eb-9abd-8c89bd399057.png" alt="Image of page for identification quiz" style="width:100%" class="crop" />
+          </div>
+          <div class="column" style="flex: 50%; padding: 5px;">
+            <img src="https://user-images.githubusercontent.com/76128486/105093655-17adc300-5a71-11eb-96e3-d8a3162a2349.png" alt="Image of page for successful sign up as a result of successful identification" style="width:100%" class="crop" />
+          </div>
+        </div>
 
-            <h4>Credit Score - Dashboard</h4>
-            <div class="row crop" style="display: flex">
-              <div class="column" style="flex: 50%; padding: 5px;">
-                <img src="https://user-images.githubusercontent.com/76128486/105093416-b4239580-5a70-11eb-8e00-193613850be6.png" alt="Image of page for showing dashboard of scores returned by various bureaus" style="width:100%" class="crop" />
-              </div>
-              <div class="column" style="flex: 50%; padding: 5px;">
-                <img src="https://user-images.githubusercontent.com/76128486/105093301-80e10680-5a70-11eb-99a3-e4b868dce698.png" alt="Image of page for showing score returned by a single bureaus" style="width:100%" class="crop" />
-              </div>
-            </div>
+        <h4>Credit Score - Dashboard</h4>
+        <div class="row crop" style="display: flex">
+          <div class="column" style="flex: 50%; padding: 5px;">
+            <img src="https://user-images.githubusercontent.com/76128486/105093416-b4239580-5a70-11eb-8e00-193613850be6.png" alt="Image of page for showing dashboard of scores returned by various bureaus" style="width:100%" class="crop" />
+          </div>
+          <div class="column" style="flex: 50%; padding: 5px;">
+            <img src="https://user-images.githubusercontent.com/76128486/105093301-80e10680-5a70-11eb-99a3-e4b868dce698.png" alt="Image of page for showing score returned by a single bureaus" style="width:100%" class="crop" />
+          </div>
+        </div>
 
-            <h4>Credit Report</h4>
-            <div class="row crop" style="display: flex">
-              <div class="column" style="flex: 50%; padding: 5px;">
-                <img src="https://user-images.githubusercontent.com/76128486/105094067-b508f700-5a71-11eb-94f0-5b72489546fe.png" alt="Image of page for showing report summary" style="width:100%" class="crop" />
-              </div>
-              <div class="column" style="flex: 50%; padding: 5px;">
-                <img src="https://user-images.githubusercontent.com/76128486/105094037-a6224480-5a71-11eb-8f45-31cf52bd78a2.png" alt="Image of page for showing score credit accounts" style="width:100%" class="crop" />
-              </div>
-            </div>
+        <h4>Credit Report</h4>
+        <div class="row crop" style="display: flex">
+          <div class="column" style="flex: 50%; padding: 5px;">
+            <img src="https://user-images.githubusercontent.com/76128486/105094067-b508f700-5a71-11eb-94f0-5b72489546fe.png" alt="Image of page for showing report summary" style="width:100%" class="crop" />
+          </div>
+          <div class="column" style="flex: 50%; padding: 5px;">
+            <img src="https://user-images.githubusercontent.com/76128486/105094037-a6224480-5a71-11eb-8f45-31cf52bd78a2.png" alt="Image of page for showing score credit accounts" style="width:100%" class="crop" />
+          </div>
+        </div>
 
-            <h4>Credit Monitoring</h4>
-            <div class="row crop" style="display: flex">
-              <div class="column" style="flex: 50%; padding: 5px;">
-                <img src="https://user-images.githubusercontent.com/76128486/105093951-83902b80-5a71-11eb-8989-31bacb070fa2.png" alt="Image of page showing credit monitoring" style="width:50%; margin-top: -8%;" class="crop" />
-              </div>
-            </div>
+        <h4>Credit Monitoring</h4>
+        <div class="row crop" style="display: flex">
+          <div class="column" style="flex: 50%; padding: 5px;">
+            <img src="https://user-images.githubusercontent.com/76128486/105093951-83902b80-5a71-11eb-8989-31bacb070fa2.png" alt="Image of page showing credit monitoring" style="width:50%; margin-top: -8%;" class="crop" />
+          </div>
+        </div>
 
-            <h4>Identity Restoration</h4>
-            <div class="row crop" style="display: flex">
-              <div class="column" style="flex: 50%; padding: 5px;">
-                <img src="https://user-images.githubusercontent.com/76128486/105093759-3b710900-5a71-11eb-9f72-e67e6bba79d9.png" alt="Image of page showing ID restoration" style="width:50%; margin-top: -8%;" class="crop" />
-              </div>
-            </div>
-
+        <h4>Identity Restoration</h4>
+        <div class="row crop" style="display: flex">
+          <div class="column" style="flex: 50%; padding: 5px;">
+            <img src="https://user-images.githubusercontent.com/76128486/105093759-3b710900-5a71-11eb-9f72-e67e6bba79d9.png" alt="Image of page showing ID restoration" style="width:50%; margin-top: -8%;" class="crop" />
+          </div>
+        </div>
         <hr>
-          <h4 class="section-heading">Web Widget in regular (medium) mode</h4>
-            <p>
-            Here are examples of the screens from the Web Widget when viewed in medium (web) mode:
-            </p>
-            
-            <div class="row" style="display: flex; padding-bottom: 10px;">
-              <h5>Registration</h5>
-              <div class="column" style="flex: 50%; padding: 5px;padding-bottom: 10px;">
-                <img src="assets/images/registration.png" alt="Image of page example for registration" style="width:100%"/>
-              </div>
-              <div class="column" style="flex: 50%; padding: 5px;">
-                <img src="assets/images/registration_content.png" alt="Image of page example for registration content" style="width:100%"/>
-              </div>
-            </div>
 
-            <div class="row" style="display: flex; padding-bottom: 10px;">
-              <h5>Login</h5>
-              <div class="column" style="flex: 50%; padding: 5px; padding-bottom: 10px;">
-                <img src="assets/images/login.png" alt="Image of page example for Sign Up" style="width:100%"/>
-              </div>
-              <div class="column" style="flex: 50%; padding: 5px;">
-              </div>
+        <h4 class="section-heading">Web Widget in regular (medium) mode</h4>
+          <p>
+          Here are examples of the screens from the Web Widget when viewed in medium (web) mode:
+          </p>
+          
+          <div class="row" style="display: flex; padding-bottom: 10px;">
+            <h5>Registration</h5>
+            <div class="column" style="flex: 50%; padding: 5px;padding-bottom: 10px;">
+              <img src="assets/images/registration.png" alt="Image of page example for registration" style="width:100%"/>
             </div>
+            <div class="column" style="flex: 50%; padding: 5px;">
+              <img src="assets/images/registration_content.png" alt="Image of page example for registration content" style="width:100%"/>
+            </div>
+          </div>
 
-            <div class="row" style="display: flex; padding-bottom: 10px;">
-              <h5>Identity</h5>
-              <div class="column" style="flex: 50%; padding: 5px; padding-bottom: 10px;">
-                <img src="assets/images/identity.png" alt="Image of page example for identity verification" style="width:100%"/>
-              </div>
-              <div class="column" style="flex: 50%; padding: 5px;">
-                <img src="assets/images/identity_content.png" alt="Image of page example for identity verification content" style="width:100%"/>
-              </div>
+          <div class="row" style="display: flex; padding-bottom: 10px;">
+            <h5>Login</h5>
+            <div class="column" style="flex: 50%; padding: 5px; padding-bottom: 10px;">
+              <img src="assets/images/login.png" alt="Image of page example for Sign Up" style="width:100%"/>
             </div>
+            <div class="column" style="flex: 50%; padding: 5px;">
+            </div>
+          </div>
 
-            <div class="row" style="display: flex; padding-bottom: 10px;">
-              <h5>Mobile identification (option 1)</h5>
-              <div class="column" style="flex: 50%; padding: 5px; padding-bottom: 10px;">
-                <img src="assets/images/mobile_identification_1.png" alt="Image of page example for mobile identification (option 1)" style="width:100%"/>
-              </div>
-              <div class="column" style="flex: 50%; padding: 5px;">
-                <img src="assets/images/mobile_identification_1_content.png" alt="Image of page example for mobile identification (option 1) content" style="width:100%"/>
-              </div>
+          <div class="row" style="display: flex; padding-bottom: 10px;">
+            <h5>Identity</h5>
+            <div class="column" style="flex: 50%; padding: 5px; padding-bottom: 10px;">
+              <img src="assets/images/identity.png" alt="Image of page example for identity verification" style="width:100%"/>
             </div>
+            <div class="column" style="flex: 50%; padding: 5px;">
+              <img src="assets/images/identity_content.png" alt="Image of page example for identity verification content" style="width:100%"/>
+            </div>
+          </div>
 
-            <div class="row" style="display: flex; padding-bottom: 10px;">
-              <h5>Identity quiz (option 2) and enrollment success</h5>
-              <div class="column" style="flex: 50%; padding: 5px; padding-bottom: 10px;">
-                <img src="assets/images/identity_quiz_2.png" alt="Image of page example for identity quiz (option 2)" style="width:100%"/>
-              </div>
-              <div class="column" style="flex: 50%; padding: 5px;">
-                <img src="assets/images/enrollment_success.png" alt="Image of page example for enrollment success" style="width:100%"/>
-              </div>
+          <div class="row" style="display: flex; padding-bottom: 10px;">
+            <h5>Mobile identification (option 1)</h5>
+            <div class="column" style="flex: 50%; padding: 5px; padding-bottom: 10px;">
+              <img src="assets/images/mobile_identification_1.png" alt="Image of page example for mobile identification (option 1)" style="width:100%"/>
             </div>
-            <div class="row" style="display: flex; padding-bottom: 10px;">
-              <h5>Credit Score Dashboard</h5>
-              <div class="column" style="flex: 50%; padding: 5px; padding-bottom: 10px;">
-                <img src="assets/images/credit_score_dashboard.png" alt="Image of page example for credit score" style="width:100%"/>
-              </div>
-              <div class="column" style="flex: 50%; padding: 5px;">
-              </div>
+            <div class="column" style="flex: 50%; padding: 5px;">
+              <img src="assets/images/mobile_identification_1_content.png" alt="Image of page example for mobile identification (option 1) content" style="width:100%"/>
             </div>
+          </div>
 
-            <div class="row" style="display: flex; padding-bottom: 10px;">
-              <h5>Credit Report</h5>
-              <div class="column" style="flex: 50%; padding: 5px; padding-bottom: 10px;">
-                <img src="assets/images/credit_report.png" alt="Image of page example for credit report" style="width:100%"/>
-              </div>
-              <div class="column" style="flex: 50%; padding: 5px; padding-bottom: 10px;">
-                <img src="assets/images/credit_report_2.png" alt="Image of page example for credit report (continued)" style="width:100%"/>
-              </div>
+          <div class="row" style="display: flex; padding-bottom: 10px;">
+            <h5>Identity quiz (option 2) and enrollment success</h5>
+            <div class="column" style="flex: 50%; padding: 5px; padding-bottom: 10px;">
+              <img src="assets/images/identity_quiz_2.png" alt="Image of page example for identity quiz (option 2)" style="width:100%"/>
             </div>
+            <div class="column" style="flex: 50%; padding: 5px;">
+              <img src="assets/images/enrollment_success.png" alt="Image of page example for enrollment success" style="width:100%"/>
+            </div>
+          </div>
+          <div class="row" style="display: flex; padding-bottom: 10px;">
+            <h5>Credit Score Dashboard</h5>
+            <div class="column" style="flex: 50%; padding: 5px; padding-bottom: 10px;">
+              <img src="assets/images/credit_score_dashboard.png" alt="Image of page example for credit score" style="width:100%"/>
+            </div>
+            <div class="column" style="flex: 50%; padding: 5px;">
+            </div>
+          </div>
 
-            <div class="row" style="display: flex; padding-bottom: 10px;">
-              <h5>Credit Monitoring</h5>
-              <div class="column" style="flex: 50%; padding: 5px; padding-bottom: 10px;">
-                <img src="assets/images/credit_monitoring.png" alt="Image of page example for credit report" style="width:100%"/>
-              </div>
-              <div class="column" style="flex: 50%; padding: 5px;">
-              </div>
+          <div class="row" style="display: flex; padding-bottom: 10px;">
+            <h5>Credit Report</h5>
+            <div class="column" style="flex: 50%; padding: 5px; padding-bottom: 10px;">
+              <img src="assets/images/credit_report.png" alt="Image of page example for credit report" style="width:100%"/>
             </div>
-            
-            <div class="row" style="display: flex; padding-bottom: 10px;">
-              <h5>Identity Restoration</h5>
-              <div class="column" style="flex: 50%; padding: 5px; padding-bottom: 10px;">
-                <img src="assets/images/identity_restoration.png" alt="Image of page example for credit report" style="width:100%"/>
-              </div>
-              <div class="column" style="flex: 50%; padding: 5px;">
-              </div>
+            <div class="column" style="flex: 50%; padding: 5px; padding-bottom: 10px;">
+              <img src="assets/images/credit_report_2.png" alt="Image of page example for credit report (continued)" style="width:100%"/>
             </div>
+          </div>
+
+          <div class="row" style="display: flex; padding-bottom: 10px;">
+            <h5>Credit Monitoring</h5>
+            <div class="column" style="flex: 50%; padding: 5px; padding-bottom: 10px;">
+              <img src="assets/images/credit_monitoring.png" alt="Image of page example for credit report" style="width:100%"/>
+            </div>
+            <div class="column" style="flex: 50%; padding: 5px;">
+            </div>
+          </div>
+          
+          <div class="row" style="display: flex; padding-bottom: 10px;">
+            <h5>Identity Restoration</h5>
+            <div class="column" style="flex: 50%; padding: 5px; padding-bottom: 10px;">
+              <img src="assets/images/identity_restoration.png" alt="Image of page example for credit report" style="width:100%"/>
+            </div>
+            <div class="column" style="flex: 50%; padding: 5px;">
+            </div>
+          </div>
 
 - name: DevTools - Web Integration with Custom Authentication
   x-displayName: Web Integration with Custom Authentication
