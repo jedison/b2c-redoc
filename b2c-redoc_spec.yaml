@@ -8,7 +8,7 @@ info:
     url: https://efx-dev.stitchcredit.com/api
   description: |
       <span class="docs-time">Last updated: 2021-11-30</span></h1>
-			<p>This guide is to assist you in integrating the Consumer Credit API into your environment.</p>
+      <p>This guide is to assist you in integrating the Consumer Credit API into your environment.</p>
 
   x-logo:
     url: 'https://user-images.githubusercontent.com/91110885/155860515-f3c84817-628e-427a-9b1c-abf7a735f05a.png'
