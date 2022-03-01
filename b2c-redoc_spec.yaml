@@ -7,7 +7,7 @@ info:
     email: supportapi@crscreditapi.com
     url: https://efx-dev.stitchcredit.com/api
   description: |
-      <span class="docs-time">Last updated: 2021-11-30</span></h1>
+      <span class="docs-time">Last updated: 2022-02-01</span></h1>
       <p>This guide is to assist you in integrating the Consumer Credit API into your environment.</p>
 
   x-logo:
@@ -11085,13 +11085,12 @@ tags:
           </p>
           <p>Collection of end-points that should be called from your server.</p>
           <ol>
-            <h4><li>Customer Login (POST)</h4>
+            <h4><li>CUSTOMER LOGIN (POST)</h4>
             <p>/direct/login</p>
               <p>Using your credentials in the request body ("apikey" and "secret"), the response will contain the <em>token</em> and <em>refresh</em> token.<br>
               These tokens are required for completing the other requests to <strong>Direct API</strong> endpoints.<br></p>
               <p>This token will be valid for approximately one hour. After the one hour, the refresh token will become valid. <br></p>
               <p>If the token expires, use <strong>/direct/refresh-token?token={<em>refresh</em>}</strong> to get a new token <br></p>
-              <br>
             <br>
             </li>
             <h4><li>CUSTOMER REFRESH TOKEN (GET)</h4>
@@ -11105,45 +11104,229 @@ tags:
               <p>
               When the token expires, use /direct/refresh-token?token={refresh} to get a new token
               </p>
+            <br>
             </li>
             <h4><li>REGISTER NEW USER (POST)</h4>
             <p>/direct/user-reg</p>
             <p>Creates a new user with unique <strong>userId</strong> and <strong>preauth token</strong>.<br></p>
             <p>When a user logs back in, use <strong>/direct/preauth-token/{userId}</strong> to generate that user a new <strong>preauth token</strong> and a new <strong>userId</strong> (refer to <strong>Returning User</strong>)</p>
             <p>Don't store the token across sessions. Use the userId from the previous session to generate a new userId and a new preauth token.</p>
+            <br>
             </li>
             <h4><li>NEW USER TOKEN (GET)</h4>
             <p>/direct/preauth-token/{userId}</p>
+            <br>
             </li>
             <h4><li>CLOSE USER ACCOUNT (POST)</h4>
             <p>/direct/close-account/{userId}</p>
+            <br>
             </li>
             <h4><li>CHANGE USER EMAIL (POST)</h4>
             <p>/direct/change-email/{userId}</p>
+            <br>
             </li>
             <h4><li>CHANGE USER PHONE (POST)</h4>
             <p>/direct/change-mobile/{userId}</p>
+            <br>
             </li>
             <h4><li>CHANGE USER HOST (POST)</h4>
             <p>/direct/change-host/{userId}</p>
+            <br>
             </li>
             <h4><li>UPDATE USER REFRESH DATA (POST)</h4>
             <p>/direct/update-refresh/{userId}</p>
             <p><strong>*Premium Feature - May Require Additional Access</strong></p>
+            <br>
             </li>
             <h4><li>GET ALERT DETAIL (GET)</h4>
             <p>/direct/efx-alert/{alertId}</p>
             <p><strong>*Premium Feature - May Require Additional Access</strong></p>
+            <br>
             </li>
           </ol>
 
-- name: Experian
+- name: customer-controller
+  x-displayName: Stitch Customer Management APIs (INTERNAL)
   description: |
-      REST API for Experian data
+      REST API for StitchCredit to manage customers
 
-- name: Transunion
+- name: admin-controller
+  x-displayName: Stitch Admin APIs (INTERNAL)
   description: |
-      REST API for Transunion data
+      REST API for StitchCredit to administer the setup
+
+- name: user-controller
+  x-displayName: User API
+  description: |
+      REST API for Users
+              <p>
+              <em><strong>User API</strong> calls must originate from the end-client</em>
+              </p>
+              <p>
+              Equifax end-points are accessible by first using the User API <strong>/users/efx-config</strong> response data, and then the <a href="#item-4-6">Equifax</a> <strong>/oauth/token</strong> call.
+              </p>
+              <p>
+              <strong>User API</strong> and <strong><a href="#item-4-6">Equifax API</a></strong> calls are intended to be called from the end-client/user's device. 
+              </p>
+              <h3 class="section-heading">Endpoints</h3>
+                <p>
+                <div style="display: table; clear: both; width:80%">
+                  <div style="float: left; width: 50%;">
+                    Preauth Token
+                    <br>
+                    User Identity
+                    <br>
+                    Phone Verify
+                    <br>
+                    Send Mobile Code
+                    <br>
+                    Renew Mobile Code
+                    <br>
+                    Verify Mobile Code
+                    <br>
+                    Get Identity Quiz
+                    <br>
+                    Verify Identity Quiz
+                    <br>
+                    Get EFX Config
+                  </div>
+                  <div style="float: left; width: 50%;">
+                    /users/preauth-token
+                    <br>
+                    /users/identity
+                    <br>
+                    /users/get-mobile
+                    <br>
+                    /users/send-code
+                    <br>
+                    /users/renew-code
+                    <br>
+                    /users/verify-code
+                    <br>
+                    /users/get-quiz
+                    <br>
+                    /users/verify-quiz
+                    <br>
+                    /users/efx-config
+                  </div>
+                </div>
+                <br/>
+                <p><em>Endpoints above are all available to the customer and require a preauth token, returned from /direct/user-reg or /direct/preauth-token</em></p>
+                <br/>
+                <div style="display: table; clear: both; width:80%">
+                  <div style="float: left; width: 50%;">
+                    Start
+                    <br>
+                    Initialize
+                    <br>
+                    Customer Login
+                    <br>
+                    Register New User
+                    <br>
+                    Password Recovery
+                    <br>
+                    Recovery Token Verify
+                    <br>
+                    Password Reset
+                    <br>
+                    Action Token
+                    <br>
+                    Change Email
+                    <br>
+                    Change Phone
+                    <br>
+                    Change Password
+                    <br>
+                    Change Recovery
+                    <br>
+                    Close Account
+                    <br>
+                  </div>
+                  <div style="float: left; width: 50%;">
+                    /users/start
+                    <br>
+                    /users/initialize
+                    <br>
+                    /users/login
+                    <br>
+                    /users/register
+                    <br>
+                    /users/password-recovery
+                    <br>
+                    /users/recovery-token
+                    <br>
+                    /users/password-reset
+                    <br>
+                    /users/action-token
+                    <br>
+                    /users/change-email
+                    <br>
+                    /users/change-phone
+                    <br>
+                    /users/change-password
+                    <br>
+                    /users/change-recovery
+                    <br>
+                    /users/close-account
+                    <br>
+                  </div>
+                </div>
+                <br/>
+                <p><em>Endpoints above are not available for use when Direct API calls are used.
+                </em></p>
+                <br/>
+                </p>
+                <!-- copied from user-api.html generation plus manual cleanup -->
+                <ol>
+                  <h4><li>Preauth Token (get)</h4>
+                  <p>/users/preauth-token/{paToken}</p>
+                  <ul>
+                    <li>
+                      <p>This request uses <strong>userId</strong> (from the response of <strong>/direct/user-reg</strong>) to generate a <strong>User Token</strong>.</p>
+                      <p>
+                        <em>The Preauth Token needed for this request is also generated by <strong>/direct/user-reg</strong> or <strong>/direct/preauth-token</strong> </em>
+                      </p>
+                    </li>
+                  </ul>
+                  </li>
+                  <h4><li>User Identity (post)</h4>
+                  <p>/users/identity</p>
+                  <p>This endpoint is most useful for checking whether the user's identity needs to be verified.</p>
+                  <p>If the response has <strong>idpass</strong> set to <em>true</em>, then the user's identity is already verified.</p>
+                  <p>If <strong>idpass</strong> is <em>false</em>, then the user's identity needs to be verified.</p>
+                  <p>The user's identity can be verified with either:</p>
+                  <ul>
+                    <li><strong>/users/get-mobile</strong> (phone sms verification)</li>
+                    <li><strong>/users/get-quiz</strong> (an identity quiz)</li>
+                  </ul>
+                  <p>The user's identity must be verified in order to enable the user's device to request the <strong>Equifax config</strong> data.</p>
+                  <p>The data in the <strong>Equifax config</strong> provides the necessary credentials for making requests to the Equifax API from the consumer's device.</p>
+                  </li>
+                  <h4><li>Phone Verify (get)</h4>
+                  <p>/users/get-mobile</p>
+                  </li>
+                  <h4><li>Send Mobile Code (post)</h4>
+                  <p>/users/send-code/{mtoken}</p>
+                  </li>
+                  <h4><li>Renew Mobile Code (post)</h4>
+                  <p>/users/renew-code</p>
+                  </li>
+                  <h4><li>Verify Mobile Code (post)</h4>
+                  <p>/users/verify-code</p>
+                  </li>
+                  <h4><li>Get Identity Quiz (get)</h4>
+                  <p>/users/get-quiz</p>
+                  </li>
+                  <h4><li>Verify Identity Quiz (post)</h4>
+                  <p>/users/verify-quiz</p>
+                  </li>
+                  <h4><li>Get EFX Config (get)</h4>
+                  <p>/users/efx-config</p>
+                  <p>Use this endpoint to get the Equifax credentials and url</p>
+                  <p>These will be needed for the consumer app to send requests to the Equifax API.</p>
+                  </li>
+                </ol>
+
 
 - name: LexisNexis
   description: |
@@ -11239,6 +11422,9 @@ x-tagGroups:
     tags:  
       - Overview of APIs
       - direct-controller
+      - user-controller
+      - customer-controller
+      - admin-controller
       
   - name: In addition
     tags:      
