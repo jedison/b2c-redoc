@@ -89,3 +89,7 @@
 	max-height:60vh;
 	overflow: scroll;
 }
+
+pre code.hljs {
+    display: unset;
+}
