@@ -1,10 +1,10 @@
 /* Adding another sub-section for the menu, so moving that section to the right to mark the fact that it's a subsection*/
+/*
 .docs-nav .section-items .third_level
 {
 	font-size: 0.90em;
 	left: 22px;
 }
-/* A fourth section*/
 .docs-nav .section-items .fourth_level
 {
 	font-size: 0.80em;
@@ -23,12 +23,12 @@
 {
 	display:block;
 }
+*/
 
 .docs-section h4, .docs-section h6
 {
 	color: #252930;
 }
-
 .crop div {
 	flex: 50%;
 	padding: 5px;
@@ -38,7 +38,7 @@
 .crop img {
         margin-top: -22%;
     }
-
+/*
 .kVVBQg {
     color: rgb(212, 31, 28);
     font-size: 0.9em;
@@ -73,6 +73,7 @@
     color: rgb(51, 51, 51);
     font-weight: normal;
 }
+*/
 
 .code {
     border-radius: 2px;
@@ -85,6 +86,6 @@
 
 .postman_code
 {
-	max-height:45vh;
+	max-height:60vh;
 	overflow: scroll;
 }
