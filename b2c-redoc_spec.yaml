@@ -10995,7 +10995,7 @@ tags:
           You can have screens for the identity verification process  for SMS one-time-code and identity quiz questions. Also, it is possible to merge the CRS registration/identity process with your own service's registration, as long as you follow the compliance guide for these screens. 
           </p>
           <p>
-          The html <a href="#item-3-3-9">Sample files</a> in the documentation demonstrate the different views for this integration option. 
+          The html <a href="/tag/DevTools-Web-Widget-with-Integrated-Authentication">Sample files</a> in the documentation demonstrate the different views for this integration option. 
           </p>
           <p>
           More information can be found in section <a href="/tag/Web-Integration-with-Custom Authentication">Web Integration with Custom Authentication</a>.
@@ -11013,7 +11013,7 @@ tags:
         <hr>
         <h2>Next Steps</h2>
         <p>
-        Once you've decide on <a href="#item-2-4">which integration option</a> is right for your use case, then it's a question of understanding how to implement the integration by looking at our samples and API guides below.
+        Once you've decide on <a href="/tag/Which-Integration-Option-is-right-for-you">which integration option</a> is right for your use case, then it's a question of understanding how to implement the integration by looking at our samples and API guides below.
         </p>
         <hr>
 
@@ -11097,7 +11097,7 @@ tags:
         Webhooks are available to notify you when an alert (or other notifications) comes in so that you can message users in whatever fashion you wish to return to your site.
         </p>
         <p>
-        Please refer to additional details on <a href="#item-4-2">Webhook Integration</a>.
+        Please refer to additional details on <a href="/tag/Webhook-Integration">Webhook Integration</a>.
         </p>
         <hr>
 
@@ -11106,7 +11106,7 @@ tags:
           To interact with the Consumer Credit Widget, you will need to implement a structure using a window event listener.
           </p>
           <p>
-          Please refer to additional details on <a href="#item-4-3">Web Messaging Integration</a>.
+          Please refer to additional details on <a href="/tag/Web-Messaging-Integration">Web Messaging Integration</a>.
           </p>
         <hr>
 
@@ -11380,14 +11380,14 @@ tags:
         Using more advanced embedded pages with messaging can facilitate communication between your primary application and the embedded CRS application. This technique allows customer applications to react to changes and events in the CRS application.
         </p>
         <p>
-        The customer needs to implement AJAX preauth token generation function; the “getData” implementation shown in the <a href="#item-3-3-9">Sample files</a> only works in the testing environment and will not work in production. True user authentication and processing must be done server-side.
+        The customer needs to implement AJAX preauth token generation function; the “getData” implementation shown in the <a href="/tag/DevTools-Web-Widget-with-Integrated-Authentication">Sample files</a> only works in the testing environment and will not work in production. True user authentication and processing must be done server-side.
         </p>
         <p>
-        <a href="#item-3-3-9">Sample files</a> show possible usage and event handling.
+        <a href="/tag/DevTools-Web-Widget-with-Integrated-Authentication">Sample files</a> show possible usage and event handling.
         </p>
         <h3>API Process Flow</h3>
         <p>
-        A token from /direct/login is required for all other <a href="#item-4-4-4">Direct API</a> end-points in yellow.
+        A token from /direct/login is required for all other <a href="/tag/direct-controller">Direct API</a> end-points in yellow.
         It is a bearer authorization token.
         </p>
         <p>
@@ -11417,21 +11417,21 @@ tags:
         Webhooks are available to notify you when an alert (or other notifications) comes in so that you can message users in whatever fashion you wish to return to your site.
         </p>
         <p>
-        Please refer to additional details on <a href="#item-4-2">Webhook Integration</a>.
+        Please refer to additional details on <a href="/tag/Webhook-Integration">Webhook Integration</a>.
         </p>
         <h3>Web Messaging Integration</h3>
         <p>
         To interact with the Consumer Credit Widget, you will need to implement a structure using a window event listener.
         </p>
         <p>
-        Please refer to additional details on <a href="#item-4-3">Web Messaging Integration</a>.
+        Please refer to additional details on <a href="/tag/Web-Messaging-Integration">Web Messaging Integration</a>.
         </p>
         <h3>Postman Collections</h3>
         <p>
-        <a href="#item-4-4-2">Access Credentials</a> have been sent to you in a Postman Environment upon registration via email. The Postman Environment is pre-configured to allow you to use the scripts and walk through the Postman Scripts with minimal intervention to aid in understanding the API call structure.
+        <a href="/tag/Sandbox">Access Credentials</a> have been sent to you in a Postman Environment upon registration via email. The Postman Environment is pre-configured to allow you to use the scripts and walk through the Postman Scripts with minimal intervention to aid in understanding the API call structure.
         </p>
         <p>
-        Consumer Credit <a href="#item-3-7">Postman Collections</a> include pre-defined API calls to help you understand and develop your solution. See the <a href="#test_api_postman_collection">Test API Postman Collection</a> for additional documentation.
+        Consumer Credit <a href="/tag/Postman-Collections">Postman Collections</a> include pre-defined API calls to help you understand and develop your solution. See the <a href="#test_api_postman_collection">Test API Postman Collection</a> for additional documentation.
         </p>
         <h3>Samples</h3>
         <p id="iframe_sample.html">
@@ -12108,7 +12108,7 @@ tags:
         Webhooks are available to notify you when an alert (or other notifications) comes in so that you can message users in whatever fashion you wish to return to your site.
         </p>
         <p>
-        Please refer to additional details on <a href="#item-4-2">Webhook Integration</a>.
+        Please refer to additional details on <a href="/tag/Webhook-Integration">Webhook Integration</a>.
         </p>
         <hr>
 
@@ -12118,13 +12118,13 @@ tags:
         <ol>
         <li>NEW USERS</li>
           <ol>
-          <li><a href="#item-4-4-4">Direct API</a>
+          <li><a href="/tag/direct-controller">Direct API</a>
             <ol>
             <li>Customer Login</li>
             <li>Register New User: Be sure to save the userId when Registering a New User or you will not be able to generate a returning token for the user</li>
             </ol>
           </li>
-          <li><a href="#item-4-4-5">User API</a>
+          <li><a href="/tag/user-controller">User API</a>
             <ol>
             <li>Preauth Token</li>
             <li>User Identity</li>
@@ -12147,13 +12147,13 @@ tags:
           </ol>
         <li>RETURNING USERS
           <ol>
-          <li><a href="#item-4-4-4">Direct API</a>
+          <li><a href="/tag/direct-controller">Direct API</a>
             <ol>
             <li>Customer Login</li>
             <li>New User Token</li>
             </ol>
           </li>
-          <li><a href="#item-4-4-5">User API</a>
+          <li><a href="/tag/user-controller">User API</a>
             <ol>
             <li>Preauth Token - if (idpass=false), the next four calls would need to be made, otherwise skip to Get EFX Config if true)</li>
             <li>User Identity</li>
@@ -12204,10 +12204,10 @@ tags:
 
         <h3>Postman Collections</h3>
         <p>
-        <a href="#item-4-4-2">Access Credentials</a> have been sent to you in a Postman Environment upon registration via email. The Postman Environment is pre-configured to allow you to use the scripts and walk through the Postman Scripts with minimal intervention to aid in understanding the API call structure.
+        <a href="/tag/Sandbox">Access Credentials</a> have been sent to you in a Postman Environment upon registration via email. The Postman Environment is pre-configured to allow you to use the scripts and walk through the Postman Scripts with minimal intervention to aid in understanding the API call structure.
         </p>
         <p>
-        Consumer Credit <a href="#item-3-7">Postman Collections</a> include pre-defined API calls to help you understand and develop your solution. See the <a href="#test_api_postman_collection">Test API Postman Collection</a> for additional documentation.
+        Consumer Credit <a href="/tag/Postman-Collections">Postman Collections</a> include pre-defined API calls to help you understand and develop your solution. See the <a href="#test_api_postman_collection">Test API Postman Collection</a> for additional documentation.
         <ul>
         <li>The <a href="#test_api_postman_collection">Consumer Credit - Test API.postman_collection.json</a> includes some webhook tests to help you understand and develop your solution.  See the Test API scripts for additional documentation.</li>
         <li>The <a href="#new_user_postman_collection">Consumer Credit - Getting Started - New User.postman_collection.json</a> will walk you through the Create New User steps in order</li>
@@ -12248,7 +12248,7 @@ tags:
 - name: Consumer Credit API Setup
   description: |
         <p>
-        The fastest way to get up and running with CRS's Consumer Credit APIs are to use the <a href="#item-3-7">Postman Collections</a> that you can find in the next section plus your <a href="#item-4-4-2">Access Credentials</a>. With this information, you can being your integration process and start testing with the CRS <a href="#section-5">Sandbox</a> in no time at all.
+        The fastest way to get up and running with CRS's Consumer Credit APIs are to use the <a href="/tag/Postman-Collections">Postman Collections</a> that you can find in the next section plus your <a href="/tag/Sandbox">Access Credentials</a>. With this information, you can being your integration process and start testing with the CRS <a href="#section-5">Sandbox</a> in no time at all.
         </p>
 
 - name: Postman Collections
@@ -12257,7 +12257,7 @@ tags:
         The Postman Environment is pre-configured to allow you to use the scripts and walk through the Postman Scripts with minimal intervention to aid in understanding the API call structure.
         </p>
         <p>
-        Consumer Credit <a href="#item-3-7">Postman Collections</a> include pre-defined API calls to help you understand and develop your solution. See the <a href="#test_api_postman_collection">Test API Postman Collection</a> for additional documentation.
+        Consumer Credit <a href="/tag/Postman-Collections">Postman Collections</a> include pre-defined API calls to help you understand and develop your solution. See the <a href="#test_api_postman_collection">Test API Postman Collection</a> for additional documentation.
         <ul>
         <li>The <a href="#test_api_postman_collection">Consumer Credit - Test API.postman_collection.json</a> includes some webhook tests to help you understand and develop your solution.  See the <a href="#test_api_postman_collection">Test API Postman Collection</a> for additional documentation.</li>
         <li>The <a href="#new_user_postman_collection">Consumer Credit - Getting Started - New User.postman_collection.json</a> will walk you through the Create New User steps in order</li>
@@ -12271,7 +12271,7 @@ tags:
 
         <p id="test_api_postman_collection"><strong>Test APIs:</strong> Consumer Credit - Test API.postman_collection.json</p> <!-- Postman Collections -->
         <p><a href="assets/json/Consumer Credit - Test API.postman_collection.json" download>Download here</a></p>
-        <div class="postman_code">
+        <div class="postman_code" style="max-height: 60vh;overflow: scroll;" onload="doHighlight();">
         <!-- Consumer Credit - Test API.postman_collection.json -->
         <pre><code class="language-json">
         {
@@ -12543,7 +12543,7 @@ tags:
         </div>
         <p id="new_user_postman_collection"><strong>Direct & User APIs:</strong> Consumer Credit - Getting Started - New User.postman_collection.json</p> <!-- Postman Collections -->
         <p><a href="assets/json/Consumer Credit - Getting Started - New User.postman_collection.json" download>Download here</a></p>
-        <div class="postman_code"> 
+        <div class="postman_code" style="max-height: 60vh;overflow: scroll;" onload="doHighlight();">
         <!-- Consumer Credit - Getting Started - New User.postman_collection.json -->
         <pre><code class="language-json">
         {
@@ -13271,7 +13271,7 @@ tags:
 
         <p id="returning_user_postman_collection"><strong>Direct & User APIs: Consumer Credit - Getting Started - Returning User.postman_collection.json</strong></p> <!-- Postman Collections -->
         <p><a href="assets/json/Consumer Credit - Getting Started - Returning User.postman_collection.json" download>Download here</a></p>
-        <div class="postman_code">
+        <div class="postman_code" style="max-height: 60vh;overflow: scroll;" onload="doHighlight();">
         <!-- Consumer Credit - Getting Started - Returning User.postman_collection.json -->
         <pre><code class="language-json">
         {
@@ -13769,7 +13769,7 @@ tags:
 
         <p id="user_api_postman_collection"><strong>User APIs: Consumer Credit - User API.postman_collection.json</strong></p> <!-- Postman Collections -->
         <p><a href="assets/json/Consumer Credit - User API.postman_collection.json" download>Download here</a></p>
-        <div class="postman_code">
+        <div class="postman_code" style="max-height: 60vh;overflow: scroll;" onload="doHighlight();">
         <!-- Consumer Credit - User API.postman_collection.json -->
         <pre><code class="language-json">
         {
@@ -14337,7 +14337,7 @@ tags:
 
         <p id="direct_api_postman_collection"><strong>Direct APIs: Consumer Credit - Direct API.postman_collection.json</strong></p> <!-- Postman Collections -->
         <p><a href="assets/json/Consumer Credit - Direct API.postman_collection.json" download>Download here</a></p>
-        <div class="postman_code">
+        <div class="postman_code" style="max-height: 60vh;overflow: scroll;" onload="doHighlight();">
         <!-- Consumer Credit - Direct API.postman_collection.json -->
         <pre><code class="language-json">
         {
@@ -14930,7 +14930,7 @@ tags:
 
         <p id="efx_api_postman_collection"><strong>Equifax APIs: Consumer Credit - EFX API.postman_collection.json</strong></p> <!-- Postman Collections -->
         <p><a href="assets/json/Consumer Credit - EFX API.postman_collection.json" download>Download here</a></p>
-        <div class="postman_code">
+        <div class="postman_code" style="max-height: 60vh;overflow: scroll;" onload="doHighlight();">
         <!-- Consumer Credit - EFX API.postman_collection.json -->
         <pre><code class="language-json">
         {
@@ -15388,18 +15388,18 @@ tags:
 
         <h2>Overview</h2>
         <p>
-        Once you have chosen your <a href="#item-2-4">integration option</a> from among:
+        Once you have chosen your <a href="/tag/Which-Integration-Option-is-right-for-you">integration option</a> from among:
         </p>
         <ol>
-          <li>Usage of credit reporting on a web page with user authentication managed by CRS: <a href="#item-3-2">Web Widget with Integrated Authentication</a></li>
-          <li>Usage of credit reporting on a web page with user authentication managed by you: <a href="#item-3-3">Web Integration with Custom Authentication</a></li>
-          <li>Usage of credit reporting on a custom UI such as a website or mobile app with authentication managed on the website/in the app: <a href="#item-3-4">API Integration for Custom Web or Mobile App</a></li>
+          <li>Usage of credit reporting on a web page with user authentication managed by CRS: <a href="/tag/DevTools-Web-Widget-with-Integrated-Authentication">Web Widget with Integrated Authentication</a></li>
+          <li>Usage of credit reporting on a web page with user authentication managed by you: <a href="/tag/DevTools-Web-Integration-with-Custom-Authentication">Web Integration with Custom Authentication</a></li>
+          <li>Usage of credit reporting on a custom UI such as a website or mobile app with authentication managed on the website/in the app: <a href="/tag/DevTools-API-Integration-for-Custom-Web-or-Mobile-App">API Integration for Custom Web or Mobile App</a></li>
         </ol>
         then you need to know what integration methods are required to exchange information with CRS.
         </p>
         <p>
         Webhooks pertain to all 3 integration options, but they are optional. 
-        Web Messaging only applies to the Widget (integration option 1: <a href="#item-3-2">Web Widget with Integrated Authentication</a> and option 2: <a href="#item-3-3">Web Integration with Custom Authentication</a>), and is a feature of the widget that customers can use for greater extensibility and insight into the stages that the widget is rendering.
+        Web Messaging only applies to the Widget (integration option 1: <a href="/tag/DevTools-Web-Widget-with-Integrated-Authentication">Web Widget with Integrated Authentication</a> and option 2: <a href="/tag/DevTools-Web-Integration-with-Custom-Authentication">Web Integration with Custom Authentication</a>), and is a feature of the widget that customers can use for greater extensibility and insight into the stages that the widget is rendering.
         </p>
         <ul>
           <li><b>Webhooks</b> - Customers should implement Webhooks if they want their users to receive notifications. The customer's webhook endpoint receives the notifications for all their users in nightly batches, and then the customer can send these notifications to their users in whatever fashion they wish.</li>
@@ -15407,7 +15407,7 @@ tags:
           <ul>
             <li>window.addEventListener(&quot;message&quot;, receiveMessage, false); : this creates the &quot;listener&quot; callback function, receiveMessage, which receives notifications for events</li>
             <li>these events have types that can be checked by the customer for triggering whatever javascript code they want when a desired event.data.type value is received.</li>
-            <li>there is a function on the event.source object called <b>postMessage()</b>. This function can be used for pre-populating certain fields -- additionally, for integration option 2: <a href="#item-3-3">Web Integration with Custom Authentication</a>, postMessage({}) can be used for redeeming the preauth token (authenticating a user) as an alternative to passing the preauth token as an iframe URL parameter.</li>
+            <li>there is a function on the event.source object called <b>postMessage()</b>. This function can be used for pre-populating certain fields -- additionally, for integration option 2: <a href="/tag/DevTools-Web-Integration-with-Custom-Authentication">Web Integration with Custom Authentication</a>, postMessage({}) can be used for redeeming the preauth token (authenticating a user) as an alternative to passing the preauth token as an iframe URL parameter.</li>
           </ul>
         </ul>
 
@@ -15587,16 +15587,16 @@ tags:
         <hr>
         <h2>Overview</h2>
         <p>
-        To quickly grasp the token flow and sequence of API calls, download and import the "Getting Started" <a href="#item-3-7">Postman Collections</a> from the <a href="https://drive.google.com/drive/folders/1VU0awRVnOswE1e9srB_tJ7nBxqUZFN2-?usp=sharing" target="_blank">Google Drive</a> and the Postman environment we provided to you.<br>
-        The <a href="https://drive.google.com/drive/folders/1VU0awRVnOswE1e9srB_tJ7nBxqUZFN2-?usp=sharing" target="_blank">Google Drive</a> and this documentation contain <a href="#item-3-7">Postman Collections</a> for each API.
+        To quickly grasp the token flow and sequence of API calls, download and import the "Getting Started" <a href="/tag/Postman-Collections">Postman Collections</a> from the <a href="https://drive.google.com/drive/folders/1VU0awRVnOswE1e9srB_tJ7nBxqUZFN2-?usp=sharing" target="_blank">Google Drive</a> and the Postman environment we provided to you.<br>
+        The <a href="https://drive.google.com/drive/folders/1VU0awRVnOswE1e9srB_tJ7nBxqUZFN2-?usp=sharing" target="_blank">Google Drive</a> and this documentation contain <a href="/tag/Postman-Collections">Postman Collections</a> for each API.
         </p>
         <p>
         <ul>
-          <li><em><strong><a href="#item-4-4-4">Direct API</a></strong> calls must originate from your server</em> </li>
-          <li><em><strong><a href="#item-4-4-5">User API</a></strong> calls must originate from the end-client</em> </li>
+          <li><em><strong><a href="/tag/direct-controller">Direct API</a></strong> calls must originate from your server</em> </li>
+          <li><em><strong><a href="/tag/user-controller">User API</a></strong> calls must originate from the end-client</em> </li>
           <li><em><strong><a href="#item-4-4-6">Equifax API</a></strong> calls must originate from the end-client</em> </li>
         </ul>
-        Equifax end-points are accessible by first using the <a href="#item-4-4-5">User API</a> <strong>/users/efx-config</strong> response data, and then the Equifax <strong>/oauth/token</strong> call. As mentioned above, <strong><a href="#item-4-4-5">User API</a></strong> and <strong><a href="#item-4-4-6">Equifax API</a></strong> calls are intended to be called from the end-client/user's device.
+        Equifax end-points are accessible by first using the <a href="/tag/user-controller">User API</a> <strong>/users/efx-config</strong> response data, and then the Equifax <strong>/oauth/token</strong> call. As mentioned above, <strong><a href="/tag/user-controller">User API</a></strong> and <strong><a href="#item-4-4-6">Equifax API</a></strong> calls are intended to be called from the end-client/user's device.
         </p>
         <p>
         It is not acceptable to pass any of the data to these calls or responses from these calls to your server. Do not save any data. Short term caching is fine, but long-term storage is not. 
@@ -15652,10 +15652,10 @@ tags:
               15 minutes
             </p>
             <p>
-              Valid for 1 day (not used in <a href="#item-4-4">Direct API</a>)
+              Valid for 1 day (not used in <a href="/tag/direct-controller">Direct API</a>)
             </p>
             <p>
-              Valid for 10 minutes (not used in <a href="#item-4-4">Direct API</a>)
+              Valid for 10 minutes (not used in <a href="/tag/direct-controller">Direct API</a>)
             </p>
           </div>
         </div>
@@ -15671,7 +15671,7 @@ tags:
         <em><strong>Direct API</strong> calls must originate from your server</em>
         </p>
         <p>
-        A token from /direct/login is required for all other <a href="#item-4-4-1">Direct API</a> end-points. It is a bearer authorization token.
+        A token from /direct/login is required for all other <a href="/tag/direct-controller">Direct API</a> end-points. It is a bearer authorization token.
         </p>
         <p>
         Once you have a preauth token, returned from /direct/user-reg or /direct/preauth-token, pass it to the Web UI entry point in the embedded iFrame.
@@ -15988,7 +15988,7 @@ tags:
         <em><strong>Equifax API</strong> calls must originate from the end-client</em>
         </p>
         <p>
-        Equifax end-points are accessible by first using the <a href="#item-4-5">User API</a> <strong>/users/efx-config</strong> response data, and then the Equifax <strong>/oauth/token</strong> call. As mentioned above, <strong><a href="#item-4-5">User API</a></strong> and <strong><a href="#item-4-6">Equifax API</a></strong> calls are intended to be called from the end-client/user's device.
+        Equifax end-points are accessible by first using the <a href="/tag/user-controller">User API</a> <strong>/users/efx-config</strong> response data, and then the Equifax <strong>/oauth/token</strong> call. As mentioned above, <strong><a href="/tag/user-controller">User API</a></strong> and <strong><a href="#item-4-6">Equifax API</a></strong> calls are intended to be called from the end-client/user's device.
         </p>
         <p>
         <a href="https://sandbox-api.consumer.equifax.com/saas/swagger-ui.html">Equifax Documentation in Swagger</a>
@@ -16459,8 +16459,8 @@ tags:
         <p>Sandbox API information has been provided to you as a Postman Collection.</p>
         <h2>Usage</h2>
         <p><a href="/tag/Postman-Collection">Postman Collections</a> for CRS B2C APIs include pre-defined API calls to help you understand and develop your solution. </p>
-        <p>To quickly grasp the token flow and sequence of API calls, download and import the "Getting Started" <a href="#item-3-7">Postman Collections</a> from the <a href="https://drive.google.com/drive/folders/1VU0awRVnOswE1e9srB_tJ7nBxqUZFN2-?usp=sharing" target="_blank">Google Drive</a> and the Postman environment we provided to you.<br>
-        The <a href="https://drive.google.com/drive/folders/1VU0awRVnOswE1e9srB_tJ7nBxqUZFN2-?usp=sharing" target="_blank">Google Drive</a> and this documentation contain <a href="#item-3-7">Postman Collections</a> for each API.</p>
+        <p>To quickly grasp the token flow and sequence of API calls, download and import the "Getting Started" <a href="/tag/Postman-Collections">Postman Collections</a> from the <a href="https://drive.google.com/drive/folders/1VU0awRVnOswE1e9srB_tJ7nBxqUZFN2-?usp=sharing" target="_blank">Google Drive</a> and the Postman environment we provided to you.<br>
+        The <a href="https://drive.google.com/drive/folders/1VU0awRVnOswE1e9srB_tJ7nBxqUZFN2-?usp=sharing" target="_blank">Google Drive</a> and this documentation contain <a href="/tag/Postman-Collections">Postman Collections</a> for each API.</p>
         <p>
         <ul>
         <li>The <a href="#new_user_postman_collection">Consumer Credit - Getting Started - New User.postman_collection.json</a> will walk you through the Create New User steps in order</li>
@@ -16478,7 +16478,7 @@ tags:
 - name: Security
   description: |
         <p>We regularly audit the security details of our implementation, including our certificates. We ensure that consumers and servers interact with CRS APIs over HTTPS.</p>
-        <p>As mentioned in <a href="#item-4-4-3">Token Validity Times</a>, authorized user tokens have specific validity times allowing a limited amount f time for users to perform actions before expiring or requiring re-validation.</p>
+        <p>As mentioned in <a href="/tag/APIs">Token Validity Times</a>, authorized user tokens have specific validity times allowing a limited amount f time for users to perform actions before expiring or requiring re-validation.</p>
         <hr>
 
 ############### x-tags: what to show, where
