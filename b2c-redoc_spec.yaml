@@ -5,7 +5,7 @@ info:
   contact:
     name: API Support
     email: supportapi@crscreditapi.com
-    url: https://efx-dev.stitchcredit.com/api
+
   description: |
       <span class="docs-time">Last updated: 2022-02-01</span></h1>
       <p>This guide is to assist you in integrating the Consumer Credit API into your environment.</p>
@@ -13,6 +13,7 @@ info:
   x-logo:
     url: 'https://user-images.githubusercontent.com/91110885/155860515-f3c84817-628e-427a-9b1c-abf7a735f05a.png'
     altText: CRS logo
+    href: /
 
 servers:
   - url: https://efx-dev.stitchcredit.com/api
@@ -11068,7 +11069,7 @@ tags:
         </p>
         <h4>Sample Embed page</h4>
         <p>
-        <pre><code>
+        <pre><code class="language-html">
           &lt;html&gt;
           &lt;head&gt;
             &lt;title&gt;StitchCredit&lt;/title&gt;
@@ -11113,7 +11114,7 @@ tags:
           <p>
           Here is an example of the iframe code configured with API-Key, flags, and color:
           </p>
-        <pre><code>
+        <pre><code class="language-html">
           &lt;iframe id="sc-iframe" 
           src="https://efx-dev.stitchcredit.com/api/users/start?key=d4eeb874-c6ae-4977-8b87-c0618b0bc194&amp;ocf=537952251&amp;ocl=https://www.premierconsumer.org/assets/images/en/logo.jpg&amp;oct=5f5ce0"> 
           &lt;/iframe>
@@ -11128,7 +11129,7 @@ tags:
         <p>
         Here is an embedded example:
         <!-- div onload="doHighlight();" --> 
-        <pre><code>
+        <pre><code class="language-html">
         &lt;html>
           &lt;head>
             &lt;title>StitchCredit&lt;/title>
@@ -11435,7 +11436,7 @@ tags:
         <h3 class="section-heading">Samples</h3>
         <p id="iframe_sample.html">
         Here is an implementation of the Sample iFrame page with inline user token&#58;
-        <pre><code>
+        <pre><code class="language-html">
         &lt;html>
             &lt;head>
                 &lt;title>StitchCredit&lt;/title>
@@ -11457,7 +11458,7 @@ tags:
         </p>
         <p id="direct_sample.html">
         Here is a sample implementation of an advanced embedded page with messaging&#58; the Tabbed User Interface with Dynamic Consumer Authentication integration (<em>direct_sample.html</em>):
-        <pre><code>
+        <pre><code class="language-html">
         &lt;html>
           &lt;head>
             &lt;title>StitchCredit&lt;/title>
@@ -11566,7 +11567,7 @@ tags:
         </p>
         <p id="aio_sample.html">
         Here is a sample implementation of an advanced embedded page with messaging: All-in-One User Interface with dynamic Consumer Authentication integration (<em>aio_sample.html</em>):
-        <pre><code>
+        <pre><code class="language-html">
         &lt;html&gt;
           &lt;head&gt;
             &lt;title&gt;StitchCredit&lt;/title&gt;
@@ -11675,7 +11676,7 @@ tags:
         </p>
         <p id="tile_sample.html">
         Here is a sample implementation of an advanced embedded page with messaging: Tile User Interface with dynamic Consumer Authentication integration (<em>tile_sample.html</em>):
-        <pre><code>
+        <pre><code class="language-html">
         &lt;html&gt;
         &lt;head&gt;
           &lt;title&gt;StitchCredit&lt;/title&gt;
@@ -11786,7 +11787,7 @@ tags:
         <p id="tile_sample_score_only.html">
         Here is a sample implementation of an advanced embedded page with messaging: Tile User Interface with dynamic Consumer Authentication integration and configuration display flags override (<em>tile_sample_score_only.html</em>):
         <div onload="doHighlight();"> 
-        <pre><code>
+        <pre><code class="language-html">
         &lt;html&gt;
         &lt;head&gt;
           &lt;title&gt;StitchCredit&lt;/title&gt;
@@ -12272,7 +12273,7 @@ tags:
         <p><a href="assets/json/Consumer Credit - Test API.postman_collection.json" download>Download here</a></p>
         <div class="postman_code">
         <!-- Consumer Credit - Test API.postman_collection.json -->
-        <pre><code>
+        <pre><code class="language-json">
         {
           "info": {
             "_postman_id": "ecfa55bb-7382-4439-ae40-8916233c0ed9",
@@ -12544,7 +12545,7 @@ tags:
         <p><a href="assets/json/Consumer Credit - Getting Started - New User.postman_collection.json" download>Download here</a></p>
         <div class="postman_code"> 
         <!-- Consumer Credit - Getting Started - New User.postman_collection.json -->
-        <pre><code>
+        <pre><code class="language-json">
         {
           "info": {
             "_postman_id": "f65c1f1d-3127-4b15-9ee6-0b85182b16e5",
@@ -13272,7 +13273,7 @@ tags:
         <p><a href="assets/json/Consumer Credit - Getting Started - Returning User.postman_collection.json" download>Download here</a></p>
         <div class="postman_code">
         <!-- Consumer Credit - Getting Started - Returning User.postman_collection.json -->
-        <pre><code>
+        <pre><code class="language-json">
         {
           "info": {
             "_postman_id": "f65c1f1d-3127-4b15-9ee6-0b85182b16e5",
@@ -13770,7 +13771,7 @@ tags:
         <p><a href="assets/json/Consumer Credit - User API.postman_collection.json" download>Download here</a></p>
         <div class="postman_code">
         <!-- Consumer Credit - User API.postman_collection.json -->
-        <pre><code>
+        <pre><code class="language-json">
         {
           "info": {
             "_postman_id": "78ea84a5-dd24-48c3-872a-2654e894b062",
@@ -14338,7 +14339,7 @@ tags:
         <p><a href="assets/json/Consumer Credit - Direct API.postman_collection.json" download>Download here</a></p>
         <div class="postman_code">
         <!-- Consumer Credit - Direct API.postman_collection.json -->
-        <pre><code>
+        <pre><code class="language-json">
         {
           "info": {
             "_postman_id": "1e3be246-0e2d-472e-8d8b-462f00852568",
@@ -14931,7 +14932,7 @@ tags:
         <p><a href="assets/json/Consumer Credit - EFX API.postman_collection.json" download>Download here</a></p>
         <div class="postman_code">
         <!-- Consumer Credit - EFX API.postman_collection.json -->
-        <pre><code>
+        <pre><code class="language-json">
         {
           "info": {
             "_postman_id": "6a775eeb-7324-447c-9564-157940e7d587",
@@ -15377,8 +15378,11 @@ tags:
         }
         </code></pre>
         </div>
-
         </p>
+
+- name: Integration Methods
+  description: |
+        TODO
 
 - name: direct-controller
   x-displayName: Direct API
@@ -15732,18 +15736,6 @@ tags:
 - name: Swagger Documentation
   description: |
         <p><a href="https://mware-dev.crscreditapi.com/api/swagger-ui/index.html?configUrl=/api/mware-docs/swagger-config#/" target="_blank">Swagger documentation</a> is available, but you will find <a href="/tag/Overview-of-APIs">descriptions of all APIs</a> within this document.</p>
-
-- name: Postman Collection
-  description: |
-        <p><strong>Testing StitchCredit Dev Server - anonymized.postman_collection.json</strong></p> <!-- Postman Collections -->
-        <p><a href="https://api.redoc.ly/registry/assets/crs-group/B2B/v1/assets%2fjson%2fTesting%20StitchCredit%20Dev%20Server%20-%20anonymized.postman_collection.json" download>Download here</a></p>
-        <div class="postman_code" onload="doHighlight();">
-        <!-- Testing StitchCredit Dev Server - anonymized.postman_collection.json -->
-        <pre><code class="language-json json">
-
-        </code></pre>
-        </div>
-        <hr>
 
 - name: Security
   description: |
