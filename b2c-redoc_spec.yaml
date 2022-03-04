@@ -7600,6 +7600,363 @@ paths:
             '*/*':
               schema:
                 type: object
+
+#EFX
+  '/{efx_url}/oauth/token':
+    post:
+      tags:
+      - Equifax API
+      - Getting Started - Create New User
+      - Getting Started - Returning User
+      summary: OAUTH Token
+      operationId: OAUTHToken
+      description: |
+        <h2>/{efx_url}/oauth/token</h2>
+        
+        <p>For this path parameter, <strong>{efx_url}</strong>, use the url found in the response of a call to <strong>/users/efx-config</strong>.</p>
+        <p>A successful request to <strong>{efx_url}/oauth/token</strong> will return credentials required for other <strong>Equifax API calls</strong>.</p>
+
+      parameters:
+      - in: path
+        name: efx_url
+        schema:
+          type: string
+          example: https://api.efx-url.com/consumer-data
+        required: true
+      requestBody:
+        content:
+          application/x-www-form-urlencoded:
+            encoding: {}
+            schema:
+              required:
+              - scope
+              - grant_type
+              - api_key
+              - client_assertion
+              type: object
+              properties:
+                scope:
+                  type: string
+                  example: delivery
+                grant_type:
+                  type: string
+                  example: jwt-bearer
+                api_key:
+                  type: string
+                  example: '{{efx_api_key}}'
+                client_assertion:
+                  type: string
+                  example: '{{efx_assertion}}'
+        required: false
+      responses:
+        200:
+          description: <p>The token in this response can be used to access the Equifax API</p>
+          headers:
+            Cache-Control:
+              content:
+                text/plain:
+                  schema:
+                    type: string
+                  example: no-cache, no-store, max-age=0, must-revalidate, no-store
+            Content-Encoding:
+              content:
+                text/plain:
+                  schema:
+                    type: string
+                  example: gzip
+            Date:
+              content:
+                text/plain:
+                  schema:
+                    type: string
+                  example: Thu, 06 Aug 2015 13:31:36 GMT
+            Expires:
+              content:
+                text/plain:
+                  schema:
+                    type: string
+                  example: 0
+            Pragma:
+              content:
+                text/plain:
+                  schema:
+                    type: string
+                  example: no-cache, no-cache
+            Server:
+              content:
+                text/plain:
+                  schema:
+                    type: string
+                  example: Apache-Coyote/1.1
+            Transfer-Encoding:
+              content:
+                text/plain:
+                  schema:
+                    type: string
+                  example: chunked
+            Vary:
+              content:
+                text/plain:
+                  schema:
+                    type: string
+                  example: Accept-Encoding
+            X-Content-Type-Options:
+              content:
+                text/plain:
+                  schema:
+                    type: string
+                  example: nosniff
+            X-Frame-Options:
+              content:
+                text/plain:
+                  schema:
+                    type: string
+                  example: DENY
+            X-XSS-Protection:
+              content:
+                text/plain:
+                  schema:
+                    type: string
+                  example: 1; mode=block
+          content:
+            application/json;charset=UTF-8:
+              schema:
+                $ref: '#/components/schemas/EFXresponse'
+              example:
+                access_token: 87e22d35-0089-4613-809b-62f248c2c978
+                token_type: bearer
+                expires_in: 610
+                scope: read write
+      deprecated: false
+  '/{efx_url}/v1/creditMonitoring/healthcheck':
+    get:
+      tags:
+      - Equifax API
+      summary: Health Check
+      operationId: HealthCheck
+      description: |
+        <h2>/{efx_url}/v1/creditMonitoring/healthcheck</h2>
+      parameters:
+      - name: format
+        in: query
+        description: ''
+        required: true
+        style: form
+        explode: true
+        schema:
+          type: string
+          example: json
+      - name: Content-Type
+        in: header
+        description: ''
+        required: true
+        style: simple
+        schema:
+          type: string
+          example: '{{content-type}}'
+      responses:
+        200:
+          description: ''
+          headers: {}
+      deprecated: false
+  '/{efx_url}/v1/creditMonitoring':
+    get:
+      tags:
+      - Equifax API
+      summary: Credit Monitoring
+      operationId: CreditMonitoring
+      description: |
+        <h2>/{efx_url}/v1/creditMonitoring</h2>
+
+      parameters:
+      - name: format
+        in: query
+        description: ''
+        required: true
+        style: form
+        explode: true
+        schema:
+          type: string
+          example: json
+      responses:
+        200:
+          description: ''
+          headers: {}
+      deprecated: false
+  '/{efx_url}/v1/creditReport':
+    get:
+      tags:
+      - Equifax API
+      summary: CreditReportList
+      operationId: CreditReportList
+      description: |
+        <h2>/{efx_url}/v1/creditReport</h2>
+
+      parameters:
+      - name: format
+        in: query
+        description: ''
+        required: true
+        style: form
+        explode: true
+        schema:
+          type: string
+          example: json
+      responses:
+        200:
+          description: ''
+          headers: {}
+      deprecated: false
+  '/{efx_url}/v1/creditReport/{reportId}/summary':
+    get:
+      tags:
+      - Equifax API
+      summary: Credit Report Summary (First in list)
+      operationId: CreditReportSummary(Firstinlist)
+      description: |
+        <h2>/{efx_url}/v1/creditReport/{reportId}/summary</h2>
+      parameters:
+      - name: format
+        in: query
+        description: ''
+        required: true
+        style: form
+        explode: true
+        schema:
+          type: string
+          example: json
+      - name: reportId
+        in: path
+        description: ''
+        required: true
+        style: simple
+        schema:
+          type: string
+      responses:
+        200:
+          description: ''
+          headers: {}
+      deprecated: false
+  '/{efx_url}/v1/creditReport/{reportId}':
+    get:
+      tags:
+      - Equifax API
+      summary: Full Credit Report (First in list)
+      operationId: FullCreditReport(Firstinlist)
+      description: |
+        <h2>/{efx_url}/v1/creditReport/{reportId}</h2>
+
+      parameters:
+      - name: format
+        in: query
+        description: ''
+        required: true
+        style: form
+        explode: true
+        schema:
+          type: string
+          example: json
+      - name: reportId
+        in: path
+        description: ''
+        required: true
+        style: simple
+        schema:
+          type: string
+      responses:
+        200:
+          description: ''
+          headers: {}
+      deprecated: false
+  '/{efx_url}/v1/creditReport/{reportId}/print':
+    get:
+      tags:
+      - Equifax API
+      summary: Credit Report (First in list) - PRINT
+      operationId: CreditReport(Firstinlist)-PRINT
+      description: |
+        <h2>/{efx_url}/v1/creditReport/{reportId}/print</h2>
+
+      parameters:
+      - name: access_token
+        in: query
+        description: ''
+        required: true
+        style: form
+        explode: true
+        schema:
+          type: string
+          example: '{{efxtoken}}'
+      - name: reportId
+        in: path
+        description: ''
+        required: true
+        style: simple
+        schema:
+          type: string
+      responses:
+        200:
+          description: ''
+          headers: {}
+      deprecated: false
+  '/{efx_url}/v1/creditScore/latest':
+    get:
+      tags:
+      - Equifax API
+      summary: Credit Score Latest
+      operationId: CreditScoreLatest
+      description: |
+        <h2>/{efx_url}/v1/creditScore/latest</h2>
+      parameters:
+      - name: format
+        in: query
+        description: ''
+        required: true
+        style: form
+        explode: true
+        schema:
+          type: string
+          example: json
+      responses:
+        200:
+          description: ''
+          headers: {}
+      deprecated: false
+  '/{efx_url}/v1/creditScore/history':
+    get:
+      tags:
+      - Equifax API
+      summary: Credit Score History
+      operationId: CreditScoreHistory
+      description: |
+        <h2>/{efx_url}/v1/creditScore/history</h2>
+      parameters:
+      - name: historicalLimit
+        in: query
+        description: ''
+        required: true
+        style: form
+        explode: true
+        schema:
+          type: integer
+          format: int32
+          example: 24
+      - name: format
+        in: query
+        description: ''
+        required: true
+        style: form
+        explode: true
+        schema:
+          type: string
+          example: json
+      responses:
+        200:
+          description: ''
+          headers: {}
+      deprecated: false
+
+
 components:
   schemas:
     StitchErrorResponse:
@@ -12134,7 +12491,7 @@ tags:
             <li>Get EFX Config</li>
             </ol>
           </li>
-          <li><a href="#item-4-4-6">Equifax API</a>
+          <li><a href="/tag/Equifax-API">Equifax API</a>
             <ol>
             <li>OAUTH Token</li>
             <li>Credit Score Latest</li>
@@ -12163,7 +12520,7 @@ tags:
             <li>Get EFX Config</li>
             </ol>
           </li>
-          <li><a href="#item-4-4-6">Equifax API</a>
+          <li><a href="/tag/Equifax-API">Equifax API</a>
             <ol>
             <li>OAUTH Token</li>
             <li>Credit Score Latest</li>
@@ -15594,9 +15951,9 @@ tags:
         <ul>
           <li><em><strong><a href="/tag/direct-controller">Direct API</a></strong> calls must originate from your server</em> </li>
           <li><em><strong><a href="/tag/user-controller">User API</a></strong> calls must originate from the end-client</em> </li>
-          <li><em><strong><a href="#item-4-4-6">Equifax API</a></strong> calls must originate from the end-client</em> </li>
+          <li><em><strong><a href="/tag/Equifax-API">Equifax API</a></strong> calls must originate from the end-client</em> </li>
         </ul>
-        Equifax end-points are accessible by first using the <a href="/tag/user-controller">User API</a> <strong>/users/efx-config</strong> response data, and then the Equifax <strong>/oauth/token</strong> call. As mentioned above, <strong><a href="/tag/user-controller">User API</a></strong> and <strong><a href="#item-4-4-6">Equifax API</a></strong> calls are intended to be called from the end-client/user's device.
+        Equifax end-points are accessible by first using the <a href="/tag/user-controller">User API</a> <strong>/users/efx-config</strong> response data, and then the Equifax <strong>/oauth/token</strong> call. As mentioned above, <strong><a href="/tag/user-controller">User API</a></strong> and <strong><a href="/tag/Equifax-API">Equifax API</a></strong> calls are intended to be called from the end-client/user's device.
         </p>
         <p>
         It is not acceptable to pass any of the data to these calls or responses from these calls to your server. Do not save any data. Short term caching is fine, but long-term storage is not. 
@@ -15801,10 +16158,10 @@ tags:
         <em><strong>User API</strong> calls must originate from the end-client</em>
         </p>
         <p>
-        Equifax end-points are accessible by first using the User API <strong>/users/efx-config</strong> response data, and then the <a href="#item-4-6">Equifax</a> <strong>/oauth/token</strong> call.
+        Equifax end-points are accessible by first using the User API <strong>/users/efx-config</strong> response data, and then the <a href="/tag/Equifax-API">Equifax</a> <strong>/oauth/token</strong> call.
         </p>
         <p>
-        <strong>User API</strong> and <strong><a href="#item-4-6">Equifax API</a></strong> calls are intended to be called from the end-client/user's device. 
+        <strong>User API</strong> and <strong><a href="/tag/Equifax-API">Equifax API</a></strong> calls are intended to be called from the end-client/user's device. 
         </p>
         <h3>Endpoints</h3>
           <p>
@@ -15988,7 +16345,7 @@ tags:
         <em><strong>Equifax API</strong> calls must originate from the end-client</em>
         </p>
         <p>
-        Equifax end-points are accessible by first using the <a href="/tag/user-controller">User API</a> <strong>/users/efx-config</strong> response data, and then the Equifax <strong>/oauth/token</strong> call. As mentioned above, <strong><a href="/tag/user-controller">User API</a></strong> and <strong><a href="#item-4-6">Equifax API</a></strong> calls are intended to be called from the end-client/user's device.
+        Equifax end-points are accessible by first using the <a href="/tag/user-controller">User API</a> <strong>/users/efx-config</strong> response data, and then the Equifax <strong>/oauth/token</strong> call. As mentioned above, <strong><a href="/tag/user-controller">User API</a></strong> and <strong><a href="/tag/Equifax-API">Equifax API</a></strong> calls are intended to be called from the end-client/user's device.
         </p>
         <p>
         <a href="https://sandbox-api.consumer.equifax.com/saas/swagger-ui.html">Equifax Documentation in Swagger</a>
@@ -16263,10 +16620,10 @@ tags:
               <em><strong>User API</strong> calls must originate from the end-client</em>
               </p>
               <p>
-              Equifax end-points are accessible by first using the User API <strong>/users/efx-config</strong> response data, and then the <a href="#item-4-6">Equifax</a> <strong>/oauth/token</strong> call.
+              Equifax end-points are accessible by first using the User API <strong>/users/efx-config</strong> response data, and then the <a href="/tag/Equifax-API">Equifax</a> <strong>/oauth/token</strong> call.
               </p>
               <p>
-              <strong>User API</strong> and <strong><a href="#item-4-6">Equifax API</a></strong> calls are intended to be called from the end-client/user's device. 
+              <strong>User API</strong> and <strong><a href="/tag/Equifax-API">Equifax API</a></strong> calls are intended to be called from the end-client/user's device. 
               </p>
               <h3>Endpoints</h3>
                 <p>
@@ -16452,13 +16809,68 @@ tags:
                 </ol>
                 </p>
 
+- name: equifax-apis
+  x-displayName: Equifax API
+  description: |
+        REST APIs for Equifax
+        <p>
+        <em><strong>Equifax API</strong> calls must originate from the end-client</em>
+        </p>
+        <p>
+        Equifax end-points are accessible by first using the <a href="/tag/User-API">User API</a> <strong>/users/efx-config</strong> response data, and then the Equifax <strong>/oauth/token</strong> call. As mentioned above, <strong><a href="/tag/User-API">User API</a></strong> and <strong><a href="/tag/Equifax-API">Equifax API</a></strong> calls are intended to be called from the end-client/user's device.
+        </p>
+        <p>
+        <a href="https://api.consumer.equifax.com/saas/swagger-ui.html">Equifax Documentation in Swagger</a>
+        </p>
+
+        <h3 class="section-heading">Endpoints</h3>
+          <p>
+          <div style="display: table; clear: both;">
+            <div style="float: left; width: 50%;">
+              Delivery Token
+              <br>
+              Credit Alerts
+              <br>
+              Credit Score
+              <br>
+              Credit Score History
+              <br>
+              Credit Report List
+              <br>
+              Credit Report
+              <br>
+              Credit Report Summary
+              <br>
+              Credit Report PDF
+              <br>
+            </div>
+            <div style="float: left; width: 50%;">
+              /oauth/token
+              <br>
+              /v1/creditMonitoring
+              <br>
+              /v1/creditScore
+              <br>
+              /v1/creditScore/history
+              <br>
+              /v1/creditReport
+              <br>
+              /v1/creditReport/{reportId}
+              <br>
+              /v1/creditReport/{reportId}/summary
+              <br>
+              /v1/creditReport/{reportId}/print
+              <br>
+            </div>
+          </div>
+          </p>
 
 - name: Sandbox
   description: |
         <p>The Sandbox is a free and fully-featured environment for application development and testing. All functionality of the CRS B2C APIs is supported in the Sandbox environment. A variety of scenarios are available to test against, and you can create an unlimited number of test items.</p>
         <p>Sandbox API information has been provided to you as a Postman Collection.</p>
         <h2>Usage</h2>
-        <p><a href="/tag/Postman-Collection">Postman Collections</a> for CRS B2C APIs include pre-defined API calls to help you understand and develop your solution. </p>
+        <p><a href="/tag/Postman-Collections">Postman Collections</a> for CRS B2C APIs include pre-defined API calls to help you understand and develop your solution. </p>
         <p>To quickly grasp the token flow and sequence of API calls, download and import the "Getting Started" <a href="/tag/Postman-Collections">Postman Collections</a> from the <a href="https://drive.google.com/drive/folders/1VU0awRVnOswE1e9srB_tJ7nBxqUZFN2-?usp=sharing" target="_blank">Google Drive</a> and the Postman environment we provided to you.<br>
         The <a href="https://drive.google.com/drive/folders/1VU0awRVnOswE1e9srB_tJ7nBxqUZFN2-?usp=sharing" target="_blank">Google Drive</a> and this documentation contain <a href="/tag/Postman-Collections">Postman Collections</a> for each API.</p>
         <p>
@@ -16516,6 +16928,7 @@ x-tagGroups:
       - Overview of APIs
       - direct-controller
       - user-controller
+      - equifax-apis
       - test-controller
       # INTERNAL for Stitch
       # - customer-controller 
