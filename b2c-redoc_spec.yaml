@@ -12683,7 +12683,7 @@ tags:
         The Postman Environment is pre-configured to allow you to use the scripts and walk through the Postman Scripts with minimal intervention to aid in understanding the API call structure.
         </p>
         <p>
-        Consumer Credit <a href="/tag/Postman-Collections">Postman Collections</a> include pre-defined API calls to help you understand and develop your solution. See the <a href="/tag/Postman-Collections#test_api_postman_collection">Test API Postman Collection</a> for additional documentation.
+        Consumer Credit <strong>Postman Collections</strong> include pre-defined API calls to help you understand and develop your solution. See the <a href="/tag/Postman-Collections#test_api_postman_collection">Test API Postman Collection</a> for additional documentation.
         <ul>
         <li>The <a href="/tag/Postman-Collections#test_api_postman_collection">Consumer Credit - Test API.postman_collection.json</a> includes some webhook tests to help you understand and develop your solution.  See the <a href="/tag/Postman-Collections#test_api_postman_collection">Test API Postman Collection</a> for additional documentation.</li>
         <li>The <a href="/tag/Postman-Collections#new_user_postman_collection">Consumer Credit - Getting Started - New User.postman_collection.json</a> will walk you through the Create New User steps in order</li>
@@ -16884,8 +16884,8 @@ tags:
                 </ol>
                 </p>
 
-- name: equifax-apis
-  x-displayName: Equifax API
+- name: Equifax API
+  x-displayName: Equifax APIs
   description: |
         REST APIs for Equifax
         <p>
@@ -17003,7 +17003,7 @@ x-tagGroups:
       - Overview of APIs
       - direct-controller
       - user-controller
-      - equifax-apis
+      - Equifax API
       - test-controller
       # INTERNAL for Stitch
       # - customer-controller 
