@@ -7956,7 +7956,6 @@ paths:
           headers: {}
       deprecated: false
 
-
 components:
   schemas:
     StitchErrorResponse:
@@ -11262,6 +11261,64 @@ components:
         accountsClosed:
           type: integer
           format: int32
+# Added from Equifax components of https://github.com/StitchCredit/b2c-redoc/redoc_spec.yaml
+    EFXresponse:
+      title: response
+      required:
+      - access_token
+      - token_type
+      - expires_in
+      - scope
+      type: object
+      properties:
+        access_token:
+          type: string
+        token_type:
+          type: string
+        expires_in:
+          type: integer
+          format: int32
+        scope:
+          type: string
+      example:
+        access_token: 87e22d35-0089-4613-809b-62f248c2c978
+        token_type: bearer
+        expires_in: 610
+        scope: read write
+    EFXOAuthResp:
+      type: object
+      properties:
+        access_token: 
+          type: string
+          example: 8495ea73-92af-629b-39c2-29dfcc891835
+        token_type: 
+          type: string
+          example: bearer
+        refresh_token: 
+          type: string
+          example: 3a73a2a8-2a2a-339c-39c2-a82a828799bd
+        expires_in: 
+          type: integer
+          example: 1999
+        scope: 
+          type: string
+          example: delivery
+        IP_ADDRESS: 
+          type: string
+          example: 00.000.000.000      
+    EFXConfigRespDTO:
+      type: object
+      properties:
+        secret:
+          type: string
+          example: klUAnAFTtK7noBjUqO6x4anUszGrwrQdqelNp1N1XvssztqxFVfDp32dNgrco7ErVHYNH9lGUThExMvXQ3KnzPXrEBl5dkfGX0cHkGKI903jggCy2pc30Zvh0UWO4Hm5J3atOByM3KvSuMYOv6bnpeSRfmSxsZbeaF2gJrDaHS3zdT3SWY01M9CD54jUu6OiQBtxxpZs5aMVzRldf3jpQ1fGTLzlZABPFWqaJvd70vDkRRw98YZ1AWXWg67F1RMrgCknp9k6jQncGVxgFP9i18blXTczccbYdUS3HsBOVsY8AIOOY34WYuTO2K0Q099VsubdN51nTWpzpzyg6TwXjo08mWXzSAa6SHDXJKPvBcanEKdiBPUYkt2dXrAfnFe0kF954xEOTXsoey26tGcdEqbIVMfv0hON6prAaOU4BPQ2rUY5veSlxwDbbJvdAmkxJZoSnqJeP9NxSEPQl23d31sKlJ5FBODaXKUrl8lwARpZMFtVqUbQeNyGUlfrdD3MOT0FZi9vfohO97qt4IFfVRXVXMAO1QXG7Xh7ioggwSoyh1ylRn81AAsdVUpcxxIomc744YwFotdjyIDkLJ0ENFU3X2lsqtB1zpWjCJDwaDqRP9PVGYaAZ7m5gVYPLVOCeiIGHeBs6op4aUudl5hMUI6nGiW1uU9fH51w6WsIpfjqfolyJSSHf0EpPB5jnov6o0y0Cyf81QSlmrTGcGXChcpjq6cRx780culj3fKC1C8QSQvwoSGvEAIGz8Tpi1uTSEPtGyUVEmG21beirygZtIpogHBe0cja9UC62O1jEv46qKOeyuXfvGAcCJkOm94LINHqk5bSoTa8ud8je1G49xMojJBkdw3U7cwJgXO6U0mOBAsdSC0Agtc9UWw7GD96wBJ56EUlb5C9uPXoHFrlRYChctcbiAYUWbtYraYgfA7u8CAJldZiNgX50g2V2dUWMYOSjcVJpK9ndpCt4q8xEO6ogHsSXRDJ8u9FMBfFXfJ0FkEswiu1qNVzojKefJcN7o2NJBsuJm666oNthEXXQd1aeVagtmAQXIZ5ZCFJxj0xdwp778gZFfDnXmdzLMI4CdesK4w6wnmn0pKBqod8PoUzIkzzOifZsGtpL8fkR5ntbs1o9YlJMCTZOptZnvwL1FkuitkXXZOmkWkM9tqub0loayrPhBsZbzCxklpedW6mNn8G5y76Dq5KKL1KWgTAh4fjzKsMY0ikDftcMH0GkqhW7Gd7qeyaUBoNlZcb0vRsCDmLttzRHCemJS4JrEbgoH2BIKtgkndz25YMJ85mjiF8Qg3
+        id:
+          type: string
+          example: 73b2e701-f730-1b90-af38-a492f73b2881_delivery
+        url:
+          type: string
+          format: url
+          example: https://example-efx-url.com/person/consumer-credsuite
   securitySchemes:
     accessToken:
       type: http
