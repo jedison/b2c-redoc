@@ -11483,6 +11483,7 @@ tags:
         </p>
         <h4>Sample Embed page</h4>
         <p>
+        <div onload="doHighlight();"> 
         <pre><code class="language-html">
           &lt;html&gt;
           &lt;head&gt;
@@ -11503,6 +11504,7 @@ tags:
           &lt;/body&gt;
           &lt;/html&gt;
         </code></pre>
+        </div>
         </p>
         <hr>
 
@@ -11528,11 +11530,13 @@ tags:
           <p>
           Here is an example of the iframe code configured with API-Key, flags, and color:
           </p>
+        <div onload="doHighlight();"> 
         <pre><code class="language-html">
           &lt;iframe id="sc-iframe" 
           src="https://efx-dev.stitchcredit.com/api/users/start?key=d4eeb874-c6ae-4977-8b87-c0618b0bc194&amp;ocf=537952251&amp;ocl=https://www.premierconsumer.org/assets/images/en/logo.jpg&amp;oct=5f5ce0"> 
           &lt;/iframe>
         </code></pre>
+        </div>
         <p>
         Users must register for a CRS account through the widget's registration and identity verification screens.
         Many fields can be pre-populated (but not SSN and DoB).
@@ -11850,6 +11854,7 @@ tags:
         <h3>Samples</h3>
         <p id="iframe_sample.html">
         Here is an implementation of the Sample iFrame page with inline user token&#58;
+        <div onload="doHighlight();"> 
         <pre><code class="language-html">
         &lt;html>
             &lt;head>
@@ -11869,9 +11874,11 @@ tags:
             &lt;/body>
         &lt;/html>
         </code></pre>
+        </div>
         </p>
         <p id="direct_sample.html">
         Here is a sample implementation of an advanced embedded page with messaging&#58; the Tabbed User Interface with Dynamic Consumer Authentication integration (<em>direct_sample.html</em>):
+        <div onload="doHighlight();"> 
         <pre><code class="language-html">
         &lt;html>
           &lt;head>
@@ -11978,9 +11985,11 @@ tags:
           &lt;/body>
         &lt;/html>
         </code></pre>
+        </div>
         </p>
         <p id="aio_sample.html">
         Here is a sample implementation of an advanced embedded page with messaging: All-in-One User Interface with dynamic Consumer Authentication integration (<em>aio_sample.html</em>):
+        <div onload="doHighlight();"> 
         <pre><code class="language-html">
         &lt;html&gt;
           &lt;head&gt;
@@ -12087,9 +12096,11 @@ tags:
           &lt;/body&gt;
         &lt;/html&gt;
         </code></pre>
+        </div>
         </p>
         <p id="tile_sample.html">
         Here is a sample implementation of an advanced embedded page with messaging: Tile User Interface with dynamic Consumer Authentication integration (<em>tile_sample.html</em>):
+        <div onload="doHighlight();"> 
         <pre><code class="language-html">
         &lt;html&gt;
         &lt;head&gt;
@@ -12197,6 +12208,7 @@ tags:
         &lt;/body&gt;
         &lt;/html&gt;
         </code></pre>
+        </div> 
         </p>
         <p id="tile_sample_score_only.html">
         Here is a sample implementation of an advanced embedded page with messaging: Tile User Interface with dynamic Consumer Authentication integration and configuration display flags override (<em>tile_sample_score_only.html</em>):
@@ -15840,6 +15852,7 @@ tags:
         </p>
         <p>
         The basic JSON for the web hook will look like the following (not all fields are present with all requests):
+        <div onload="doHighlight();"> 
         <pre><code data-language="json">
         [{
         id: "String - Webhook ID, UUID format",
@@ -15854,14 +15867,17 @@ tags:
         alert_source: "String - name of the institution reporting when available"
         }]
         </code></pre>
+        </div>
         <p>
         When a webhook is received, a response is needed.  Responses with a status other than true will cause the webhook to be resent.
+        <div onload="doHighlight();"> 
         <pre><code data-language="json">
         [{
         hook_id: "the ID of the webhook",
         status: true | false
         }]
         </code></pre>
+        </div>
         <p>
         Webhook Type Values
         <ul>
@@ -15912,6 +15928,7 @@ tags:
         <p>
         Here a sample javascript code for handling Web Messaging:
         </p>
+        <div onload="doHighlight();"> 
         <pre><code data-language="html">
         &lt;script>
         //this just throws in a default ID if one isn't provided on the query string
@@ -15983,7 +16000,8 @@ tags:
         }
         &lt;/script>
         </code></pre>
-          </p>
+        </div>
+        </p>
         <p>
         Please see <a href="/tag/DevTools-Web-Integration-with-Custom-Authentication#direct_sample.html">direct_sample.html</a> for a working implementation.
         </p>
