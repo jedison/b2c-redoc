@@ -11771,7 +11771,7 @@ tags:
         You can have screens for the identity verification process  for SMS one-time-code and identity quiz questions. Also, it is possible to merge the CRS registration/identity process with your own service's registration, as long as you follow the compliance guide for these screens. 
         </p>
         <p>
-        <u>If a customer wants to create their own UI for the identity verification process,</u> they simply need to continue the API steps in the "Getting Started" Postman Collections (<a href="/tag/Postman-Collections#new_user_postman_collection">Consumer Credit - Getting Started - New User.postman_collection.json</a> and <a href="/tag/Postman-Collections#returning_user_postman_collection">Consumer Credit - Getting Started - Returning User.postman_collection.json</a>) with their custom screens until idpass is true, before they have the user's device redeem the preauth for the widget. If idpass is true for a user whose preauth token is redeemed using the widget, then the widget will render that user's credit dashboard (skipping the id verification process). If the user's device were to redeem the preauth token when idpass equals false, then the widget renders the built in widget screens for the identity verification process.
+        <u>If a customer wants to create their own UI for the identity verification process,</u> they simply need to continue the API steps in the "Getting Started" Postman Collections (<a href="/tag/Postman-Collections">Consumer Credit - Getting Started - New User.postman_collection.json</a> and <a href="/tag/Postman-Collections">Consumer Credit - Getting Started - Returning User.postman_collection.json</a>) with their custom screens until idpass is true, before they have the user's device redeem the preauth for the widget. If idpass is true for a user whose preauth token is redeemed using the widget, then the widget will render that user's credit dashboard (skipping the id verification process). If the user's device were to redeem the preauth token when idpass equals false, then the widget renders the built in widget screens for the identity verification process.
         </p>
         <h3>Simple Integration Guide</h3>
         <p>
@@ -11849,7 +11849,7 @@ tags:
         <a href="/tag/Sandbox">Access Credentials</a> have been sent to you in a Postman Environment upon registration via email. The Postman Environment is pre-configured to allow you to use the scripts and walk through the Postman Scripts with minimal intervention to aid in understanding the API call structure.
         </p>
         <p>
-        Consumer Credit <a href="/tag/Postman-Collections">Postman Collections</a> include pre-defined API calls to help you understand and develop your solution. See the <a href="/tag/Postman-Collections#test_api_postman_collection">Test API Postman Collection</a> for additional documentation.
+        Consumer Credit <a href="/tag/Postman-Collections">Postman Collections</a> include pre-defined API calls to help you understand and develop your solution. See the <a href="/tag/Postman-Collections">Test API Postman Collection</a> for additional documentation.
         </p>
         <h3>Samples</h3>
         <p id="iframe_sample.html">
@@ -11878,7 +11878,7 @@ tags:
         </p>
         <p id="direct_sample.html">
         Here is a sample implementation of an advanced embedded page with messaging&#58; the Tabbed User Interface with Dynamic Consumer Authentication integration (<em>direct_sample.html</em>):
-        <div onload="doHighlight();"> 
+        <div style="max-height: 60vh;overflow: scroll;display: unset;" onload="doHighlight();"> 
         <pre><code class="language-html">
         &lt;html>
           &lt;head>
@@ -11989,7 +11989,7 @@ tags:
         </p>
         <p id="aio_sample.html">
         Here is a sample implementation of an advanced embedded page with messaging: All-in-One User Interface with dynamic Consumer Authentication integration (<em>aio_sample.html</em>):
-        <div onload="doHighlight();"> 
+        <div style="max-height: 60vh;overflow: scroll;display: unset;" onload="doHighlight();"> 
         <pre><code class="language-html">
         &lt;html>
           &lt;head>
@@ -12100,7 +12100,7 @@ tags:
         </p>
         <p id="tile_sample.html">
         Here is a sample implementation of an advanced embedded page with messaging: Tile User Interface with dynamic Consumer Authentication integration (<em>tile_sample.html</em>):
-        <div onload="doHighlight();"> 
+        <div style="max-height: 60vh;overflow: scroll;display: unset;" onload="doHighlight();"> 
         <pre><code class="language-html">
         &lt;html>
         &lt;head>
@@ -12212,7 +12212,7 @@ tags:
         </p>
         <p id="tile_sample_score_only.html">
         Here is a sample implementation of an advanced embedded page with messaging: Tile User Interface with dynamic Consumer Authentication integration and configuration display flags override (<em>tile_sample_score_only.html</em>):
-        <div onload="doHighlight();"> 
+        <div style="max-height: 60vh;overflow: scroll;display: unset;" onload="doHighlight();"> 
         <pre><code class="language-html">
         &lt;html>
         &lt;head>
@@ -12603,7 +12603,7 @@ tags:
         </li>
         </ol>
         <p>
-        The <a href="/tag/Postman-Collections#new_user_postman_collection">Consumer Credit - Getting Started - New User.postman_collection.json</a> will walk you through these steps in order
+        The <a href="/tag/Postman-Collections">Consumer Credit - Getting Started - New User.postman_collection.json</a> will walk you through these steps in order
         </p>
         <p>
         When creating creating a new user:
@@ -12633,14 +12633,14 @@ tags:
         <a href="/tag/Sandbox">Access Credentials</a> have been sent to you in a Postman Environment upon registration via email. The Postman Environment is pre-configured to allow you to use the scripts and walk through the Postman Scripts with minimal intervention to aid in understanding the API call structure.
         </p>
         <p>
-        Consumer Credit <a href="/tag/Postman-Collections">Postman Collections</a> include pre-defined API calls to help you understand and develop your solution. See the <a href="/tag/Postman-Collections#test_api_postman_collection">Test API Postman Collection</a> for additional documentation.
+        Consumer Credit <a href="/tag/Postman-Collections">Postman Collections</a> include pre-defined API calls to help you understand and develop your solution. See the <a href="/tag/Postman-Collections">Test API Postman Collection</a> for additional documentation.
         <ul>
-        <li>The <a href="/tag/Postman-Collections#test_api_postman_collection">Consumer Credit - Test API.postman_collection.json</a> includes some webhook tests to help you understand and develop your solution.  See the Test API scripts for additional documentation.</li>
-        <li>The <a href="/tag/Postman-Collections#new_user_postman_collection">Consumer Credit - Getting Started - New User.postman_collection.json</a> will walk you through the Create New User steps in order</li>
-        <li>The <a href="/tag/Postman-Collections#returning_user_postman_collection">Consumer Credit - Getting Started - Returning User.postman_collection.json</a> will walk you through the Returning User steps in order</li>
-        <li>The <a href="/tag/Postman-Collections#user_api_postman_collection">Consumer Credit - User API.postman_collection.json</a> provides all User-oriented APIs</li>
-        <li>The <a href="/tag/Postman-Collections#direct_api_postman_collection">Consumer Credit - Direct API.postman_collection.json</a> will walk you through using the Direct API collection</li>
-        <li>The <a href="/tag/Postman-Collections#efx_api_postman_collection">Consumer Credit - EFX API.postman_collection.json</a> has examples for all Equifax APIs</li>
+        <li>The <a href="/tag/Postman-Collections">Consumer Credit - Test API.postman_collection.json</a> includes some webhook tests to help you understand and develop your solution.  See the Test API scripts for additional documentation.</li>
+        <li>The <a href="/tag/Postman-Collections">Consumer Credit - Getting Started - New User.postman_collection.json</a> will walk you through the Create New User steps in order</li>
+        <li>The <a href="/tag/Postman-Collections">Consumer Credit - Getting Started - Returning User.postman_collection.json</a> will walk you through the Returning User steps in order</li>
+        <li>The <a href="/tag/Postman-Collections">Consumer Credit - User API.postman_collection.json</a> provides all User-oriented APIs</li>
+        <li>The <a href="/tag/Postman-Collections">Consumer Credit - Direct API.postman_collection.json</a> will walk you through using the Direct API collection</li>
+        <li>The <a href="/tag/Postman-Collections">Consumer Credit - EFX API.postman_collection.json</a> has examples for all Equifax APIs</li>
         </ul>
         In the <strong>test</strong> environment it is important that you use the User Test Identity provided to you verbatim. You may change the email address and phone number <strong>ONLY</strong>.
         </p>
@@ -12683,14 +12683,14 @@ tags:
         The Postman Environment is pre-configured to allow you to use the scripts and walk through the Postman Scripts with minimal intervention to aid in understanding the API call structure.
         </p>
         <p>
-        Consumer Credit <strong>Postman Collections</strong> include pre-defined API calls to help you understand and develop your solution. See the <a href="/tag/Postman-Collections#test_api_postman_collection">Test API Postman Collection</a> for additional documentation.
+        Consumer Credit <strong>Postman Collections</strong> include pre-defined API calls to help you understand and develop your solution. See the <a href="/tag/Postman-Collections">Test API Postman Collection</a> for additional documentation.
         <ul>
-        <li>The <a href="/tag/Postman-Collections#test_api_postman_collection">Consumer Credit - Test API.postman_collection.json</a> includes some webhook tests to help you understand and develop your solution.  See the <a href="/tag/Postman-Collections#test_api_postman_collection">Test API Postman Collection</a> for additional documentation.</li>
-        <li>The <a href="/tag/Postman-Collections#new_user_postman_collection">Consumer Credit - Getting Started - New User.postman_collection.json</a> will walk you through the Create New User steps in order</li>
-        <li>The <a href="/tag/Postman-Collections#returning_user_postman_collection">Consumer Credit - Getting Started - Returning User.postman_collection.json</a> will walk you through the Returning User steps in order</li>
-        <li>The <a href="/tag/Postman-Collections#user_api_postman_collection">Consumer Credit - User API.postman_collection.json</a> provides all User-oriented APIs</li>
-        <li>The <a href="/tag/Postman-Collections#direct_api_postman_collection">Consumer Credit - Direct API.postman_collection.json</a> will walk you through using the Direct API collection</li>
-        <li>The <a href="/tag/Postman-Collections#efx_api_postman_collection">Consumer Credit - EFX API.postman_collection.json</a> has examples for all Equifax APIs</li>
+        <li>The <a href="/tag/Postman-Collections">Consumer Credit - Test API.postman_collection.json</a> includes some webhook tests to help you understand and develop your solution.  See the <a href="/tag/Postman-Collections">Test API Postman Collection</a> for additional documentation.</li>
+        <li>The <a href="/tag/Postman-Collections">Consumer Credit - Getting Started - New User.postman_collection.json</a> will walk you through the Create New User steps in order</li>
+        <li>The <a href="/tag/Postman-Collections">Consumer Credit - Getting Started - Returning User.postman_collection.json</a> will walk you through the Returning User steps in order</li>
+        <li>The <a href="/tag/Postman-Collections">Consumer Credit - User API.postman_collection.json</a> provides all User-oriented APIs</li>
+        <li>The <a href="/tag/Postman-Collections">Consumer Credit - Direct API.postman_collection.json</a> will walk you through using the Direct API collection</li>
+        <li>The <a href="/tag/Postman-Collections">Consumer Credit - EFX API.postman_collection.json</a> has examples for all Equifax APIs</li>
         </ul>
         In the <strong>test</strong> environment it is important that you use the User Test Identity provided to you verbatim. You may change the email address and phone number <strong>ONLY</strong>.
         </p>
@@ -15843,7 +15843,7 @@ tags:
         Webhooks are available to notify you when an alert (or other notifications) comes in so that you can message users in whatever fashion you wish to return to your site.
         </p>
         <p>
-        Implementing webhooks is optional and the same for each of the 3 integration options. If the customer wants to send notifications to their users, then they need to set up their webhook, which is where we will send their users' notifications as http requests. For their reference while setting this up, the <a href="/tag/Postman-Collections#test_api_postman_collection">Test API Postman Collection</a> has an example demonstrating how their webhook should respond to the requests that CRS sends to it. When their webhook is ready, they send us the webhook URL, username, password -- This info is added to their configuration so that their webhook URL receives all their users' notifications (in production notifications are sent in nightly batches). The <a href="/tag/Postman-Collections#test_api_postman_collection">Test API Postman Collection</a> also has a request that will trigger our server to send a webhook to the URL that we have set up for their host configuration so the customer can see that their webhook is behaving correctly. The required behavior for the customer's Webhook is specified below.</p>
+        Implementing webhooks is optional and the same for each of the 3 integration options. If the customer wants to send notifications to their users, then they need to set up their webhook, which is where we will send their users' notifications as http requests. For their reference while setting this up, the <a href="/tag/Postman-Collections">Test API Postman Collection</a> has an example demonstrating how their webhook should respond to the requests that CRS sends to it. When their webhook is ready, they send us the webhook URL, username, password -- This info is added to their configuration so that their webhook URL receives all their users' notifications (in production notifications are sent in nightly batches). The <a href="/tag/Postman-Collections">Test API Postman Collection</a> also has a request that will trigger our server to send a webhook to the URL that we have set up for their host configuration so the customer can see that their webhook is behaving correctly. The required behavior for the customer's Webhook is specified below.</p>
         <p>
         To get started, please provide us a URL endpoint to push the webhook to.
         </p>
@@ -15899,7 +15899,7 @@ tags:
         <p>
         </p>
         <p>
-        <a href="/tag/Postman-Collections#test_api_postman_collection">Consumer Credit - Test API.postman_collection.json</a> includes some webhook tests to help you understand and develop your solution. Once your host is configured, you can use Webhook Test to send a test webhook for a user on demand. See the Test API for additional documentation.
+        <a href="/tag/Postman-Collections">Consumer Credit - Test API.postman_collection.json</a> includes some webhook tests to help you understand and develop your solution. Once your host is configured, you can use Webhook Test to send a test webhook for a user on demand. See the Test API for additional documentation.
         </p>
 
 - name: Web Messaging Integration
@@ -15913,7 +15913,7 @@ tags:
         </p>
         <p>
         Explanation for most messages is explained within the Javascript code.<br>
-        See Tabbed User Interface with Dynamic Consumer Authentication (<a href="/tag/DevTools-Web-Integration-with-Custom-Authentication#direct_sample.html">direct_sample.html</a>) for a working implementation.
+        See Tabbed User Interface with Dynamic Consumer Authentication (<a href="/tag/DevTools-Web-Integration-with-Custom-Authentication">direct_sample.html</a>) for a working implementation.
         </p>
         <p>
         You should implement your own user authentication on your servers and return a valid preauth-token to continue. <br>
@@ -15926,11 +15926,11 @@ tags:
         For example, when the event.data.type, 'IDENTITY_STARTED', is listened for/received, the customer can use the postMessage({}) function on the event.source in order to prepopulate some identity fields that the customer may already have stored (should never be used for pre-populating the date of birth or ssn per compliance). From one of the html examples, here is how the identity form fields can be prepopulated after the 'IDENTITY_STARTED' event.data.type is received:
         </p>
         <p>
-        Here a sample javascript code for handling Web Messaging:
+        Here is a sample javascript code for handling Web Messaging:
         </p>
-        <div onload="doHighlight();"> 
+        <div style="max-height: 60vh;overflow: scroll;display: unset;" onload="doHighlight();"> 
         <pre><code data-language="html">
-        <script>
+        &lt;script>
         //this just throws in a default ID if one isn't provided on the query string
         const id = document.location.search.length > 0 ? document.location.search.split('&')[0].split('=')[1] : '048741d2-3dcf-4892-8fb0-99930a540cc1';
         console.log("ID: ",id);
@@ -15998,12 +15998,12 @@ tags:
         }
 
         }
-        </script>
+        &lt;/script>
         </code></pre>
         </div>
         </p>
         <p>
-        Please see <a href="/tag/DevTools-Web-Integration-with-Custom-Authentication#direct_sample.html">direct_sample.html</a> for a working implementation.
+        Please see <a href="/tag/DevTools-Web-Integration-with-Custom-Authentication">direct_sample.html</a> for a working implementation.
         </p>
         <p>
         Note that the /test/preauth-token call used in the getData function only functions in the development environment.  You should implement your own user authentication on your servers and return a valid preauth-token to continue.
@@ -16954,8 +16954,8 @@ tags:
         The <a href="https://drive.google.com/drive/folders/1VU0awRVnOswE1e9srB_tJ7nBxqUZFN2-?usp=sharing" target="_blank">Google Drive</a> and this documentation contain <a href="/tag/Postman-Collections">Postman Collections</a> for each API.</p>
         <p>
         <ul>
-        <li>The <a href="/tag/Postman-Collections#new_user_postman_collection">Consumer Credit - Getting Started - New User.postman_collection.json</a> will walk you through the Create New User steps in order</li>
-        <li>The <a href="/tag/Postman-Collections#returning_user_postman_collection">Consumer Credit - Getting Started - Returning User.postman_collection.json</a> will walk you through the Returning User steps in order</li>
+        <li>The <a href="/tag/Postman-Collections">Consumer Credit - Getting Started - New User.postman_collection.json</a> will walk you through the Create New User steps in order</li>
+        <li>The <a href="/tag/Postman-Collections">Consumer Credit - Getting Started - Returning User.postman_collection.json</a> will walk you through the Returning User steps in order</li>
         </ul>
         </p>
         <hr>
