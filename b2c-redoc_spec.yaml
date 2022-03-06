@@ -11484,7 +11484,7 @@ tags:
         <h4>Sample Embed page</h4>
         <p>
         <div onload="doHighlight();"> 
-        <pre><code class="language-html">
+        <pre><code class="language-html" id="sample_embed.html">
           &lt;html>
           &lt;head>
             &lt;title>CRS&lt;/title>
@@ -11531,7 +11531,7 @@ tags:
           Here is an example of the iframe code configured with API-Key, flags, and color:
           </p>
         <div onload="doHighlight();"> 
-        <pre><code class="language-html">
+        <pre><code class="language-html" id="sample_iframe.html">
           &lt;iframe id="sc-iframe" 
           src="https://efx-dev.stitchcredit.com/api/users/start?key=d4eeb874-c6ae-4977-8b87-c0618b0bc194&ocf=537952251&ocl=https://www.premierconsumer.org/assets/images/en/logo.jpg&oct=5f5ce0"> 
           &lt;/iframe>
@@ -11547,7 +11547,7 @@ tags:
         <p>
         Here is an embedded example:
         <div onload="doHighlight();"> 
-        <pre><code class="language-html">
+        <pre><code class="language-html" id="sample_widget.html">
         &lt;html>
           &lt;head>
             &lt;title>CRS&lt;/title>
@@ -11852,10 +11852,10 @@ tags:
         Consumer Credit <a href="/tag/Postman-Collections">Postman Collections</a> include pre-defined API calls to help you understand and develop your solution. See the <a href="/tag/Postman-Collections">Test API Postman Collection</a> for additional documentation.
         </p>
         <h3>Samples</h3>
-        <p id="iframe_sample.html">
+        <p>
         Here is an implementation of the Sample iFrame page with inline user token&#58;
         <div onload="doHighlight();"> 
-        <pre><code class="language-html">
+        <pre><code class="language-html" id="iframe_sample.html">
         &lt;html>
           &lt;head>
               &lt;title>CRS&lt;/title>
@@ -11876,20 +11876,20 @@ tags:
         </code></pre>
         </div>
         </p>
-        <p id="direct_sample.html">
+        <p>
         Here is a sample implementation of an advanced embedded page with messaging&#58; the Tabbed User Interface with Dynamic Consumer Authentication integration (<em>direct_sample.html</em>):
         <div style="max-height: 60vh;overflow: scroll;display: unset;" onload="doHighlight();"> 
-        <pre><code class="language-html">
-        &lt;html>
-          &lt;head>
-            &lt;title>CRS&lt;/title>
-            &lt;link rel="icon" href="/favicon.ico" />
-            &lt;meta name="description" content="CRS Consumer Credit Reports" />
+        <pre><code class="language-html" id="direct_sample.html">
+        &lt;html&gt;
+          &lt;head&gt;
+            &lt;title&gt;CRS&lt;/title&gt;
+            &lt;link rel="icon" href="/favicon.ico" /&gt;
+            &lt;meta name="description" content="CRS Consumer Credit Reports" /&gt;
             &lt;meta
               name="viewport"
               content="minimum-scale=1, initial-scale=1, width=device-width"
-            />
-            &lt;style>
+            /&gt;
+            &lt;style&gt;
               html,
               body {
                 margin: 0;
@@ -11906,16 +11906,16 @@ tags:
                 border: none;
                 overflow: hidden;
               }
-            &lt;/style>
-          &lt;/head>
-          &lt;body>
+            &lt;/style&gt;
+          &lt;/head&gt;
+          &lt;body&gt;
             &lt;iframe
               id="sc-iframe" allowTransparency="true"
               src="https://efx-dev.stitchcredit.com/login-direct?key=5a10e0d7-1dc8-4325-929f-d0d131990527&ocf=2039"
-            >&lt;/iframe>
-            &lt;script>
+            &gt;&lt;/iframe&gt;
+            &lt;script&gt;
             //this just throws in a default ID if one isn't provided on the query string
-            const id = document.location.search.length > 0 ? document.location.search.split('&')[0].split('=')[1] : '048741d2-3dcf-4892-8fb0-99930a540cc1';
+            const id = document.location.search.length &gt; 0 ? document.location.search.split('&')[0].split('=')[1] : '048741d2-3dcf-4892-8fb0-99930a540cc1';
             console.log("ID: ",id);
             console.log("Loading Message Listener...");
 
@@ -11979,129 +11979,128 @@ tags:
                     xhr.setRequestHeader("Content-Type", "application/json");
                     xhr.send();
                 }
-
             }
-            &lt;/script>
-          &lt;/body>
-        &lt;/html>
+            &lt;/script&gt;
+          &lt;/body&gt;
+        &lt;/html&gt;
         </code></pre>
         </div>
         </p>
-        <p id="aio_sample.html">
+        <p>
         Here is a sample implementation of an advanced embedded page with messaging: All-in-One User Interface with dynamic Consumer Authentication integration (<em>aio_sample.html</em>):
         <div style="max-height: 60vh;overflow: scroll;display: unset;" onload="doHighlight();"> 
-        <pre><code class="language-html">
-        &lt;html>
-          &lt;head>
-            &lt;title>CRS&lt;/title>
-            &lt;link rel='icon' href='/favicon.ico' />
-            &lt;meta name='description' content='CRS Consumer Credit Reports' />
-            &lt;meta
-              name='viewport'
-              content='minimum-scale=1, initial-scale=1, width=device-width'
-            />
-            &lt;style>
-              html,
-              body {
-                margin: 0;
-                padding: 0;
-                position: relative;
-                background: #eeeeee;
-              }
-              #sc-iframe {
-                margin: 0;
-                padding: 0;
-                z-index: 1;
-                width: 100%;
-                height: 100vh;
-                border: none;
-                overflow: hidden;
-              }
-            &lt;/style>
-          &lt;/head>
-          &lt;body>
-            &lt;iframe
-              id='sc-iframe' allowTransparency='true'
-              src='https://efx-dev.stitchcredit.com/login-aio?key=5a10e0d7-1dc8-4325-929f-d0d131990527&ocf=2039'
-            >&lt;/iframe>
-            &lt;script>
-            //this just throws in a default ID if one isn't provided on the query string
-            const id = document.location.search.length > 0 ? document.location.search.split('&')[0].split('=')[1] : '988a6fd7-7297-4757-8b96-907daa14a1f6';
-            console.log('ID: ',id);
-            console.log('Loading Message Listener...');
-
-            window.addEventListener('message', receiveMessage, false);
-
-            function receiveMessage(event) {
-                if(event && event.source && event.data) {
-                    // You only need to implement the types that are important/relevant to your use case.
-                    if(event.data.type === 'AUTH_REQUIRED') {
-                        //The iframe clident will post this message when a valid preauth token does not exist.
-                        //Posting a proper message with a preauth token in response allows the client to continue seemlessly.
-                        //console.log('Auth Required Event Received');
-                        const es = event.source;
-                        //this code uses a test endpoint on the server to provide a preauth-token for any user ID without the usual hurdles.
-                        //This is ONLY for testing and does not exist in the production environment.
-                        getData('https://efx-dev.stitchcredit.com/api/test/preauth-token/'+id, function() {
-                            const token = JSON.parse(this.responseText).token;
-                            console.log('Status: ', this.status, ', token: ', token);
-                            es.postMessage({type: 'PREAUTH', token: this.status == 200 ? token : null},'*');
-                        });
-                    }
-                    else if(event.data.type === 'REG_STARTED') {
-                        const es = event.source;
-                        //only valid for full web implementation, Direct API already creates the customer, so this will never happen in those instances
-                // (new Date().valueOf()) - is used to generate a new email ID on the fly for testing purposes
-                        es.postMessage({type: 'REG', data: {fname:'Gertrude', lname:'Harkenreadeo', email: 'test+' + (new Date().valueOf()) + '@test.com'}},'*');
-                    }
-                    else if(event.data.type === 'IDENTITY_STARTED') {
-                        const es = event.source;
-                        //You could use this function to pre-populate the given fields.  DoB and SSN will never be prepopulated as it violates compliance
-                // new Date().valueOf().toString() - generates a unique number for street2 to ensure each run goes through the full identity process, remove to test sequential sign up of the same user
-                        es.postMessage({type: 'IDENTITY', data: {street1:'305 Linden Av', street2: new Date().valueOf().toString(), city: 'Atlanta', state: 'GA', zip: '30316', mobile: '0000000000'}},'*');
-                    }
-                    else if(event.data.type === 'LOGIN_SUCCESSFUL') {
-                        console.log('User succesfully logged in');
-                    }
-                    else if(event.data.type === 'LOGIN_FAILED') {
-                        //if you see this message more than a few times in a row, it's likely an issue
-                        //typically this will only occur for full web implementations, not Direct API
-                        console.log('User login failed');
-                    }
-                    else if(event.data.type === 'USER_ENROLLED') {
-                        //User successfully completed identity and has been enrolled for consumer data
-                        console.log('User enrollment successful');
-                    }
-                    else if(event.data.type === 'IDENTITY_FAILED') {
-                        //Identity process failed, user is likely 'stuck' as they cannot continue
-                        console.log('User identity failure');
-                    }
-                    else if(event.data.type === 'SERVICE_FAILURE') {
-                        //Identity process failed most likely due to a service outage, but the user is stuck as they cannot continue without passing identity
-                        console.log('Identity service failure');
-                    }
+        <pre><code class="language-html" id="aio_sample.html">
+          &lt;html&gt;
+            &lt;head&gt;
+              &lt;title&gt;StitchCredit&lt;/title&gt;
+              &lt;link rel=&quot;icon&quot; href=&quot;/favicon.ico&quot; /&gt;
+              &lt;meta name=&quot;description&quot; content=&quot;StitchCredit Consumer Credit Reports&quot; /&gt;
+              &lt;meta
+                name=&quot;viewport&quot;
+                content=&quot;minimum-scale=1, initial-scale=1, width=device-width&quot;
+              /&gt;
+              &lt;style&gt;
+                html,
+                body {
+                  margin: 0;
+                  padding: 0;
+                  position: relative;
+                  background: #eeeeee;
                 }
-
-                function getData(req, action) {
-                var xhr = new XMLHttpRequest();
-                    xhr.responesType = 'json';
-                    xhr.onload = action;
-                    xhr.open('GET', req);
-                    xhr.setRequestHeader('Content-Type', 'application/json');
-                    xhr.send();
+                #sc-iframe {
+                  margin: 0;
+                  padding: 0;
+                  z-index: 1;
+                  width: 100%;
+                  height: 100vh;
+                  border: none;
+                  overflow: hidden;
                 }
+              &lt;/style&gt;
+            &lt;/head&gt;
+            &lt;body&gt;
+              &lt;iframe
+                id=&quot;sc-iframe&quot; allowTransparency=&quot;true&quot;
+                src=&quot;https://efx-dev.stitchcredit.com/login-aio?key=5a10e0d7-1dc8-4325-929f-d0d131990527&amp;ocf=2039&quot;
+              &gt;&lt;/iframe&gt;
+              &lt;script&gt;
+              //this just throws in a default ID if one isn't provided on the query string
+              const id = document.location.search.length &gt; 0 ? document.location.search.split('&amp;')[0].split('=')[1] : '988a6fd7-7297-4757-8b96-907daa14a1f6';
+              console.log(&quot;ID: &quot;,id);
+              console.log(&quot;Loading Message Listener...&quot;);
 
-            }
-            &lt;/script>
-          &lt;/body>
-        &lt;/html>
+              window.addEventListener(&quot;message&quot;, receiveMessage, false);
+
+              function receiveMessage(event) {
+                  if(event &amp;&amp; event.source &amp;&amp; event.data) {
+                      // You only need to implement the types that are important/relevant to your use case.
+                      if(event.data.type === 'AUTH_REQUIRED') {
+                          //The iframe clident will post this message when a valid preauth token does not exist.
+                          //Posting a proper message with a preauth token in response allows the client to continue seemlessly.
+                          //console.log(&quot;Auth Required Event Received&quot;);
+                          const es = event.source;
+                          //this code uses a test endpoint on the server to provide a preauth-token for any user ID without the usual hurdles.
+                          //This is ONLY for testing and does not exist in the production environment.
+                          getData(&quot;https://efx-dev.stitchcredit.com/api/test/preauth-token/&quot;+id, function() {
+                              const token = JSON.parse(this.responseText).token;
+                              console.log(&quot;Status: &quot;, this.status, &quot;, token: &quot;, token);
+                              es.postMessage({type: 'PREAUTH', token: this.status == 200 ? token : null},&quot;*&quot;);
+                          });
+                      }
+                      else if(event.data.type === 'REG_STARTED') {
+                          const es = event.source;
+                          //only valid for full web implementation, Direct API already creates the customer, so this will never happen in those instances
+                  // (new Date().valueOf()) - is used to generate a new email ID on the fly for testing purposes
+                          es.postMessage({type: 'REG', data: {fname:&quot;Gertrude&quot;, lname:&quot;Harkenreadeo&quot;, email: &quot;test+&quot; + (new Date().valueOf()) + &quot;@test.com&quot;}},&quot;*&quot;);
+                      }
+                      else if(event.data.type === 'IDENTITY_STARTED') {
+                          const es = event.source;
+                          //You could use this function to pre-populate the given fields.  DoB and SSN will never be prepopulated as it violates compliance
+                  // new Date().valueOf().toString() - generates a unique number for street2 to ensure each run goes through the full identity process, remove to test sequential sign up of the same user
+                          es.postMessage({type: 'IDENTITY', data: {street1:&quot;305 Linden Av&quot;, street2: new Date().valueOf().toString(), city: &quot;Atlanta&quot;, state: &quot;GA&quot;, zip: &quot;30316&quot;, mobile: &quot;0000000000&quot;}},&quot;*&quot;);
+                      }
+                      else if(event.data.type === 'LOGIN_SUCCESSFUL') {
+                          console.log(&quot;User succesfully logged in&quot;);
+                      }
+                      else if(event.data.type === 'LOGIN_FAILED') {
+                          //if you see this message more than a few times in a row, it's likely an issue
+                          //typically this will only occur for full web implementations, not Direct API
+                          console.log(&quot;User login failed&quot;);
+                      }
+                      else if(event.data.type === 'USER_ENROLLED') {
+                          //User successfully completed identity and has been enrolled for consumer data
+                          console.log(&quot;User enrollment successful&quot;);
+                      }
+                      else if(event.data.type === 'IDENTITY_FAILED') {
+                          //Identity process failed, user is likely &quot;stuck&quot; as they cannot continue
+                          console.log(&quot;User identity failure&quot;);
+                      }
+                      else if(event.data.type === 'SERVICE_FAILURE') {
+                          //Identity process failed most likely due to a service outage, but the user is stuck as they cannot continue without passing identity
+                          console.log(&quot;Identity service failure&quot;);
+                      }
+                  }
+
+                  function getData(req, action) {
+                  var xhr = new XMLHttpRequest();
+                      xhr.responesType = 'json';
+                      xhr.onload = action;
+                      xhr.open(&quot;GET&quot;, req);
+                      xhr.setRequestHeader(&quot;Content-Type&quot;, &quot;application/json&quot;);
+                      xhr.send();
+                  }
+
+              }
+              &lt;/script&gt;
+            &lt;/body&gt;
+          &lt;/html&gt;
         </code></pre>
         </div>
         </p>
-        <p id="tile_sample.html">
+        <p>
         Here is a sample implementation of an advanced embedded page with messaging: Tile User Interface with dynamic Consumer Authentication integration (<em>tile_sample.html</em>):
         <div style="max-height: 60vh;overflow: scroll;display: unset;" onload="doHighlight();"> 
-        <pre><code class="language-html">
+        <pre><code class="language-html" id="tile_sample.html">
         &lt;html>
         &lt;head>
           &lt;title>CRS&lt;/title>
@@ -12210,10 +12209,10 @@ tags:
         </code></pre>
         </div> 
         </p>
-        <p id="tile_sample_score_only.html">
+        <p>
         Here is a sample implementation of an advanced embedded page with messaging: Tile User Interface with dynamic Consumer Authentication integration and configuration display flags override (<em>tile_sample_score_only.html</em>):
         <div style="max-height: 60vh;overflow: scroll;display: unset;" onload="doHighlight();"> 
-        <pre><code class="language-html">
+        <pre><code class="language-html" id="tile_sample_score_only.html">
         &lt;html>
         &lt;head>
           &lt;title>CRS&lt;/title>
@@ -12695,11 +12694,11 @@ tags:
         In the <strong>test</strong> environment it is important that you use the User Test Identity provided to you verbatim. You may change the email address and phone number <strong>ONLY</strong>.
         </p>
 
-        <p id="test_api_postman_collection"><strong>Test APIs:</strong> Consumer Credit - Test API.postman_collection.json</p> <!-- Postman Collections -->
+        <p><strong>Test APIs:</strong> Consumer Credit - Test API.postman_collection.json</p> <!-- Postman Collections -->
         <p><a href="assets/json/Consumer Credit - Test API.postman_collection.json" download>Download here</a></p>
         <div class="postman_code" style="max-height: 60vh;overflow: scroll;" onload="doHighlight();">
         <!-- Consumer Credit - Test API.postman_collection.json -->
-        <pre><code class="language-json">
+        <pre><code class="language-json" id="test_api_postman_collection">
         {
           "info": {
             "_postman_id": "ecfa55bb-7382-4439-ae40-8916233c0ed9",
@@ -12967,11 +12966,11 @@ tags:
         }
         </code></pre>
         </div>
-        <p id="new_user_postman_collection"><strong>Direct & User APIs:</strong> Consumer Credit - Getting Started - New User.postman_collection.json</p> <!-- Postman Collections -->
+        <p><strong>Direct & User APIs:</strong> Consumer Credit - Getting Started - New User.postman_collection.json</p> <!-- Postman Collections -->
         <p><a href="assets/json/Consumer Credit - Getting Started - New User.postman_collection.json" download>Download here</a></p>
         <div class="postman_code" style="max-height: 60vh;overflow: scroll;" onload="doHighlight();">
         <!-- Consumer Credit - Getting Started - New User.postman_collection.json -->
-        <pre><code class="language-json">
+        <pre><code class="language-json" id="new_user_postman_collection">
         {
           "info": {
             "_postman_id": "f65c1f1d-3127-4b15-9ee6-0b85182b16e5",
@@ -13695,11 +13694,11 @@ tags:
         </code></pre>
         </div>
 
-        <p id="returning_user_postman_collection"><strong>Direct & User APIs: Consumer Credit - Getting Started - Returning User.postman_collection.json</strong></p> <!-- Postman Collections -->
+        <p><strong>Direct & User APIs: Consumer Credit - Getting Started - Returning User.postman_collection.json</strong></p> <!-- Postman Collections -->
         <p><a href="assets/json/Consumer Credit - Getting Started - Returning User.postman_collection.json" download>Download here</a></p>
         <div class="postman_code" style="max-height: 60vh;overflow: scroll;" onload="doHighlight();">
         <!-- Consumer Credit - Getting Started - Returning User.postman_collection.json -->
-        <pre><code class="language-json">
+        <pre><code class="language-json" id="returning_user_postman_collection">
         {
           "info": {
             "_postman_id": "f65c1f1d-3127-4b15-9ee6-0b85182b16e5",
@@ -14193,11 +14192,11 @@ tags:
         </code></pre>
         </div>
 
-        <p id="user_api_postman_collection"><strong>User APIs: Consumer Credit - User API.postman_collection.json</strong></p> <!-- Postman Collections -->
+        <p><strong>User APIs: Consumer Credit - User API.postman_collection.json</strong></p> <!-- Postman Collections -->
         <p><a href="assets/json/Consumer Credit - User API.postman_collection.json" download>Download here</a></p>
         <div class="postman_code" style="max-height: 60vh;overflow: scroll;" onload="doHighlight();">
         <!-- Consumer Credit - User API.postman_collection.json -->
-        <pre><code class="language-json">
+        <pre><code class="language-json" id="user_api_postman_collection">
         {
           "info": {
             "_postman_id": "78ea84a5-dd24-48c3-872a-2654e894b062",
@@ -14761,11 +14760,11 @@ tags:
         </code></pre>
         </div>
 
-        <p id="direct_api_postman_collection"><strong>Direct APIs: Consumer Credit - Direct API.postman_collection.json</strong></p> <!-- Postman Collections -->
+        <p><strong>Direct APIs: Consumer Credit - Direct API.postman_collection.json</strong></p> <!-- Postman Collections -->
         <p><a href="assets/json/Consumer Credit - Direct API.postman_collection.json" download>Download here</a></p>
         <div class="postman_code" style="max-height: 60vh;overflow: scroll;" onload="doHighlight();">
         <!-- Consumer Credit - Direct API.postman_collection.json -->
-        <pre><code class="language-json">
+        <pre><code class="language-json" id="direct_api_postman_collection">
         {
           "info": {
             "_postman_id": "1e3be246-0e2d-472e-8d8b-462f00852568",
@@ -15354,11 +15353,11 @@ tags:
         </code></pre>
         </div>
 
-        <p id="efx_api_postman_collection"><strong>Equifax APIs: Consumer Credit - EFX API.postman_collection.json</strong></p> <!-- Postman Collections -->
+        <p><strong>Equifax APIs: Consumer Credit - EFX API.postman_collection.json</strong></p> <!-- Postman Collections -->
         <p><a href="assets/json/Consumer Credit - EFX API.postman_collection.json" download>Download here</a></p>
         <div class="postman_code" style="max-height: 60vh;overflow: scroll;" onload="doHighlight();">
         <!-- Consumer Credit - EFX API.postman_collection.json -->
-        <pre><code class="language-json">
+        <pre><code class="language-json" id="efx_api_postman_collection">
         {
           "info": {
             "_postman_id": "6a775eeb-7324-447c-9564-157940e7d587",
@@ -15853,7 +15852,7 @@ tags:
         <p>
         The basic JSON for the web hook will look like the following (not all fields are present with all requests):
         <div onload="doHighlight();"> 
-        <pre><code data-language="json">
+        <pre><code data-language="json" id="webhook">
         [{
         id: "String - Webhook ID, UUID format",
         type: "String - Webhook Type, see possible values below",
@@ -15871,7 +15870,7 @@ tags:
         <p>
         When a webhook is received, a response is needed.  Responses with a status other than true will cause the webhook to be resent.
         <div onload="doHighlight();"> 
-        <pre><code data-language="json">
+        <pre><code data-language="json" id="webhook_response">
         [{
         hook_id: "the ID of the webhook",
         status: true | false
@@ -15929,7 +15928,7 @@ tags:
         Here is a sample javascript code for handling Web Messaging:
         </p>
         <div style="max-height: 60vh;overflow: scroll;display: unset;" onload="doHighlight();"> 
-        <pre><code data-language="html">
+        <pre><code data-language="html" id="web_messaging">
         &lt;script>
         //this just throws in a default ID if one isn't provided on the query string
         const id = document.location.search.length > 0 ? document.location.search.split('&')[0].split('=')[1] : '048741d2-3dcf-4892-8fb0-99930a540cc1';
