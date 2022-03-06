@@ -11549,12 +11549,12 @@ tags:
         <div> 
         <pre><code data-language="html" class="hljs xml" id="sample_iframe.html">
         <span class="hljs-tag">&lt;<span class="hljs-name">iframe</span> <span class="hljs-attr">id</span>=<span class="hljs-string">"sc-iframe"</span>
-        <span class="hljs-name">src</span>=<span class="hljs-string">"https://efx-dev.stitchcredit.com/api/users/start?key=d4eeb874-c6ae-4977-8b87-c0618b0bc194&amp;ocf=537952251&amp;ocl=https://www.premierconsumer.org/assets/images/en/logo.jpg&amp;oct=5f5ce0"</span>&gt;</span>
+          <span class="hljs-name">src</span>=<span class="hljs-string">"https://efx-dev.stitchcredit.com/api/users/start?key=d4eeb874-c6ae-4977-8b87-c0618b0bc194&amp;ocf=537952251&amp;ocl=https://www.premierconsumer.org/assets/images/en/logo.jpg&amp;oct=5f5ce0"</span>&gt;</span>
         <span class="hljs-tag">&lt;<span class="hljs-name">/iframe</span>&gt;</span>
         </code></pre>
         <!-- sample_iframe
         <iframe id="sc-iframe" 
-        src="https://efx-dev.stitchcredit.com/api/users/start?key=d4eeb874-c6ae-4977-8b87-c0618b0bc194&ocf=537952251&ocl=https://www.premierconsumer.org/assets/images/en/logo.jpg&oct=5f5ce0"> 
+          src="https://efx-dev.stitchcredit.com/api/users/start?key=d4eeb874-c6ae-4977-8b87-c0618b0bc194&ocf=537952251&ocl=https://www.premierconsumer.org/assets/images/en/logo.jpg&oct=5f5ce0"> 
         </iframe>
         -->
         </div>
@@ -12002,7 +12002,7 @@ tags:
                     }
                 }
                 <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">getData</span>(<span class="hljs-params">req, action</span>) </span>{
-                <span class="hljs-keyword">var</span> xhr = <span class="hljs-keyword">new</span> XMLHttpRequest();
+                    <span class="hljs-keyword">var</span> xhr = <span class="hljs-keyword">new</span> XMLHttpRequest();
                     xhr.responesType = <span class="hljs-string">'json'</span>;
                     xhr.onload = action;
                     xhr.open(<span class="hljs-string">"GET"</span>, req);
@@ -12104,7 +12104,7 @@ tags:
                     }
                 }
                 function getData(req, action) {
-                var xhr = new XMLHttpRequest();
+                    var xhr = new XMLHttpRequest();
                     xhr.responesType = 'json';
                     xhr.onload = action;
                     xhr.open("GET", req);
@@ -12211,7 +12211,7 @@ tags:
                     }
                 }
                 <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">getData</span>(<span class="hljs-params">req, action</span>) </span>{
-                <span class="hljs-keyword">var</span> xhr = <span class="hljs-keyword">new</span> XMLHttpRequest();
+                    <span class="hljs-keyword">var</span> xhr = <span class="hljs-keyword">new</span> XMLHttpRequest();
                     xhr.responesType = <span class="hljs-string">'json'</span>;
                     xhr.onload = action;
                     xhr.open(<span class="hljs-string">"GET"</span>, req);
@@ -12314,7 +12314,7 @@ tags:
                     }
                 }
                 function getData(req, action) {
-                var xhr = new XMLHttpRequest();
+                    var xhr = new XMLHttpRequest();
                     xhr.responesType = 'json';
                     xhr.onload = action;
                     xhr.open("GET", req);
@@ -12421,7 +12421,7 @@ tags:
               }
             }
             <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">getData</span>(<span class="hljs-params">req, action</span>) </span>{
-            <span class="hljs-keyword">var</span> xhr = <span class="hljs-keyword">new</span> XMLHttpRequest();
+              <span class="hljs-keyword">var</span> xhr = <span class="hljs-keyword">new</span> XMLHttpRequest();
               xhr.responesType = <span class="hljs-string">'json'</span>;
               xhr.onload = action;
               xhr.open(<span class="hljs-string">"GET"</span>, req);
@@ -12525,7 +12525,7 @@ tags:
                   }
               }
               function getData(req, action) {
-              var xhr = new XMLHttpRequest();
+                  var xhr = new XMLHttpRequest();
                   xhr.responesType = 'json';
                   xhr.onload = action;
                   xhr.open("GET", req);
@@ -12632,7 +12632,7 @@ tags:
               }
             }
             <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">getData</span>(<span class="hljs-params">req, action</span>) </span>{
-            <span class="hljs-keyword">var</span> xhr = <span class="hljs-keyword">new</span> XMLHttpRequest();
+              <span class="hljs-keyword">var</span> xhr = <span class="hljs-keyword">new</span> XMLHttpRequest();
               xhr.responesType = <span class="hljs-string">'json'</span>;
               xhr.onload = action;
               xhr.open(<span class="hljs-string">"GET"</span>, req);
@@ -12735,7 +12735,7 @@ tags:
                   }
               }
               function getData(req, action) {
-              var xhr = new XMLHttpRequest();
+                  var xhr = new XMLHttpRequest();
                   xhr.responesType = 'json';
                   xhr.onload = action;
                   xhr.open("GET", req);
@@ -19327,16 +19327,16 @@ tags:
         <div> 
         <pre><code data-language="json" class="hljs json" id="webhook">
         [{
-        <span class="hljs-built_in">id</span>: <span class="hljs-string">"String - Webhook ID, UUID format"</span>,
-        <span class="hljs-built_in">type</span>: <span class="hljs-string">"String - Webhook Type, see possible values below"</span>,
-        <span class="hljs-built_in">user_id</span>: <span class="hljs-string">"String - StitchCredit user ID, UUID format"</span>,
-        <span class="hljs-built_in">host_id</span>: <span class="hljs-string">"String - The host configuration generating the webhook, UUID format"</span>,
-        <span class="hljs-built_in">time</span>: <span class="hljs-string">"long - Linux epoch, seconds since 1/1/1970"</span>,
-        <span class="hljs-built_in">error_code</span>: <span class="hljs-string">"String - used to report host errors, future use at the moment"</span>,
-        <span class="hljs-built_in">error_msg</span>: <span class="hljs-string">"String - error code details"</span>
-        <span class="hljs-built_in">alert_id</span>: <span class="hljs-string">"String - id for retrieving additional alert details when available"</span>,
-        <span class="hljs-built_in">alert_date</span>: <span class="hljs-string">"Date - the date/time the alert was reported"</span>,
-        <span class="hljs-built_in">alert_source</span>: <span class="hljs-string">"String - name of the institution reporting when available"</span>
+            <span class="hljs-built_in">id</span>: <span class="hljs-string">"String - Webhook ID, UUID format"</span>,
+            <span class="hljs-built_in">type</span>: <span class="hljs-string">"String - Webhook Type, see possible values below"</span>,
+            <span class="hljs-built_in">user_id</span>: <span class="hljs-string">"String - StitchCredit user ID, UUID format"</span>,
+            <span class="hljs-built_in">host_id</span>: <span class="hljs-string">"String - The host configuration generating the webhook, UUID format"</span>,
+            <span class="hljs-built_in">time</span>: <span class="hljs-string">"long - Linux epoch, seconds since 1/1/1970"</span>,
+            <span class="hljs-built_in">error_code</span>: <span class="hljs-string">"String - used to report host errors, future use at the moment"</span>,
+            <span class="hljs-built_in">error_msg</span>: <span class="hljs-string">"String - error code details"</span>
+            <span class="hljs-built_in">alert_id</span>: <span class="hljs-string">"String - id for retrieving additional alert details when available"</span>,
+            <span class="hljs-built_in">alert_date</span>: <span class="hljs-string">"Date - the date/time the alert was reported"</span>,
+            <span class="hljs-built_in">alert_source</span>: <span class="hljs-string">"String - name of the institution reporting when available"</span>
         }]
         </code></pre>
         </div>
@@ -19345,8 +19345,8 @@ tags:
         <div> 
         <pre><code data-language="json" class="hljs json" id="webhook_response">
         [{
-        <span class="hljs-built_in">hook_id</span>: <span class="hljs-string">"the ID of the webhook"</span>,
-        <span class="hljs-built_in">status</span>: <span class="hljs-literal">true</span> | <span class="hljs-literal">false</span>
+            <span class="hljs-built_in">hook_id</span>: <span class="hljs-string">"the ID of the webhook"</span>,
+            <span class="hljs-built_in">status</span>: <span class="hljs-literal">true</span> | <span class="hljs-literal">false</span>
         }]
         </code></pre>
         </div>
@@ -19422,7 +19422,7 @@ tags:
                   <span class="hljs-keyword">const</span> token = <span class="hljs-built_in">JSON</span>.parse(<span class="hljs-keyword">this</span>.responseText).token;
                   <span class="hljs-built_in">console</span>.log(<span class="hljs-string">"Status: "</span>, <span class="hljs-keyword">this</span>.status, <span class="hljs-string">", token: "</span>, token);
                   es.postMessage({<span class="hljs-attr">type</span>: <span class="hljs-string">'PREAUTH'</span>, <span class="hljs-attr">token</span>: <span class="hljs-keyword">this</span>.status == <span class="hljs-number">200</span> ? token : <span class="hljs-literal">null</span>},<span class="hljs-string">"*"</span>);
-          });
+              });
             }
             <span class="hljs-keyword">else</span> <span class="hljs-keyword">if</span>(event.data.type === <span class="hljs-string">'REG_STARTED'</span>) {
               <span class="hljs-keyword">const</span> es = event.source;
@@ -19458,7 +19458,7 @@ tags:
             }
         }
         <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">getData</span>(<span class="hljs-params">req, action</span>) </span>{
-        <span class="hljs-keyword">var</span> xhr = <span class="hljs-keyword">new</span> XMLHttpRequest();
+            <span class="hljs-keyword">var</span> xhr = <span class="hljs-keyword">new</span> XMLHttpRequest();
             xhr.responesType = <span class="hljs-string">'json'</span>;
             xhr.onload = action;
             xhr.open(<span class="hljs-string">"GET"</span>, req);
@@ -19525,7 +19525,7 @@ tags:
             }
         }
         function getData(req, action) {
-        var xhr = new XMLHttpRequest();
+            var xhr = new XMLHttpRequest();
             xhr.responesType = 'json';
             xhr.onload = action;
             xhr.open("GET", req);
