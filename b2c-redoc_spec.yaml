@@ -16009,7 +16009,7 @@ tags:
         </p>
         <hr>
 
-- name: APIs
+- name: Overview of APIs
   description: |
         <p>
         With CRS's Consumer Credit API, you can offer Consumer Credit Scores and Credit Monitoring directly as part of your web or mobile experience.
@@ -16999,7 +16999,6 @@ x-tagGroups:
       - Overview of Integration Methods
       - Webhook Integration
       - Web Messaging Integration
-      - APIs
 
   - name: APIs
     tags:  
