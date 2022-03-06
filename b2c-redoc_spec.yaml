@@ -11484,26 +11484,29 @@ tags:
         <h4>Sample Embed page</h4>
         <p>
         <div"> 
-        <pre><code class="language-html" id="sample_embed.html">
-          &lt;html>
-          &lt;head>
-            &lt;title>CRS&lt;/title>
-            &lt;meta name='description' content='CRS Consumer Credit Reports'/>
-            &lt;link rel='icon' href='/favicon.ico'>
-            &lt;style>
-              body { background: #F9FAFB; }
-              #sc-iframe { border:none;overflow:hidden;padding:0px;margin:0px;
-              width:100%;height:100vh;z-index:1;position:absolute;left:0;top:0; }
-            &lt;/style>
-          &lt;/head>
-          &lt;body>
-            &lt;iframe id='sc-iframe'
-              src='https://efx-dev.stitchcredit.com/api/users/start?key=[API-KEY]&ocf=[FLAGS]&oct=[COLOR]&view=[VIEW-OPTION]&ocl=[LOGO-URL]' 
-              width='100%' height='100vh'>
-            &lt;/iframe>
-          &lt;/body>
-          &lt;/html>
+        <pre><code data-language="html" class="hljs xml" id="sample_embed.html">
+        <span class="hljs-tag">&lt;<span class="hljs-name">html</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">head</span>&gt;</span>
+          <span class="hljs-tag">&lt;<span class="hljs-name">title</span>&gt;</span>StitchCredit<span class="hljs-tag">&lt;/<span class="hljs-name">title</span>&gt;</span>
+          <span class="hljs-tag">&lt;<span class="hljs-name">meta</span> <span class="hljs-attr">name</span>=<span class="hljs-string">"description"</span> <span class="hljs-attr">content</span>=<span class="hljs-string">"StitchCredit Consumer Credit Reports"</span>/&gt;</span>
+          <span class="hljs-tag">&lt;<span class="hljs-name">link</span> <span class="hljs-attr">rel</span>=<span class="hljs-string">"icon"</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"/favicon.ico"</span>&gt;</span>
+          <span class="hljs-tag">&lt;<span class="hljs-name">style</span>&gt;</span><span class="css">
+            <span class="hljs-selector-tag">body</span> { <span class="hljs-attribute">background</span>: <span class="hljs-number">#F9FAFB</span>; }
+            <span class="hljs-selector-id">#sc-iframe</span> { <span class="hljs-attribute">border</span>:none;<span class="hljs-attribute">overflow</span>:hidden;<span class="hljs-attribute">padding</span>:<span class="hljs-number">0px</span>;<span class="hljs-attribute">margin</span>:<span class="hljs-number">0px</span>;
+            <span class="hljs-attribute">width</span>:<span class="hljs-number">100%</span>;<span class="hljs-attribute">height</span>:<span class="hljs-number">100vh</span>;<span class="hljs-attribute">z-index</span>:<span class="hljs-number">1</span>;<span class="hljs-attribute">position</span>:absolute;<span class="hljs-attribute">left</span>:<span class="hljs-number">0</span>;<span class="hljs-attribute">top</span>:<span class="hljs-number">0</span>; }
+          </span><span class="hljs-tag">&lt;/<span class="hljs-name">style</span>&gt;</span>
+        <span class="hljs-tag">&lt;/<span class="hljs-name">head</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">body</span>&gt;</span>
+          <span class="hljs-tag">&lt;<span class="hljs-name">iframe</span> <span class="hljs-attr">id</span>=<span class="hljs-string">"sc-iframe"</span>
+            <span class="hljs-attr">src</span>=<span class="hljs-string">"https://efx-dev.stitchcredit.com/api/users/start?key=[API-KEY]&amp;ocf=[FLAGS]&amp;oct=[COLOR]&amp;view=[VIEW-OPTION]&amp;ocl=[LOGO-URL]"</span> 
+            <span class="hljs-attr">width</span>=<span class="hljs-string">“100%”</span> <span class="hljs-attr">height</span>=<span class="hljs-string">“100vh”</span>&gt;</span>
+          <span class="hljs-tag">&lt;/<span class="hljs-name">iframe</span>&gt;</span>
+        <span class="hljs-tag">&lt;/<span class="hljs-name">body</span>&gt;</span>
+        <span class="hljs-tag">&lt;/<span class="hljs-name">html</span>&gt;</span>
         </code></pre>
+        <!-- TODO
+        sample_embed.html
+        -->
         </div>
         </p>
         <hr>
@@ -11531,10 +11534,10 @@ tags:
           Here is an example of the iframe code configured with API-Key, flags, and color:
           </p>
         <div> 
-        <pre><code data-language="html" class="hljs makefile" id="sample_iframe.html">
-        &lt;iframe id=<span class="hljs-string">"sc-iframe"</span> 
-        src=<span class="hljs-string">"https://efx-dev.stitchcredit.com/api/users/start?key=d4eeb874-c6ae-4977-8b87-c0618b0bc194&amp;ocf=537952251&amp;ocl=https://www.premierconsumer.org/assets/images/en/logo.jpg&amp;oct=5f5ce0"</span>&gt; 
-        &lt;/iframe&gt;
+        <pre><code data-language="html" class="hljs xml" id="sample_iframe.html">
+        <span class="hljs-tag">&lt;<span class="hljs-name">iframe</span> <span class="hljs-attr">id</span>=<span class="hljs-string">"sc-iframe"</span>
+        <span class="hljs-name">src</span>=<span class="hljs-string">"https://efx-dev.stitchcredit.com/api/users/start?key=d4eeb874-c6ae-4977-8b87-c0618b0bc194&amp;ocf=537952251&amp;ocl=https://www.premierconsumer.org/assets/images/en/logo.jpg&amp;oct=5f5ce0"</span>&gt; </span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">/iframe</span>&gt;</span>
         </code></pre>
         <!-- TODO sample_iframe
         -->
@@ -11903,7 +11906,7 @@ tags:
         <p>
         Here is a sample implementation of an advanced embedded page with messaging&#58; the Tabbed User Interface with Dynamic Consumer Authentication integration (<em>direct_sample.html</em>):
         <div style="max-height: 60vh;overflow: scroll;display: unset;"> 
-        <pre><code data-language="html" class="hljs xml" id="direct_sample.html">>
+        <pre><code data-language="html" class="hljs xml" id="direct_sample.html">
         <span class="hljs-tag">&lt;<span class="hljs-name">html</span>&gt;</span>
           <span class="hljs-tag">&lt;<span class="hljs-name">head</span>&gt;</span>
             <span class="hljs-tag">&lt;<span class="hljs-name">title</span>&gt;</span>StitchCredit<span class="hljs-tag">&lt;/<span class="hljs-name">title</span>&gt;</span>
@@ -11942,9 +11945,7 @@ tags:
             <span class="hljs-keyword">const</span> id = <span class="hljs-built_in">document</span>.location.search.length &gt; <span class="hljs-number">0</span> ? <span class="hljs-built_in">document</span>.location.search.split(<span class="hljs-string">'&amp;'</span>)[<span class="hljs-number">0</span>].split(<span class="hljs-string">'='</span>)[<span class="hljs-number">1</span>] : <span class="hljs-string">'048741d2-3dcf-4892-8fb0-99930a540cc1'</span>;
             <span class="hljs-built_in">console</span>.log(<span class="hljs-string">"ID: "</span>,id);
             <span class="hljs-built_in">console</span>.log(<span class="hljs-string">"Loading Message Listener..."</span>);
-            
             <span class="hljs-built_in">window</span>.addEventListener(<span class="hljs-string">"message"</span>, receiveMessage, <span class="hljs-literal">false</span>);
-            
             <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">receiveMessage</span>(<span class="hljs-params">event</span>) </span>{
                 <span class="hljs-keyword">if</span>(event &amp;&amp; event.source &amp;&amp; event.data) {
                     <span class="hljs-comment">// You only need to implement the types that are important/relevant to your use case.</span>
@@ -11994,7 +11995,6 @@ tags:
                         <span class="hljs-built_in">console</span>.log(<span class="hljs-string">"Identity service failure"</span>);
                     }
                 }
-                
                 <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">getData</span>(<span class="hljs-params">req, action</span>) </span>{
                 <span class="hljs-keyword">var</span> xhr = <span class="hljs-keyword">new</span> XMLHttpRequest();
                     xhr.responesType = <span class="hljs-string">'json'</span>;
@@ -12003,7 +12003,6 @@ tags:
                     xhr.setRequestHeader(<span class="hljs-string">"Content-Type"</span>, <span class="hljs-string">"application/json"</span>);
                     xhr.send();
                 }
-                
             }
             </span><span class="hljs-tag">&lt;/<span class="hljs-name">script</span>&gt;</span>
           <span class="hljs-tag">&lt;/<span class="hljs-name">body</span>&gt;</span>
@@ -12048,9 +12047,7 @@ tags:
             const id = document.location.search.length > 0 ? document.location.search.split('&')[0].split('=')[1] : '048741d2-3dcf-4892-8fb0-99930a540cc1';
             console.log("ID: ",id);
             console.log("Loading Message Listener...");
-            
             window.addEventListener("message", receiveMessage, false);
-            
             function receiveMessage(event) {
                 if(event && event.source && event.data) {
                     // You only need to implement the types that are important/relevant to your use case.
@@ -12100,7 +12097,6 @@ tags:
                         console.log("Identity service failure");
                     }
                 }
-                
                 function getData(req, action) {
                 var xhr = new XMLHttpRequest();
                     xhr.responesType = 'json';
@@ -12109,7 +12105,6 @@ tags:
                     xhr.setRequestHeader("Content-Type", "application/json");
                     xhr.send();
                 }
-              
             }
             </script>
           </body>
@@ -12159,9 +12154,7 @@ tags:
             <span class="hljs-keyword">const</span> id = <span class="hljs-built_in">document</span>.location.search.length &gt; <span class="hljs-number">0</span> ? <span class="hljs-built_in">document</span>.location.search.split(<span class="hljs-string">'&amp;'</span>)[<span class="hljs-number">0</span>].split(<span class="hljs-string">'='</span>)[<span class="hljs-number">1</span>] : <span class="hljs-string">'988a6fd7-7297-4757-8b96-907daa14a1f6'</span>;
             <span class="hljs-built_in">console</span>.log(<span class="hljs-string">"ID: "</span>,id);
             <span class="hljs-built_in">console</span>.log(<span class="hljs-string">"Loading Message Listener..."</span>);
-
             <span class="hljs-built_in">window</span>.addEventListener(<span class="hljs-string">"message"</span>, receiveMessage, <span class="hljs-literal">false</span>);
-
             <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">receiveMessage</span>(<span class="hljs-params">event</span>) </span>{
                 <span class="hljs-keyword">if</span>(event &amp;&amp; event.source &amp;&amp; event.data) {
                     <span class="hljs-comment">// You only need to implement the types that are important/relevant to your use case.</span>
@@ -12211,7 +12204,6 @@ tags:
                         <span class="hljs-built_in">console</span>.log(<span class="hljs-string">"Identity service failure"</span>);
                     }
                 }
-                
                 <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">getData</span>(<span class="hljs-params">req, action</span>) </span>{
                 <span class="hljs-keyword">var</span> xhr = <span class="hljs-keyword">new</span> XMLHttpRequest();
                     xhr.responesType = <span class="hljs-string">'json'</span>;
@@ -12220,7 +12212,6 @@ tags:
                     xhr.setRequestHeader(<span class="hljs-string">"Content-Type"</span>, <span class="hljs-string">"application/json"</span>);
                     xhr.send();
                 }
-            
             }
             </span><span class="hljs-tag">&lt;/<span class="hljs-name">script</span>&gt;</span>
           <span class="hljs-tag">&lt;/<span class="hljs-name">body</span>&gt;</span>
@@ -12377,9 +12368,7 @@ tags:
           <span class="hljs-keyword">const</span> id = <span class="hljs-built_in">document</span>.location.search.length &gt; <span class="hljs-number">0</span> ? <span class="hljs-built_in">document</span>.location.search.split(<span class="hljs-string">'&amp;'</span>)[<span class="hljs-number">0</span>].split(<span class="hljs-string">'='</span>)[<span class="hljs-number">1</span>] : <span class="hljs-string">'988a6fd7-7297-4757-8b96-907daa14a1f6'</span>;
           <span class="hljs-built_in">console</span>.log(<span class="hljs-string">"ID: "</span>,id);
           <span class="hljs-built_in">console</span>.log(<span class="hljs-string">"Loading Message Listener..."</span>);
-          
           <span class="hljs-built_in">window</span>.addEventListener(<span class="hljs-string">"message"</span>, receiveMessage, <span class="hljs-literal">false</span>);
-          
           <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">receiveMessage</span>(<span class="hljs-params">event</span>) </span>{
             <span class="hljs-keyword">if</span>(event &amp;&amp; event.source &amp;&amp; event.data) {
               <span class="hljs-comment">// You only need to implement the types that are important/relevant to your use case.</span>
@@ -12429,7 +12418,6 @@ tags:
                 <span class="hljs-built_in">console</span>.log(<span class="hljs-string">"Identity service failure"</span>);
               }
             }
-            
             <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">getData</span>(<span class="hljs-params">req, action</span>) </span>{
             <span class="hljs-keyword">var</span> xhr = <span class="hljs-keyword">new</span> XMLHttpRequest();
               xhr.responesType = <span class="hljs-string">'json'</span>;
@@ -12438,7 +12426,6 @@ tags:
               xhr.setRequestHeader(<span class="hljs-string">"Content-Type"</span>, <span class="hljs-string">"application/json"</span>);
               xhr.send();
             }
-          
           }
           </span><span class="hljs-tag">&lt;/<span class="hljs-name">script</span>&gt;</span>
         <span class="hljs-tag">&lt;/<span class="hljs-name">body</span>&gt;</span>
@@ -12485,9 +12472,7 @@ tags:
           const id = document.location.search.length > 0 ? document.location.search.split('&')[0].split('=')[1] : '048741d2-3dcf-4892-8fb0-99930a540cc1';
           console.log("ID: ",id);
           console.log("Loading Message Listener...");
-          
           window.addEventListener("message", receiveMessage, false);
-          
           function receiveMessage(event) {
               if(event && event.source && event.data) {
                   // You only need to implement the types that are important/relevant to your use case.
@@ -12537,7 +12522,6 @@ tags:
                       console.log("Identity service failure");
                   }
               }
-              
               function getData(req, action) {
               var xhr = new XMLHttpRequest();
                   xhr.responesType = 'json';
@@ -12546,7 +12530,6 @@ tags:
                   xhr.setRequestHeader("Content-Type", "application/json");
                   xhr.send();
               }
-            
           }
           </script>
         </body>
@@ -12596,9 +12579,7 @@ tags:
           <span class="hljs-keyword">const</span> id = <span class="hljs-built_in">document</span>.location.search.length &gt; <span class="hljs-number">0</span> ? <span class="hljs-built_in">document</span>.location.search.split(<span class="hljs-string">'&amp;'</span>)[<span class="hljs-number">0</span>].split(<span class="hljs-string">'='</span>)[<span class="hljs-number">1</span>] : <span class="hljs-string">'988a6fd7-7297-4757-8b96-907daa14a1f6'</span>;
           <span class="hljs-built_in">console</span>.log(<span class="hljs-string">"ID: "</span>,id);
           <span class="hljs-built_in">console</span>.log(<span class="hljs-string">"Loading Message Listener..."</span>);
-          
           <span class="hljs-built_in">window</span>.addEventListener(<span class="hljs-string">"message"</span>, receiveMessage, <span class="hljs-literal">false</span>);
-          
           <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">receiveMessage</span>(<span class="hljs-params">event</span>) </span>{
             <span class="hljs-keyword">if</span>(event &amp;&amp; event.source &amp;&amp; event.data) {
               <span class="hljs-comment">// You only need to implement the types that are important/relevant to your use case.</span>
@@ -12648,7 +12629,6 @@ tags:
                 <span class="hljs-built_in">console</span>.log(<span class="hljs-string">"Identity service failure"</span>);
               }
             }
-            
             <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">getData</span>(<span class="hljs-params">req, action</span>) </span>{
             <span class="hljs-keyword">var</span> xhr = <span class="hljs-keyword">new</span> XMLHttpRequest();
               xhr.responesType = <span class="hljs-string">'json'</span>;
@@ -12657,7 +12637,6 @@ tags:
               xhr.setRequestHeader(<span class="hljs-string">"Content-Type"</span>, <span class="hljs-string">"application/json"</span>);
               xhr.send();
             }
-          
           }
           </span><span class="hljs-tag">&lt;/<span class="hljs-name">script</span>&gt;</span>
         <span class="hljs-tag">&lt;/<span class="hljs-name">body</span>&gt;</span>
@@ -12703,9 +12682,7 @@ tags:
           const id = document.location.search.length > 0 ? document.location.search.split('&')[0].split('=')[1] : '048741d2-3dcf-4892-8fb0-99930a540cc1';
           console.log("ID: ",id);
           console.log("Loading Message Listener...");
-          
           window.addEventListener("message", receiveMessage, false);
-          
           function receiveMessage(event) {
               if(event && event.source && event.data) {
                   // You only need to implement the types that are important/relevant to your use case.
@@ -12725,13 +12702,13 @@ tags:
                   else if(event.data.type === 'REG_STARTED') {
                       const es = event.source;
                       //only valid for full web implementation, Direct API already creates the customer, so this will never happen in those instances
-              // (new Date().valueOf()) - is used to generate a new email ID on the fly for testing purposes
+                      // (new Date().valueOf()) - is used to generate a new email ID on the fly for testing purposes
                       es.postMessage({type: 'REG', data: {fname:"Gertrude", lname:"Harkenreadeo", email: "test+" + (new Date().valueOf()) + "@test.com"}},"*");
                   }
                   else if(event.data.type === 'IDENTITY_STARTED') {
                       const es = event.source;
                       //You could use this function to pre-populate the given fields.  DoB and SSN will never be prepopulated as it violates compliance
-              // new Date().valueOf().toString() - generates a unique number for street2 to ensure each run goes through the full identity process, remove to test sequential sign up of the same user
+                      // new Date().valueOf().toString() - generates a unique number for street2 to ensure each run goes through the full identity process, remove to test sequential sign up of the same user
                       es.postMessage({type: 'IDENTITY', data: {street1:"305 Linden Av", street2: new Date().valueOf().toString(), city: "Atlanta", state: "GA", zip: "30316", mobile: "0000000000"}},"*");
                   }
                   else if(event.data.type === 'LOGIN_SUCCESSFUL') {
@@ -12755,7 +12732,6 @@ tags:
                       console.log("Identity service failure");
                   }
               }
-              
               function getData(req, action) {
               var xhr = new XMLHttpRequest();
                   xhr.responesType = 'json';
@@ -12764,7 +12740,6 @@ tags:
                   xhr.setRequestHeader("Content-Type", "application/json");
                   xhr.send();
               }
-
           }
           </script>
         </body>
@@ -16321,18 +16296,18 @@ tags:
         <p>
         The basic JSON for the web hook will look like the following (not all fields are present with all requests):
         <div> 
-        <pre><code data-language="json" class="hljs json" id="webhook"
+        <pre><code data-language="json" class="hljs json" id="webhook">
         [{
-        id: <span class="hljs-string">"String - Webhook ID, UUID format"</span>,
+        <span class="hljs-built_in">id</span>: <span class="hljs-string">"String - Webhook ID, UUID format"</span>,
         <span class="hljs-built_in">type</span>: <span class="hljs-string">"String - Webhook Type, see possible values below"</span>,
-        user_id: <span class="hljs-string">"String - StitchCredit user ID, UUID format"</span>,
-        host_id: <span class="hljs-string">"String - The host configuration generating the webhook, UUID format"</span>,
-        time: <span class="hljs-string">"long - Linux epoch, seconds since 1/1/1970"</span>,
-        error_code: <span class="hljs-string">"String - used to report host errors, future use at the moment"</span>,
-        error_msg: <span class="hljs-string">"String - error code details"</span>
-        alert_id: <span class="hljs-string">"String - id for retrieving additional alert details when available"</span>,
-        alert_date: <span class="hljs-string">"Date - the date/time the alert was reported"</span>,
-        alert_source: <span class="hljs-string">"String - name of the institution reporting when available"</span>
+        <span class="hljs-built_in">user_id</span>: <span class="hljs-string">"String - StitchCredit user ID, UUID format"</span>,
+        <span class="hljs-built_in">host_id</span>: <span class="hljs-string">"String - The host configuration generating the webhook, UUID format"</span>,
+        <span class="hljs-built_in">time</span>: <span class="hljs-string">"long - Linux epoch, seconds since 1/1/1970"</span>,
+        <span class="hljs-built_in">error_code</span>: <span class="hljs-string">"String - used to report host errors, future use at the moment"</span>,
+        <span class="hljs-built_in">error_msg</span>: <span class="hljs-string">"String - error code details"</span>
+        <span class="hljs-built_in">alert_id</span>: <span class="hljs-string">"String - id for retrieving additional alert details when available"</span>,
+        <span class="hljs-built_in">alert_date</span>: <span class="hljs-string">"Date - the date/time the alert was reported"</span>,
+        <span class="hljs-built_in">alert_source</span>: <span class="hljs-string">"String - name of the institution reporting when available"</span>
         }]
         </code></pre>
         </div>
@@ -16341,8 +16316,8 @@ tags:
         <div> 
         <pre><code data-language="json" class="hljs json" id="webhook_response">
         [{
-        hook_id: <span class="hljs-string">"the ID of the webhook"</span>,
-        status: <span class="hljs-literal">true</span> | <span class="hljs-literal">false</span>
+        <span class="hljs-built_in">hook_id</span>: <span class="hljs-string">"the ID of the webhook"</span>,
+        <span class="hljs-built_in">status</span>: <span class="hljs-literal">true</span> | <span class="hljs-literal">false</span>
         }]
         </code></pre>
         </div>
