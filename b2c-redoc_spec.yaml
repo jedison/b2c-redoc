@@ -11460,7 +11460,6 @@ tags:
             From sign up to launch in less than one week
           </p>
         <hr>
-        
         <h3>Simple Integration Guide</h3>
         <p>
         <strong>Web Integration Requirements:</strong>
@@ -11483,7 +11482,7 @@ tags:
         </p>
         <h4>Sample Embed page</h4>
         <p>
-        <div"> 
+        <div> 
         <pre><code data-language="html" class="hljs xml" id="sample_embed.html">
         <span class="hljs-tag">&lt;<span class="hljs-name">html</span>&gt;</span>
         <span class="hljs-tag">&lt;<span class="hljs-name">head</span>&gt;</span>
@@ -11498,7 +11497,7 @@ tags:
         <span class="hljs-tag">&lt;/<span class="hljs-name">head</span>&gt;</span>
         <span class="hljs-tag">&lt;<span class="hljs-name">body</span>&gt;</span>
           <span class="hljs-tag">&lt;<span class="hljs-name">iframe</span> <span class="hljs-attr">id</span>=<span class="hljs-string">"sc-iframe"</span>
-            <span class="hljs-attr">src</span>=<span class="hljs-string">"https://efx-dev.stitchcredit.com/api/users/start?key=[API-KEY]&amp;ocf=[FLAGS]&amp;oct=[COLOR]&amp;view=[VIEW-OPTION]&amp;ocl=[LOGO-URL]"</span> 
+            <span class="hljs-attr">src</span>=<span class="hljs-string">"https://efx-dev.stitchcredit.com/api/users/start?key=[API-KEY]&amp;ocf=[FLAGS]&amp;oct=[COLOR]&amp;view=[VIEW-OPTION]&amp;ocl=[LOGO-URL]"</span>
             <span class="hljs-attr">width</span>=<span class="hljs-string">“100%”</span> <span class="hljs-attr">height</span>=<span class="hljs-string">“100vh”</span>&gt;</span>
           <span class="hljs-tag">&lt;/<span class="hljs-name">iframe</span>&gt;</span>
         <span class="hljs-tag">&lt;/<span class="hljs-name">body</span>&gt;</span>
@@ -11527,7 +11526,6 @@ tags:
         </div>
         </p>
         <hr>
-        
         <h3>Webhook Integration</h3>
         <p>
         Webhooks are available to notify you when an alert (or other notifications) comes in so that you can message users in whatever fashion you wish to return to your site.
@@ -11536,7 +11534,6 @@ tags:
         Please refer to additional details on <a href="/tag/Webhook-Integration">Webhook Integration</a>.
         </p>
         <hr>
-        
         <h3>Web Messaging Integration</h3>
           <p>
           To interact with the Consumer Credit Widget, you will need to implement a structure using a window event listener.
@@ -11545,7 +11542,6 @@ tags:
           Please refer to additional details on <a href="/tag/Web-Messaging-Integration">Web Messaging Integration</a>.
           </p>
         <hr>
-        
         <h3>Samples</h3>
           <p>
           Here is an example of the iframe code configured with API-Key, flags, and color:
@@ -11553,7 +11549,7 @@ tags:
         <div> 
         <pre><code data-language="html" class="hljs xml" id="sample_iframe.html">
         <span class="hljs-tag">&lt;<span class="hljs-name">iframe</span> <span class="hljs-attr">id</span>=<span class="hljs-string">"sc-iframe"</span>
-        <span class="hljs-name">src</span>=<span class="hljs-string">"https://efx-dev.stitchcredit.com/api/users/start?key=d4eeb874-c6ae-4977-8b87-c0618b0bc194&amp;ocf=537952251&amp;ocl=https://www.premierconsumer.org/assets/images/en/logo.jpg&amp;oct=5f5ce0"</span>&gt; </span>
+        <span class="hljs-name">src</span>=<span class="hljs-string">"https://efx-dev.stitchcredit.com/api/users/start?key=d4eeb874-c6ae-4977-8b87-c0618b0bc194&amp;ocf=537952251&amp;ocl=https://www.premierconsumer.org/assets/images/en/logo.jpg&amp;oct=5f5ce0"</span>&gt;</span>
         <span class="hljs-tag">&lt;<span class="hljs-name">/iframe</span>&gt;</span>
         </code></pre>
         <!-- sample_iframe
@@ -11608,7 +11604,6 @@ tags:
         -->
         </div>
         <hr>
-        
         <h4>Responsiveness Breakpoints</h4>
           <p>
           These are two main breakpoints we use to scale desktop, tablet, and mobile devices. Devices with a width larger than 960px will be treated as a desktop view, devices with smaller widths fall under tablet and mobile device scaling thus will be displayed as a mobile view. With that being said, the widget should scale well on small, medium, and large devices without issues.
@@ -11621,12 +11616,10 @@ tags:
           </ul>
           </p>
         <hr>
-        
         <h4>Web Widget in mobile mode</h4>
         <p>
         Here are examples of the screens from the Web Widget when viewed in small (mobile) mode:
         </p>
-        
         <div class="row crop" style="display: flex">
           <div class="column" style="flex: 50%; padding: 5px;">
             <img src="https://user-images.githubusercontent.com/76128486/105094648-96573000-5a72-11eb-9429-6b84ba036804.png" alt="Image of page example for Sign Up" style="width:100%" class="crop" />
@@ -11635,17 +11628,13 @@ tags:
             <img src="https://user-images.githubusercontent.com/76128486/105094606-83446000-5a72-11eb-83c7-df5d4ba541ae.png" alt="Image of page example for Registering Terms of Use" style="width:100%" class="crop" />
           </div>
         </div>
-        
         <h4>Login</h4>
-        
         <div class="row crop" style="display: flex">
           <div class="column" style="flex: 50%; padding: 5px;">
             <img src="https://user-images.githubusercontent.com/76128486/105094441-4aa48680-5a72-11eb-86c9-9a9e7a64ed90.png" alt="Image of credit report page example" style="width:50%; margin-top: -12%;" class="crop" />
           </div>
         </div>
-        
         <h4>Identity</h4>
-        
         <div class="row crop" style="display: flex" class="crop">
         <div class="column" style="flex: 50%; padding: 5px;">
           <img src="https://user-images.githubusercontent.com/76128486/105093444-c0a7ee00-5a70-11eb-85ef-b4a17e4c2b45.png" alt="Image of identity page example" style="width:100%" class="crop" />
@@ -11654,9 +11643,7 @@ tags:
           <img src="https://user-images.githubusercontent.com/76128486/105093564-edf49c00-5a70-11eb-8d03-c46d83010b07.png" alt="Image of page example for consumer consent language" style="width:100%" class="crop" />
         </div>
         </div>
-        
         <h4>Identification (option 1): mobile</h4>
-        
         <div class="row crop" style="display: flex">
           <div class="column" style="flex: 50%; padding: 5px;">
             <img src="https://user-images.githubusercontent.com/76128486/105093896-6f4c2e80-5a71-11eb-9185-1a2b78596470.png" alt="Image of page for sending code via SMS to verify identity" style="width:100%" class="crop" />
@@ -11665,7 +11652,6 @@ tags:
             <img src="https://user-images.githubusercontent.com/76128486/105093817-504d9c80-5a71-11eb-8334-7e2ecb8d0129.png" alt="Image of page for entering identity verifying code via SMS" style="width:100%" class="crop" />
           </div>
         </div>
-        
         <h4>Identification (option 2): quiz</h4>
         <div class="row crop" style="display: flex">
           <div class="column" style="flex: 50%; padding: 5px;">
@@ -11675,7 +11661,6 @@ tags:
             <img src="https://user-images.githubusercontent.com/76128486/105093655-17adc300-5a71-11eb-96e3-d8a3162a2349.png" alt="Image of page for successful sign up as a result of successful identification" style="width:100%" class="crop" />
           </div>
         </div>
-        
         <h4>Credit Score - Dashboard</h4>
         <div class="row crop" style="display: flex">
           <div class="column" style="flex: 50%; padding: 5px;">
@@ -11685,7 +11670,6 @@ tags:
             <img src="https://user-images.githubusercontent.com/76128486/105093301-80e10680-5a70-11eb-99a3-e4b868dce698.png" alt="Image of page for showing score returned by a single bureaus" style="width:100%" class="crop" />
           </div>
         </div>
-        
         <h4>Credit Report</h4>
         <div class="row crop" style="display: flex">
           <div class="column" style="flex: 50%; padding: 5px;">
@@ -11695,14 +11679,12 @@ tags:
             <img src="https://user-images.githubusercontent.com/76128486/105094037-a6224480-5a71-11eb-8f45-31cf52bd78a2.png" alt="Image of page for showing score credit accounts" style="width:100%" class="crop" />
           </div>
         </div>
-        
         <h4>Credit Monitoring</h4>
         <div class="row crop" style="display: flex">
           <div class="column" style="flex: 50%; padding: 5px;">
             <img src="https://user-images.githubusercontent.com/76128486/105093951-83902b80-5a71-11eb-8989-31bacb070fa2.png" alt="Image of page showing credit monitoring" style="width:50%; margin-top: -8%;" class="crop" />
           </div>
         </div>
-        
         <h4>Identity Restoration</h4>
         <div class="row crop" style="display: flex">
           <div class="column" style="flex: 50%; padding: 5px;">
@@ -11710,12 +11692,10 @@ tags:
           </div>
         </div>
         <hr>
-        
         <h4>Web Widget in regular (medium) mode</h4>
           <p>
           Here are examples of the screens from the Web Widget when viewed in medium (web) mode:
           </p>
-          
           <h4>Registration</h4>
           <div class="row" style="display: flex; padding-bottom: 10px;">
             <div class="column" style="flex: 50%; padding: 5px;padding-bottom: 10px;">
@@ -11725,7 +11705,6 @@ tags:
               <img src="https://api.redoc.ly/registry/assets/crs-group/B2C/v2/assets%2fimgs%2fregistration_content.png" alt="Image of page example for registration content" style="width:100%"/>
             </div>
           </div>
-        
           <h4>Login</h4>
           <div class="row" style="display: flex; padding-bottom: 10px;">
             <div class="column" style="flex: 50%; padding: 5px; padding-bottom: 10px;">
@@ -11734,7 +11713,6 @@ tags:
             <div class="column" style="flex: 50%; padding: 5px;">
             </div>
           </div>
-        
           <h4>Identity</h4>
           <div class="row" style="display: flex; padding-bottom: 10px;">
             <div class="column" style="flex: 50%; padding: 5px; padding-bottom: 10px;">
@@ -11744,7 +11722,6 @@ tags:
               <img src="https://api.redoc.ly/registry/assets/crs-group/B2C/v2/assets%2fimgs%2fidentity_content.png" alt="Image of page example for identity verification content" style="width:100%"/>
             </div>
           </div>
-        
           <h4>Mobile identification (option 1)</h4>
           <div class="row" style="display: flex; padding-bottom: 10px;">
             <div class="column" style="flex: 50%; padding: 5px; padding-bottom: 10px;">
@@ -11754,7 +11731,6 @@ tags:
               <img src="https://api.redoc.ly/registry/assets/crs-group/B2C/v2/assets%2fimgs%2fmobile_identification_1_content.png" alt="Image of page example for mobile identification (option 1) content" style="width:100%"/>
             </div>
           </div>
-        
           <h4>Identity quiz (option 2) and enrollment success</h4>
           <div class="row" style="display: flex; padding-bottom: 10px;">
             <div class="column" style="flex: 50%; padding: 5px; padding-bottom: 10px;">
@@ -11764,7 +11740,6 @@ tags:
               <img src="https://api.redoc.ly/registry/assets/crs-group/B2C/v2/assets%2fimgs%2fenrollment_success.png" alt="Image of page example for enrollment success" style="width:100%"/>
             </div>
           </div>
-        
           <h4>Credit Score Dashboard</h4>
           <div class="row" style="display: flex; padding-bottom: 10px;">
             <div class="column" style="flex: 50%; padding: 5px; padding-bottom: 10px;">
@@ -11773,7 +11748,6 @@ tags:
             <div class="column" style="flex: 50%; padding: 5px;">
             </div>
           </div>
-        
           <h4>Credit Report</h4>
           <div class="row" style="display: flex; padding-bottom: 10px;">
             <div class="column" style="flex: 50%; padding: 5px; padding-bottom: 10px;">
@@ -11783,7 +11757,6 @@ tags:
               <img src="https://api.redoc.ly/registry/assets/crs-group/B2C/v2/assets%2fimgs%2fcredit_report_2.png" alt="Image of page example for credit report (continued)" style="width:100%"/>
             </div>
           </div>
-        
           <h4>Credit Monitoring</h4>
           <div class="row" style="display: flex; padding-bottom: 10px;">
             <div class="column" style="flex: 50%; padding: 5px; padding-bottom: 10px;">
@@ -11792,7 +11765,6 @@ tags:
             <div class="column" style="flex: 50%; padding: 5px;">
             </div>
           </div>
-          
           <h4>Identity Restoration</h4>
           <div class="row" style="display: flex; padding-bottom: 10px;">
             <div class="column" style="flex: 50%; padding: 5px; padding-bottom: 10px;">
@@ -11910,7 +11882,7 @@ tags:
             <span class="hljs-tag">&lt;/<span class="hljs-name">head</span>&gt;</span>
             <span class="hljs-tag">&lt;<span class="hljs-name">body</span>&gt;</span>
                 <span class="hljs-tag">&lt;<span class="hljs-name">iframe</span> <span class="hljs-attr">id</span>=<span class="hljs-string">"sc-iframe"</span> 
-                    <span class="hljs-attr">src</span>=<span class="hljs-string">“https://efx-dev.stitchcredit.com/login-direct</span>?<span class="hljs-attr">key</span>=<span class="hljs-string">[API-KEY]</span>&amp;<span class="hljs-attr">token</span>=<span class="hljs-string">[PREAUTH-TOKEN]</span>&amp;<span class="hljs-attr">ocf</span>=<span class="hljs-string">[FLAGS]</span>&amp;<span class="hljs-attr">oct</span>=<span class="hljs-string">[COLOR]</span>&amp;<span class="hljs-attr">ocl</span>=<span class="hljs-string">[LOGO-URL]”</span>
+                    <span class="hljs-attr">src</span>=<span class="hljs-string">“https://efx-dev.stitchcredit.com/login-direct?key=[API-KEY]&amp;token=[PREAUTH-TOKEN]&amp;ocf=[FLAGS]&amp;oct=[COLOR]&amp;ocl=[LOGO-URL]”</span>
                     <span class="hljs-attr">width</span>=<span class="hljs-string">“100%”</span> <span class="hljs-attr">height</span>=<span class="hljs-string">“100vh”</span> <span class="hljs-attr">frameborder</span>=<span class="hljs-string">“0”</span>&gt;</span>
                 <span class="hljs-tag">&lt;/<span class="hljs-name">iframe</span>&gt;</span>
             <span class="hljs-tag">&lt;/<span class="hljs-name">body</span>&gt;</span>
@@ -11972,7 +11944,7 @@ tags:
           <span class="hljs-tag">&lt;<span class="hljs-name">body</span>&gt;</span>
             <span class="hljs-tag">&lt;<span class="hljs-name">iframe</span>
               <span class="hljs-attr">id</span>=<span class="hljs-string">"sc-iframe"</span> <span class="hljs-attr">allowTransparency</span>=<span class="hljs-string">"true"</span>
-              <span class="hljs-attr">src</span>=<span class="hljs-string">"https://efx-dev.stitchcredit.com/login-direct</span>?<span class="hljs-attr">key</span>=<span class="hljs-string">5a10e0d7-1dc8-4325-929f-d0d131990527&amp;ocf=2039"</span>
+              <span class="hljs-attr">src</span>=<span class="hljs-string">"https://efx-dev.stitchcredit.com/login-direct?key=5a10e0d7-1dc8-4325-929f-d0d131990527&amp;ocf=2039"</span>
             &gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">iframe</span>&gt;</span>
             <span class="hljs-tag">&lt;<span class="hljs-name">script</span>&gt;</span><span class="javascript">
             <span class="hljs-comment">//this just throws in a default ID if one isn't provided on the query string</span>
@@ -12181,7 +12153,7 @@ tags:
           <span class="hljs-tag">&lt;<span class="hljs-name">body</span>&gt;</span>
             <span class="hljs-tag">&lt;<span class="hljs-name">iframe</span>
               <span class="hljs-attr">id</span>=<span class="hljs-string">"sc-iframe"</span> <span class="hljs-attr">allowTransparency</span>=<span class="hljs-string">"true"</span>
-              <span class="hljs-attr">src</span>=<span class="hljs-string">"https://efx-dev.stitchcredit.com/login-aio</span>?<span class="hljs-attr">key</span>=<span class="hljs-string">5a10e0d7-1dc8-4325-929f-d0d131990527</span>&amp;<span class="hljs-attr">ocf</span>=<span class="hljs-string">2039"</span>
+              <span class="hljs-attr">src</span>=<span class="hljs-string">"https://efx-dev.stitchcredit.com/login-aio?key=5a10e0d7-1dc8-4325-929f-d0d131990527&amp;ocf=2039"</span>
             &gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">iframe</span>&gt;</span>
             <span class="hljs-tag">&lt;<span class="hljs-name">script</span>&gt;</span><span class="javascript">
             <span class="hljs-comment">//this just throws in a default ID if one isn't provided on the query string</span>
@@ -12287,23 +12259,21 @@ tags:
               src="https://efx-dev.stitchcredit.com/login-aio?key=5a10e0d7-1dc8-4325-929f-d0d131990527&ocf=2039"
             ></iframe>
             <script>
-            //this just throws in a default ID if one isn't provided on the query string
+            // this just throws in a default ID if one isn't provided on the query string
             const id = document.location.search.length > 0 ? document.location.search.split('&')[0].split('=')[1] : '048741d2-3dcf-4892-8fb0-99930a540cc1';
             console.log("ID: ",id);
             console.log("Loading Message Listener...");
-            
             window.addEventListener("message", receiveMessage, false);
-            
             function receiveMessage(event) {
                 if(event && event.source && event.data) {
                     // You only need to implement the types that are important/relevant to your use case.
                     if(event.data.type === 'AUTH_REQUIRED') {
-                        //The iframe clident will post this message when a valid preauth token does not exist.
-                        //Posting a proper message with a preauth token in response allows the client to continue seemlessly.
-                        //console.log("Auth Required Event Received");
+                        // The iframe clident will post this message when a valid preauth token does not exist.
+                        // Posting a proper message with a preauth token in response allows the client to continue seemlessly.
+                        // console.log("Auth Required Event Received");
                         const es = event.source;
-                        //this code uses a test endpoint on the server to provide a preauth-token for any user ID without the usual hurdles.
-                        //This is ONLY for testing and does not exist in the production environment.
+                        // this code uses a test endpoint on the server to provide a preauth-token for any user ID without the usual hurdles.
+                        // This is ONLY for testing and does not exist in the production environment.
                         getData("https://efx-dev.stitchcredit.com/api/test/preauth-token/"+id, function() {
                             const token = JSON.parse(this.responseText).token;
                             console.log("Status: ", this.status, ", token: ", token);
@@ -12312,38 +12282,37 @@ tags:
                     }
                     else if(event.data.type === 'REG_STARTED') {
                         const es = event.source;
-                        //only valid for full web implementation, Direct API already creates the customer, so this will never happen in those instances
-                // (new Date().valueOf()) - is used to generate a new email ID on the fly for testing purposes
+                        // only valid for full web implementation, Direct API already creates the customer, so this will never happen in those instances
+                        // (new Date().valueOf()) - is used to generate a new email ID on the fly for testing purposes
                         es.postMessage({type: 'REG', data: {fname:"Gertrude", lname:"Harkenreadeo", email: "test+" + (new Date().valueOf()) + "@test.com"}},"*");
                     }
                     else if(event.data.type === 'IDENTITY_STARTED') {
                         const es = event.source;
-                        //You could use this function to pre-populate the given fields.  DoB and SSN will never be prepopulated as it violates compliance
-                // new Date().valueOf().toString() - generates a unique number for street2 to ensure each run goes through the full identity process, remove to test sequential sign up of the same user
+                        // You could use this function to pre-populate the given fields.  DoB and SSN will never be prepopulated as it violates compliance
+                        // new Date().valueOf().toString() - generates a unique number for street2 to ensure each run goes through the full identity process, remove to test sequential sign up of the same user
                         es.postMessage({type: 'IDENTITY', data: {street1:"305 Linden Av", street2: new Date().valueOf().toString(), city: "Atlanta", state: "GA", zip: "30316", mobile: "0000000000"}},"*");
                     }
                     else if(event.data.type === 'LOGIN_SUCCESSFUL') {
                         console.log("User succesfully logged in");
                     }
                     else if(event.data.type === 'LOGIN_FAILED') {
-                        //if you see this message more than a few times in a row, it's likely an issue
-                        //typically this will only occur for full web implementations, not Direct API
+                        // if you see this message more than a few times in a row, it's likely an issue
+                        // typically this will only occur for full web implementations, not Direct API
                         console.log("User login failed");
                     }
                     else if(event.data.type === 'USER_ENROLLED') {
-                        //User successfully completed identity and has been enrolled for consumer data
+                        // User successfully completed identity and has been enrolled for consumer data
                         console.log("User enrollment successful");
                     }
                     else if(event.data.type === 'IDENTITY_FAILED') {
-                        //Identity process failed, user is likely "stuck" as they cannot continue
+                        // Identity process failed, user is likely "stuck" as they cannot continue
                         console.log("User identity failure");
                     }
                     else if(event.data.type === 'SERVICE_FAILURE') {
-                        //Identity process failed most likely due to a service outage, but the user is stuck as they cannot continue without passing identity
+                        // Identity process failed most likely due to a service outage, but the user is stuck as they cannot continue without passing identity
                         console.log("Identity service failure");
                     }
                 }
-                
                 function getData(req, action) {
                 var xhr = new XMLHttpRequest();
                     xhr.responesType = 'json';
@@ -12352,7 +12321,6 @@ tags:
                     xhr.setRequestHeader("Content-Type", "application/json");
                     xhr.send();
                 }
-                
             }
             </script>
           </body>
@@ -12395,7 +12363,7 @@ tags:
         <span class="hljs-tag">&lt;<span class="hljs-name">body</span>&gt;</span>
           <span class="hljs-tag">&lt;<span class="hljs-name">iframe</span>
           <span class="hljs-attr">id</span>=<span class="hljs-string">"sc-iframe"</span> <span class="hljs-attr">allowTransaparency</span>=<span class="hljs-string">"true"</span>
-          <span class="hljs-attr">src</span>=<span class="hljs-string">"https://efx-dev.stitchcredit.com/login-tile</span>?<span class="hljs-attr">key</span>=<span class="hljs-string">5a10e0d7-1dc8-4325-929f-d0d131990527</span>&amp;<span class="hljs-attr">ocf</span>=<span class="hljs-string">2039"</span>
+          <span class="hljs-attr">src</span>=<span class="hljs-string">"https://efx-dev.stitchcredit.com/login-tile?key=5a10e0d7-1dc8-4325-929f-d0d131990527&amp;ocf=2039"</span>
           &gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">iframe</span>&gt;</span>
           <span class="hljs-tag">&lt;<span class="hljs-name">script</span>&gt;</span><span class="javascript">
           <span class="hljs-comment">//this just throws in a default ID if one isn't provided on the query string</span>
@@ -12606,7 +12574,7 @@ tags:
         <span class="hljs-tag">&lt;<span class="hljs-name">body</span>&gt;</span>
           <span class="hljs-tag">&lt;<span class="hljs-name">iframe</span>
           <span class="hljs-attr">id</span>=<span class="hljs-string">"sc-iframe"</span> <span class="hljs-attr">allowTransaparency</span>=<span class="hljs-string">"true"</span>
-          <span class="hljs-attr">src</span>=<span class="hljs-string">"https://efx-dev.stitchcredit.com/login-tile</span>?<span class="hljs-attr">key</span>=<span class="hljs-string">5a10e0d7-1dc8-4325-929f-d0d131990527</span>&amp;<span class="hljs-attr">ocf</span>=<span class="hljs-string">1"</span>
+          <span class="hljs-attr">src</span>=<span class="hljs-string">"https://efx-dev.stitchcredit.com/login-tile?key=5a10e0d7-1dc8-4325-929f-d0d131990527&amp;ocf=1"</span>
           &gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">iframe</span>&gt;</span>
           <span class="hljs-tag">&lt;<span class="hljs-name">script</span>&gt;</span><span class="javascript">
           <span class="hljs-comment">//this just throws in a default ID if one isn't provided on the query string</span>
@@ -12633,13 +12601,13 @@ tags:
               <span class="hljs-keyword">else</span> <span class="hljs-keyword">if</span>(event.data.type === <span class="hljs-string">'REG_STARTED'</span>) {
                 <span class="hljs-keyword">const</span> es = event.source;
                 <span class="hljs-comment">//only valid for full web implementation, Direct API already creates the customer, so this will never happen in those instances</span>
-            <span class="hljs-comment">// (new Date().valueOf()) - is used to generate a new email ID on the fly for testing purposes</span>
+                <span class="hljs-comment">// (new Date().valueOf()) - is used to generate a new email ID on the fly for testing purposes</span>
                 es.postMessage({<span class="hljs-attr">type</span>: <span class="hljs-string">'REG'</span>, <span class="hljs-attr">data</span>: {<span class="hljs-attr">fname</span>:<span class="hljs-string">"Gertrude"</span>, <span class="hljs-attr">lname</span>:<span class="hljs-string">"Harkenreadeo"</span>, <span class="hljs-attr">email</span>: <span class="hljs-string">"test+"</span> + (<span class="hljs-keyword">new</span> <span class="hljs-built_in">Date</span>().valueOf()) + <span class="hljs-string">"@test.com"</span>}},<span class="hljs-string">"*"</span>);
               }
               <span class="hljs-keyword">else</span> <span class="hljs-keyword">if</span>(event.data.type === <span class="hljs-string">'IDENTITY_STARTED'</span>) {
                 <span class="hljs-keyword">const</span> es = event.source;
                 <span class="hljs-comment">//You could use this function to pre-populate the given fields.  DoB and SSN will never be prepopulated as it violates compliance</span>
-            <span class="hljs-comment">// new Date().valueOf().toString() - generates a unique number for street2 to ensure each run goes through the full identity process, remove to test sequential sign up of the same user</span>
+                <span class="hljs-comment">// new Date().valueOf().toString() - generates a unique number for street2 to ensure each run goes through the full identity process, remove to test sequential sign up of the same user</span>
                 es.postMessage({<span class="hljs-attr">type</span>: <span class="hljs-string">'IDENTITY'</span>, <span class="hljs-attr">data</span>: {<span class="hljs-attr">street1</span>:<span class="hljs-string">"305 Linden Av"</span>, <span class="hljs-attr">street2</span>: <span class="hljs-keyword">new</span> <span class="hljs-built_in">Date</span>().valueOf().toString(), <span class="hljs-attr">city</span>: <span class="hljs-string">"Atlanta"</span>, <span class="hljs-attr">state</span>: <span class="hljs-string">"GA"</span>, <span class="hljs-attr">zip</span>: <span class="hljs-string">"30316"</span>, <span class="hljs-attr">mobile</span>: <span class="hljs-string">"0000000000"</span>}},<span class="hljs-string">"*"</span>);
               }
               <span class="hljs-keyword">else</span> <span class="hljs-keyword">if</span>(event.data.type === <span class="hljs-string">'LOGIN_SUCCESSFUL'</span>) {
@@ -12799,7 +12767,6 @@ tags:
         <p>
         The 3rd Integration option is for customers who want to create their own UI, such as a website or mobile app, entirely using the CRS Consumer Credit API. User authentication is managed by the website or in the app.
         </p>
-        
         <h3>Overview</h3>
         <p>
         The 3rd Integration option is for customers who want to create their own UI, such as a website or mobile app, entirely using the CRS Consumer Credit API. User authentication is managed by the website or in the app.
@@ -12812,7 +12779,6 @@ tags:
         </p>
         <h3>App Integration</h3>
         <h4>Sign-up / Registration Terms of Use</h4>
-        
         <strong>Consumers must agree to CRS’s Terms of Use and Privacy Policy <em>prior to the Identity process</em></strong>
         <blockquote>
         <p>By clicking "Register” and creating an account you accept CRS’s <a href="https://efx-dev.stitchcredit.com/terms-of-use" title="Terms of use">Terms of Use</a> and <a href="https://efx-dev.stitchcredit.com/privacy-policy">Privacy Policy</a>. CRS does not maintain critical personal data, much less sell or otherwise disclose your personal information to anyone else. You may opt-out of email correspondence, except confirmation Emails, which often contain important information about your account.</p>
@@ -12821,7 +12787,6 @@ tags:
         <ul>
         <li>CRS Terms of Use <a href="https://app.termly.io/embed/terms-of-use/cd8446e8-9910-4a02-8f7c-36d9921a3bc7">https://app.termly.io/embed/terms-of-use/cd8446e8-9910-4a02-8f7c-36d9921a3bc7</a>
         </li>
-        
         <li>CRS Privacy Policy <a href="https://app.termly.io/embed/terms-of-use/958f774c-a642-41e7-9696-7ac060bdf44c">https://app.termly.io/embed/terms-of-use/958f774c-a642-41e7-9696-7ac060bdf44c</a>
         </li>
         </ul>
@@ -12834,17 +12799,13 @@ tags:
             <img src="https://user-images.githubusercontent.com/76128486/105094606-83446000-5a72-11eb-83c7-df5d4ba541ae.png" alt="Image of page example for Registering Terms of Use" style="width:100%" class="crop" />
           </div>
         </div>
-        
         <h4>Login</h4>
-        
         <div class="row crop" style="display: flex">
           <div class="column" style="flex: 50%; padding: 5px;">
             <img src="https://user-images.githubusercontent.com/76128486/105094441-4aa48680-5a72-11eb-86c9-9a9e7a64ed90.png" alt="Image of credit report page example" style="width:50%; margin-top: -12%;" class="crop" />
           </div>
         </div>
-        
         <h4>Identity</h4>
-        
         <p>Consumers must be notified and express specific consent to access third party data to verify identity</p>
         <p>Required Identity Consent language:</p>
         <blockquote>
@@ -12858,9 +12819,7 @@ tags:
           <img src="https://user-images.githubusercontent.com/76128486/105093564-edf49c00-5a70-11eb-8d03-c46d83010b07.png" alt="Image of page example for consumer consent language" style="width:100%" class="crop" />
         </div>
         </div>
-        
         <h4>Identification (option 1): mobile</h4>
-        
         <p>Mobile Identity Consent language: </p>
         <blockquote>
         <p>
@@ -12879,7 +12838,6 @@ tags:
             <img src="https://user-images.githubusercontent.com/76128486/105093817-504d9c80-5a71-11eb-8334-7e2ecb8d0129.png" alt="Image of page for entering identity verifying code via SMS" style="width:100%" class="crop" />
           </div>
         </div>
-        
         <h4>Identification (option 2): quiz</h4>
         <p>
         Users who don’t qualify or are unable to pass mobile verification must pass an identity quiz. Users will have at most 2 chances to pass a quiz, assuming enough questions can be generated. Users may re-enter and try to pass the identity quiz again, however two attempts (2 chances each) is the limit and will result in a 72-hr lockout.
@@ -12892,14 +12850,11 @@ tags:
             <img src="https://user-images.githubusercontent.com/76128486/105093655-17adc300-5a71-11eb-96e3-d8a3162a2349.png" alt="Image of page for successful sign up as a result of successful identification" style="width:100%" class="crop" />
           </div>
         </div>
-        
         <h4>Credit Score - Dashboard</h4>
         <p>
         The provider of the score is required – do not use a logo, you must have marketing approval from a bureau to use their logo. 
         <strong>VantageScore&reg; 3.0 using Equifax Data</strong> – must be present, just like that (VantageScore is one word and it’s a brand, ignore the mistake in this image). The date the score was pulled is required. The date the next score will be available is strongly encouraged, this is based on the weekly or monthly refresh you subscribe to VantageScore&reg; 3.0 is known as an “educational score” and may differ from the FICO&reg; Score used to determine credit availability – notice must be given
-        
         </p>
-        
         <div class="row crop" style="display: flex">
           <div class="column" style="flex: 50%; padding: 5px;">
             <img src="https://user-images.githubusercontent.com/76128486/105093416-b4239580-5a70-11eb-8e00-193613850be6.png" alt="Image of page for showing dashboard of scores returned by various bureaus" style="width:100%" class="crop" />
@@ -12908,7 +12863,6 @@ tags:
             <img src="https://user-images.githubusercontent.com/76128486/105093301-80e10680-5a70-11eb-99a3-e4b868dce698.png" alt="Image of page for showing score returned by a single bureaus" style="width:100%" class="crop" />
           </div>
         </div>
-        
         <h4>Credit Report</h4>
         <p>
         The provider of the report is required. The date the report was pulled is required.
@@ -12921,20 +12875,16 @@ tags:
             <img src="https://user-images.githubusercontent.com/76128486/105094037-a6224480-5a71-11eb-8f45-31cf52bd78a2.png" alt="Image of page for showing score credit accounts" style="width:100%" class="crop" />
           </div>
         </div>
-        
         <h4>Credit Monitoring</h4>
         <p>
         The provider of the alert is required. The date the alert is required.
         </p>
-        
         <div class="row crop" style="display: flex">
           <div class="column" style="flex: 50%; padding: 5px;">
             <img src="https://user-images.githubusercontent.com/76128486/105093951-83902b80-5a71-11eb-8989-31bacb070fa2.png" alt="Image of page showing credit monitoring" style="width:50%; margin-top: -8%;" class="crop" />
           </div>
         </div>
-        
         <h4>Identity Restoration</h4>
-        
         <p>
         This product content must be delivered as is.
         </p>
@@ -12953,7 +12903,6 @@ tags:
             <img src="https://user-images.githubusercontent.com/76128486/105093759-3b710900-5a71-11eb-9f72-e67e6bba79d9.png" alt="Image of page showing ID restoration" style="width:50%; margin-top: -8%;" class="crop" />
           </div>
         </div>
-        
         <h3>API Process Flow</h3>
         <p>
         Your custom application must perform the necessary exchange of information via the corresponding APIs. This diagram shows the API process flow.
@@ -12961,7 +12910,6 @@ tags:
         <p>
         <img src="https://api.redoc.ly/registry/assets/crs-group/B2C/v2/assets%2fimgs%2fapi_process_flow.png" style="display:flex; margin:auto; max-width: 45vw;"/>
         </p>
-        
         <h3>B2C Communication & Token Flow</h3>
         <p>
         The diagram shows the communication exchange that must occur between the consumer, your servers (marked Customer Servers), CRS servers (marked CRS Tech Servers) and the Equifax Servers.
@@ -12969,7 +12917,6 @@ tags:
         <p>
         <img src="https://api.redoc.ly/registry/assets/crs-group/B2C/v2/assets%2fimgs%2fb2c_communcation_and_token_flow.png" style="display:flex; margin:auto; max-width: 45vw;"/>
         </p>
-        
         <h3>Compliance</h3>
         <p>
         Consumers must always know who they are dealing with. Content delivered to users must not be misleading in any way. Consumers must know where the data came from. Pages with consumer credit data must be compliant with all data presentation requirements and restrictions, no matter how small.
@@ -12987,7 +12934,6 @@ tags:
         <p>
         Terms of Use and Privacy Policy are from and through CRS – there is no ability to white label this at this time.
         </p>
-        
         <h3>Webhook Integration</h3>
         <p>
         Webhooks are available to notify you when an alert (or other notifications) comes in so that you can message users in whatever fashion you wish to return to your site.
@@ -12996,7 +12942,6 @@ tags:
         Please refer to additional details on <a href="/tag/Webhook-Integration">Webhook Integration</a>.
         </p>
         <hr>
-        
         <h3>Managing Users</h3>
         <p>
         The basic steps to create a new user and manage returning users, including data access:
@@ -13086,7 +13031,6 @@ tags:
         </ul>
         </p>
         <hr>
-        
         <h3>Postman Collections</h3>
         <p>
         <a href="/tag/Sandbox">Access Credentials</a> have been sent to you in a Postman Environment upon registration via email. The Postman Environment is pre-configured to allow you to use the scripts and walk through the Postman Scripts with minimal intervention to aid in understanding the API call structure.
@@ -13153,7 +13097,6 @@ tags:
         </ul>
         In the <strong>test</strong> environment it is important that you use the User Test Identity provided to you verbatim. You may change the email address and phone number <strong>ONLY</strong>.
         </p>
-        
         <p><strong>Test APIs:</strong> Consumer Credit - Test API.postman_collection.json</p> <!-- Postman Collections -->
         <p><a href="assets/json/Consumer Credit - Test API.postman_collection.json" download>Download here</a></p>
         <div class="postman_code" style="max-height: 60vh;overflow: scroll;">
@@ -16131,7 +16074,6 @@ tags:
         }
         -->
         </div>
-
         <p><strong>User APIs: Consumer Credit - User API.postman_collection.json</strong></p> <!-- Postman Collections -->
         <p><a href="assets/json/Consumer Credit - User API.postman_collection.json" download>Download here</a></p>
         <div class="postman_code" style="max-height: 60vh;overflow: scroll;">
@@ -18440,7 +18382,6 @@ tags:
         }
         -->
         </div>
-        
         <p><strong>Equifax APIs: Consumer Credit - EFX API.postman_collection.json</strong></p> <!-- Postman Collections -->
         <p><a href="assets/json/Consumer Credit - EFX API.postman_collection.json" download>Download here</a></p>
         <div class="postman_code" style="max-height: 60vh;overflow: scroll;">
@@ -19343,7 +19284,6 @@ tags:
         <p>
         With CRS's Consumer Credit B2C offering, you have multiple integration methods to offer Consumer Credit Scores and Credit Monitoring directly as part of your web or mobile experience.
         </p>
-        
         <h2>Overview</h2>
         <p>
         Once you have chosen your <a href="/tag/Which-Integration-Option-is-right-for-you">integration option</a> from among:
@@ -19610,7 +19550,6 @@ tags:
         <p>
         With CRS's Consumer Credit API, you can offer Consumer Credit Scores and Credit Monitoring directly as part of your web or mobile experience.
         </p>
-        
         <hr>
         <h2>Overview</h2>
         <p>
@@ -19629,13 +19568,11 @@ tags:
         It is not acceptable to pass any of the data to these calls or responses from these calls to your server. Do not save any data. Short term caching is fine, but long-term storage is not. 
         </p>
         <hr>
-        
         <h2>Access Credentials</h2>
         <p>
         Access Credentials will be sent to you in a Postman Environment upon registration via email. If you have not received the Access Credentials, please contact CRS to obtain these Credentials so that you can setup your API development environment.
         </p>
         <hr>
-        
         <h2>Token Validity Times</h2>
         <p>
         <div style="display: table; clear: both;width: 80%;">
@@ -19691,9 +19628,7 @@ tags:
         Keep in mind, the preauth token is only valid for 30 <strong>seconds</strong>.
         </p>
         <hr>
-        
         <h2>Direct API</h2>
-        
         <p>
         <em><strong>Direct API</strong> calls must originate from your server</em>
         </p>
@@ -19710,7 +19645,6 @@ tags:
         **<em>The preauth token is only valid for 30 seconds</em>
         </p>
         <hr>
-        
         <h3>Endpoints</h3>
           <p>
           <div style="display: table; clear: both; width: 80%;">
@@ -19762,7 +19696,6 @@ tags:
               <p>If the token expires, use <strong>/direct/refresh-token?token={<em>refresh</em>}</strong> to get a new token <br></p>
               <br>
             </li>
-            
             <h4><li>CUSTOMER REFRESH TOKEN (GET)</h4>
             <p>/direct/refresh-token</p>
               <p>
@@ -19776,7 +19709,6 @@ tags:
               </p>
             <br>
             </li>
-            
             <h4><li>REGISTER NEW USER (POST)</h4>
             <p>/direct/user-reg</p>
             <p>Creates a new user with unique <strong>userId</strong> and <strong>preauth token</strong>.<br></p>
@@ -19784,45 +19716,37 @@ tags:
             <p>Don't store the token across sessions. Use the userId from the previous session to generate a new userId and a new preauth token.</p>
             <br>
             </li>
-            
             <h4><li>NEW USER TOKEN (GET)</h4>
             <p>/direct/preauth-token/{userId}</p>
             <br>
             </li>
-            
             <h4><li>CLOSE USER ACCOUNT (POST)</h4>
             <p>/direct/close-account/{userId}</p>
             <br>
             </li>
-            
             <h4><li>CHANGE USER EMAIL (POST)</h4>
             <p>/direct/change-email/{userId}</p>
             <br>
             </li>
-            
             <h4><li>CHANGE USER PHONE (POST)</h4>
             <p>/direct/change-mobile/{userId}</p>
             <br>
             </li>
-            
             <h4><li>CHANGE USER HOST (POST)</h4>
             <p>/direct/change-host/{userId}</p>
             <br>
             </li>
-            
             <h4><li>UPDATE USER REFRESH DATA (POST)</h4>
             <p>/direct/update-refresh/{userId}</p>
             <p><strong>*Premium Feature - May Require Additional Access</strong></p>
             <br>
             </li>
-            
             <h4><li>GET ALERT DETAIL (GET)</h4>
             <p>/direct/efx-alert/{alertId}</p>
             <p><strong>*Premium Feature - May Require Additional Access</strong></p>
             </li>
           </ol>
         <hr>
-        
         <h2>User API</h2>
         <p>
         <em><strong>User API</strong> calls must originate from the end-client</em>
@@ -19954,10 +19878,8 @@ tags:
             </ul>
             <br />
             </li>
-            
             <h4><li>User Identity (post)</h4>
             <p>/users/identity</p>
-            
             <p>This endpoint is most useful for checking whether the user's identity needs to be verified.</p>
             <p>If the response has <strong>idpass</strong> set to <em>true</em>, then the user's identity is already verified.</p>
             <p>If <strong>idpass</strong> is <em>false</em>, then the user's identity needs to be verified.</p>
@@ -19970,37 +19892,30 @@ tags:
             <p>The data in the <strong>Equifax config</strong> provides the necessary credentials for making requests to the Equifax API from the consumer's device.</p>
             <br />
             </li>
-            
             <h4><li>Phone Verify (get)</h4>
             <p>/users/get-mobile</p>
             <br />
             </li>
-            
             <h4><li>Send Mobile Code (post)</h4>
             <p>/users/send-code/{mtoken}</p>
             <br />
             </li>
-            
             <h4><li>Renew Mobile Code (post)</h4>
             <p>/users/renew-code</p>
             <br />
             </li>
-            
             <h4><li>Verify Mobile Code (post)</h4>
             <p>/users/verify-code</p>
             <br />
             </li>
-            
             <h4><li>Get Identity Quiz (get)</h4>
             <p>/users/get-quiz</p>
             <br />
             </li>
-            
             <h4><li>Verify Identity Quiz (post)</h4>
             <p>/users/verify-quiz</p>
             <br />
             </li>
-            
             <h4><li>Get EFX Config (get)</h4>
             <p>/users/efx-config</p>
             <p>Use this endpoint to get the Equifax credentials and url</p>
@@ -20009,7 +19924,6 @@ tags:
           </li>
         </ol>
         <hr>
-        
         <h2>Equifax API</h2>
         <p>
         <em><strong>Equifax API</strong> calls must originate from the end-client</em>
@@ -20020,7 +19934,6 @@ tags:
         <p>
         <a href="https://sandbox-api.consumer.equifax.com/saas/swagger-ui.html">Equifax Documentation in Swagger</a>
         </p>
-        
         <h3>Endpoints</h3>
           <p>
           <div style="display: table; clear: both;">
@@ -20062,7 +19975,6 @@ tags:
             </div>
           </div>
           </p>
-          
           <p>
           <ol>
             <h4><li>OAUTH Token (post)</h4>
@@ -20071,42 +19983,34 @@ tags:
             <p>A successful request to <strong>{efx_url}/oauth/token</strong> will return credentials required for other <strong>Equifax API calls</strong>.</p>
             <br />
             </li>
-            
             <h4><li>Health Check (get)</h4>
             <p>/{efx_url}/v1/creditMonitoring/healthcheck</p>
             <br />
             </li>
-            
             <h4><li>Credit Monitoring (get)</h4>
             <p>/{efx_url}/v1/creditMonitoring</p>
             <br />
             </li>
-            
             <h4><li>CreditReportList (get)</h4>
             <p>/{efx_url}/v1/creditReport</p>
             <br />
             </li>
-            
             <h4><li>Credit Report Summary (First in list) (get)</h4>
             <p>/{efx_url}/v1/creditReport/{reportId}/summary</p>
             <br />
             </li>
-            
             <h4><li>Full Credit Report (First in list) (get)</h4>
             <p>/{efx_url}/v1/creditReport/{reportId}</p>
             <br />
             </li>
-            
             <h4><li>Credit Report (First in list) - PRINT (get)</h4>
             <p>/{efx_url}/v1/creditReport/{reportId}/print</p>
             <br />
             </li>
-            
             <h4><li>Credit Score Latest (get)</h4>
             <p>/{efx_url}/v1/creditScore/latest</p>
             <br />
             </li>
-
             <h4><li>Credit Score History (get)</h4>
             <p>/{efx_url}/v1/creditScore/history</p>
             <br />
@@ -20114,12 +20018,10 @@ tags:
           </ol>
         </p>
         <hr>
-        
         <h2>Test API</h2>
         <p>
         Collection of end-points for testing webhooks
         </p>
-        
         <h3>Endpoints</h3>
           <p>
           <ol>
@@ -20127,12 +20029,10 @@ tags:
             <p>/test/preauth-token/{userId}</p>
             <br>
             </li>
-            
             <h4><li>Webhook Test</h4>
             <p>/test/webhook/send/{userId}</p>
             <br>
             </li>
-            
             <h4><li>Webhook Sink</h4>
             <p>/test/webhook/sink</p>
             <br>
@@ -20140,7 +20040,6 @@ tags:
           </ol>
         </p>
         <hr>
-        
         <h2>OpenAPI Definition File</h2>
           <p>
           The OpenAPI definition file can be <a href="https://efx-dev.stitchcredit.com/api/stitch-docs/">downloaded</a> or viewed in <a href="https://efx-dev.stitchcredit.com/api/swagger-ui/index.html?configUrl=/api/stitch-docs/swagger-config#/">Swagger</a>.
@@ -20492,7 +20391,6 @@ tags:
         <p>
         <a href="https://api.consumer.equifax.com/saas/swagger-ui.html">Equifax Documentation in Swagger</a>
         </p>
-        
         <h3 class="section-heading">Endpoints</h3>
           <p>
           <div style="display: table; clear: both;">
@@ -20589,7 +20487,7 @@ x-tagGroups:
       - SDKs
       - Consumer Credit API Setup
       - Postman Collections
-      
+
   - name: Integration Methods
     tags:      
       - Overview of Integration Methods
