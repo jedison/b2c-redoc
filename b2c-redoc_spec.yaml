@@ -15929,9 +15929,9 @@ tags:
         </p>
         <div style="max-height: 60vh;overflow: scroll;display: unset;" onload="doHighlight();"> 
         <pre><code data-language="html" id="web_messaging">
-        &lt;script>
+        &lt;script&gt;
         //this just throws in a default ID if one isn't provided on the query string
-        const id = document.location.search.length > 0 ? document.location.search.split('&')[0].split('=')[1] : '048741d2-3dcf-4892-8fb0-99930a540cc1';
+        const id = document.location.search.length &gt; 0 ? document.location.search.split('&')[0].split('=')[1] : '048741d2-3dcf-4892-8fb0-99930a540cc1';
         console.log("ID: ",id);
         console.log("Loading Message Listener...");
         
@@ -15997,7 +15997,7 @@ tags:
           }
           
         }
-        &lt;/script>
+        &lt;/script&gt;
         </code></pre>
         </div>
         </p>
