@@ -3,6 +3,6 @@
 // hljs.initHighlighting();
 function doHighlight() {
     // console.log("calling hljs");
-//    hljs.highlightAll();
+    hljs.highlightAll();
 }
 doHighlight();
