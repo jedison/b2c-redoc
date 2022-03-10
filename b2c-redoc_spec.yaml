@@ -1,6 +1,6 @@
 openapi: 3.0.1
 info:
-  title: B2C Documentation
+  title: eCredit Monitoring API
   version: v2
   contact:
     name: API Support
@@ -8,7 +8,7 @@ info:
 
   description: |
       <span class="docs-time">Last updated: 2022-03-03</span></h1>
-      <p>This guide is to assist you in integrating the Consumer Credit API into your environment.</p>
+      <p>This guide is to assist you in integrating the eCredit Monitoring API into your environment.</p>
 
   x-logo:
     url: 'https://gist.githubusercontent.com/jedisonbru/f8eb1437878b3047591a505b22d6ff58/raw/2a85cd4b5dff25086d47041f4259270c7837100d/crs_b2c.svg'
@@ -11413,7 +11413,7 @@ tags:
           The 3rd Integration option is for customers who want to create their own UI, such as a website or mobile app, entirely using the CRS Consumer Credit API. User authentication is managed by the website or in the app.
           </p>
           <p>
-          With this option, you can create your own user experience for connecting your users to their credit data by leveraging the same B2C API that the widget is utilizing.
+          With this option, you can create your own user experience for connecting your users to their credit data by leveraging the same eCredit Monitoring API that the widget is utilizing.
           </p>
           <p>
           More information can be found in section <a href="/tag/DevTools-API-Integration-for-Custom-Web-or-Mobile-App">API Integration for Custom Web or Mobile App</a>.
@@ -11480,8 +11480,8 @@ tags:
         <pre><code data-language="html" class="hljs xml" id="sample_embed.html">
         <span class="hljs-tag">&lt;<span class="hljs-name">html</span>&gt;</span>
         <span class="hljs-tag">&lt;<span class="hljs-name">head</span>&gt;</span>
-          <span class="hljs-tag">&lt;<span class="hljs-name">title</span>&gt;</span>StitchCredit<span class="hljs-tag">&lt;/<span class="hljs-name">title</span>&gt;</span>
-          <span class="hljs-tag">&lt;<span class="hljs-name">meta</span> <span class="hljs-attr">name</span>=<span class="hljs-string">"description"</span> <span class="hljs-attr">content</span>=<span class="hljs-string">"StitchCredit Consumer Credit Reports"</span>/&gt;</span>
+          <span class="hljs-tag">&lt;<span class="hljs-name">title</span>&gt;</span>eCredit Monitoring<span class="hljs-tag">&lt;/<span class="hljs-name">title</span>&gt;</span>
+          <span class="hljs-tag">&lt;<span class="hljs-name">meta</span> <span class="hljs-attr">name</span>=<span class="hljs-string">"description"</span> <span class="hljs-attr">content</span>=<span class="hljs-string">"CRS Consumer Credit Reports"</span>/&gt;</span>
           <span class="hljs-tag">&lt;<span class="hljs-name">link</span> <span class="hljs-attr">rel</span>=<span class="hljs-string">"icon"</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"/favicon.ico"</span>&gt;</span>
           <span class="hljs-tag">&lt;<span class="hljs-name">style</span>&gt;</span><span class="css">
             <span class="hljs-selector-tag">body</span> { <span class="hljs-attribute">background</span>: <span class="hljs-number">#F9FAFB</span>; }
@@ -11500,8 +11500,8 @@ tags:
         <!-- sample_embed.html
         <html>
         <head>
-          <title>StitchCredit</title>
-          <meta name="description" content="StitchCredit Consumer Credit Reports"/>
+          <title>eCredit Monitoring</title>
+          <meta name="description" content="CRS Consumer Credit Reports"/>
           <link rel="icon" href="/favicon.ico">
           <style>
             body { background: #F9FAFB; }
@@ -11565,8 +11565,8 @@ tags:
         <pre><code data-language="html" class="hljs xml" id="sample_widget.html">
         <span class="hljs-tag">&lt;<span class="hljs-name">html</span>&gt;</span>
           <span class="hljs-tag">&lt;<span class="hljs-name">head</span>&gt;</span>
-            <span class="hljs-tag">&lt;<span class="hljs-name">title</span>&gt;</span>StitchCredit<span class="hljs-tag">&lt;/<span class="hljs-name">title</span>&gt;</span>
-            <span class="hljs-tag">&lt;<span class="hljs-name">meta</span> <span class="hljs-attr">name</span>=<span class="hljs-string">"description"</span> <span class="hljs-attr">content</span>=<span class="hljs-string">"StitchCredit Consumer Credit Reports"</span>/&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">title</span>&gt;</span>eCredit Monitoring<span class="hljs-tag">&lt;/<span class="hljs-name">title</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">meta</span> <span class="hljs-attr">name</span>=<span class="hljs-string">"description"</span> <span class="hljs-attr">content</span>=<span class="hljs-string">"CRS Consumer Credit Reports"</span>/&gt;</span>
             <span class="hljs-tag">&lt;<span class="hljs-name">link</span> <span class="hljs-attr">rel</span>=<span class="hljs-string">"icon"</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"/favicon.ico"</span>&gt;</span>
             <span class="hljs-tag">&lt;<span class="hljs-name">style</span>&gt;</span><span class="css">
               <span class="hljs-selector-tag">body</span> { <span class="hljs-attribute">background</span>: <span class="hljs-number">#F9FAFB</span>; }
@@ -11582,8 +11582,8 @@ tags:
         <!-- sample_widget.html
         <html>
         <head>
-          <title>StitchCredit</title>
-          <meta name="description" content="StitchCredit Consumer Credit Reports"/>
+          <title>eCredit Monitoring</title>
+          <meta name="description" content="CRS Consumer Credit Reports"/>
           <link rel="icon" href="/favicon.ico">
           <style>
             body { background: #F9FAFB; }
@@ -11831,7 +11831,7 @@ tags:
         <p>
         <img src="https://api.redoc.ly/registry/assets/crs-group/B2C/v2/assets%2fimgs%2fapi_process_flow.png" style="display:flex; margin:auto; max-width: 45vw;"/>
         </p>
-        <h3>B2C Communication & Token Flow</h3>
+        <h3>eCredit Monitoring Communication & Token Flow</h3>
         <p>
         The diagram shows the communication exchange that must occur between the consumer, your servers (marked Customer Servers), CRS servers (marked CRS Tech Servers) and the Equifax Servers.
         </p>
@@ -11866,7 +11866,7 @@ tags:
         <pre><code data-language="html" class="hljs xml" id="iframe_sample.html">
         <span class="hljs-tag">&lt;<span class="hljs-name">html</span>&gt;</span>
             <span class="hljs-tag">&lt;<span class="hljs-name">head</span>&gt;</span>
-                <span class="hljs-tag">&lt;<span class="hljs-name">title</span>&gt;</span>StitchCredit<span class="hljs-tag">&lt;/<span class="hljs-name">title</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">title</span>&gt;</span>eCredit Monitoring<span class="hljs-tag">&lt;/<span class="hljs-name">title</span>&gt;</span>
                 <span class="hljs-tag">&lt;<span class="hljs-name">meta</span> <span class="hljs-attr">name</span>=<span class="hljs-string">"description"</span> <span class="hljs-attr">content</span>=<span class="hljs-string">"StitchCredit Consumer Credit Reports"</span>/&gt;</span>
                 <span class="hljs-tag">&lt;<span class="hljs-name">link</span> <span class="hljs-attr">rel</span>=<span class="hljs-string">"icon"</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"/favicon.ico"</span>&gt;</span>
                 <span class="hljs-tag">&lt;<span class="hljs-name">style</span>&gt;</span><span class="css">
@@ -11886,8 +11886,8 @@ tags:
         <!-- iframe_sample.html
         <html>
             <head>
-                <title>StitchCredit</title>
-                <meta name="description" content="StitchCredit Consumer Credit Reports"/>
+                <title>eCredit Monitoring</title>
+                <meta name="description" content="CRS Consumer Credit Reports"/>
                 <link rel="icon" href="/favicon.ico">
                 <style>
                     body { background: #F9FAFB; }
@@ -11909,9 +11909,9 @@ tags:
         <pre><code data-language="html" class="hljs xml" id="direct_sample.html">
         <span class="hljs-tag">&lt;<span class="hljs-name">html</span>&gt;</span>
           <span class="hljs-tag">&lt;<span class="hljs-name">head</span>&gt;</span>
-            <span class="hljs-tag">&lt;<span class="hljs-name">title</span>&gt;</span>StitchCredit<span class="hljs-tag">&lt;/<span class="hljs-name">title</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">title</span>&gt;</span>eCredit Monitoring<span class="hljs-tag">&lt;/<span class="hljs-name">title</span>&gt;</span>
             <span class="hljs-tag">&lt;<span class="hljs-name">link</span> <span class="hljs-attr">rel</span>=<span class="hljs-string">"icon"</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"/favicon.ico"</span> /&gt;</span>
-            <span class="hljs-tag">&lt;<span class="hljs-name">meta</span> <span class="hljs-attr">name</span>=<span class="hljs-string">"description"</span> <span class="hljs-attr">content</span>=<span class="hljs-string">"StitchCredit Consumer Credit Reports"</span> /&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">meta</span> <span class="hljs-attr">name</span>=<span class="hljs-string">"description"</span> <span class="hljs-attr">content</span>=<span class="hljs-string">"CRS Consumer Credit Reports"</span> /&gt;</span>
             <span class="hljs-tag">&lt;<span class="hljs-name">meta</span>
               <span class="hljs-attr">name</span>=<span class="hljs-string">"viewport"</span>
               <span class="hljs-attr">content</span>=<span class="hljs-string">"minimum-scale=1, initial-scale=1, width=device-width"</span>
@@ -12011,9 +12011,9 @@ tags:
         <!-- direct_sample.html
         <html>
           <head>
-            <title>StitchCredit</title>
+            <title>eCredit Monitoring</title>
             <link rel="icon" href="/favicon.ico" />
-            <meta name="description" content="StitchCredit Consumer Credit Reports" />
+            <meta name="description" content="CRS Consumer Credit Reports" />
             <meta
               name="viewport"
               content="minimum-scale=1, initial-scale=1, width=device-width"
@@ -12118,9 +12118,9 @@ tags:
         <pre><code data-language="html" class="hljs xml" id="aio_sample.html">
         <span class="hljs-tag">&lt;<span class="hljs-name">html</span>&gt;</span>
           <span class="hljs-tag">&lt;<span class="hljs-name">head</span>&gt;</span>
-            <span class="hljs-tag">&lt;<span class="hljs-name">title</span>&gt;</span>StitchCredit<span class="hljs-tag">&lt;/<span class="hljs-name">title</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">title</span>&gt;</span>eCredit Monitoring<span class="hljs-tag">&lt;/<span class="hljs-name">title</span>&gt;</span>
             <span class="hljs-tag">&lt;<span class="hljs-name">link</span> <span class="hljs-attr">rel</span>=<span class="hljs-string">"icon"</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"/favicon.ico"</span> /&gt;</span>
-            <span class="hljs-tag">&lt;<span class="hljs-name">meta</span> <span class="hljs-attr">name</span>=<span class="hljs-string">"description"</span> <span class="hljs-attr">content</span>=<span class="hljs-string">"StitchCredit Consumer Credit Reports"</span> /&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">meta</span> <span class="hljs-attr">name</span>=<span class="hljs-string">"description"</span> <span class="hljs-attr">content</span>=<span class="hljs-string">"CRS Consumer Credit Reports"</span> /&gt;</span>
             <span class="hljs-tag">&lt;<span class="hljs-name">meta</span>
               <span class="hljs-attr">name</span>=<span class="hljs-string">"viewport"</span>
               <span class="hljs-attr">content</span>=<span class="hljs-string">"minimum-scale=1, initial-scale=1, width=device-width"</span>
@@ -12221,9 +12221,9 @@ tags:
         <!-- aio_sample.html
         <html>
           <head>
-            <title>StitchCredit</title>
+            <title>eCredit Monitoring</title>
             <link rel="icon" href="/favicon.ico" />
-            <meta name="description" content="StitchCredit Consumer Credit Reports" />
+            <meta name="description" content="CRS Consumer Credit Reports" />
             <meta
               name="viewport"
               content="minimum-scale=1, initial-scale=1, width=device-width"
@@ -12327,9 +12327,9 @@ tags:
         <pre><code data-language="html" class="hljs xml" id="tile_sample.html">
         <span class="hljs-tag">&lt;<span class="hljs-name">html</span>&gt;</span>
         <span class="hljs-tag">&lt;<span class="hljs-name">head</span>&gt;</span>
-          <span class="hljs-tag">&lt;<span class="hljs-name">title</span>&gt;</span>StitchCredit<span class="hljs-tag">&lt;/<span class="hljs-name">title</span>&gt;</span>
+          <span class="hljs-tag">&lt;<span class="hljs-name">title</span>&gt;</span>eCredit Monitoring<span class="hljs-tag">&lt;/<span class="hljs-name">title</span>&gt;</span>
           <span class="hljs-tag">&lt;<span class="hljs-name">link</span> <span class="hljs-attr">rel</span>=<span class="hljs-string">"icon"</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"/favicon.ico"</span> /&gt;</span>
-          <span class="hljs-tag">&lt;<span class="hljs-name">meta</span> <span class="hljs-attr">name</span>=<span class="hljs-string">"description"</span> <span class="hljs-attr">content</span>=<span class="hljs-string">"StitchCredit Consumer Credit Reports"</span> /&gt;</span>
+          <span class="hljs-tag">&lt;<span class="hljs-name">meta</span> <span class="hljs-attr">name</span>=<span class="hljs-string">"description"</span> <span class="hljs-attr">content</span>=<span class="hljs-string">"CRS Consumer Credit Reports"</span> /&gt;</span>
           <span class="hljs-tag">&lt;<span class="hljs-name">meta</span>
           <span class="hljs-attr">name</span>=<span class="hljs-string">"viewport"</span>
           <span class="hljs-attr">content</span>=<span class="hljs-string">"minimum-scale=1, initial-scale=1, width=device-width"</span>
@@ -12431,9 +12431,9 @@ tags:
         <!-- tile_sample.html
         <html>
         <head>
-          <title>StitchCredit</title>
+          <title>eCredit Monitoring</title>
           <link rel="icon" href="/favicon.ico" />
-          <meta name="description" content="StitchCredit Consumer Credit Reports" />
+          <meta name="description" content="CRS Consumer Credit Reports" />
           <meta
             name="viewport"
             content="minimum-scale=1, initial-scale=1, width=device-width"
@@ -12538,9 +12538,9 @@ tags:
         <pre><code data-language="html" class="hljs xml" id="tile_sample_score_only.html">
         <span class="hljs-tag">&lt;<span class="hljs-name">html</span>&gt;</span>
         <span class="hljs-tag">&lt;<span class="hljs-name">head</span>&gt;</span>
-          <span class="hljs-tag">&lt;<span class="hljs-name">title</span>&gt;</span>StitchCredit<span class="hljs-tag">&lt;/<span class="hljs-name">title</span>&gt;</span>
+          <span class="hljs-tag">&lt;<span class="hljs-name">title</span>&gt;</span>eCredit Monitoring<span class="hljs-tag">&lt;/<span class="hljs-name">title</span>&gt;</span>
           <span class="hljs-tag">&lt;<span class="hljs-name">link</span> <span class="hljs-attr">rel</span>=<span class="hljs-string">"icon"</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"/favicon.ico"</span> /&gt;</span>
-          <span class="hljs-tag">&lt;<span class="hljs-name">meta</span> <span class="hljs-attr">name</span>=<span class="hljs-string">"description"</span> <span class="hljs-attr">content</span>=<span class="hljs-string">"StitchCredit Consumer Credit Reports"</span> /&gt;</span>
+          <span class="hljs-tag">&lt;<span class="hljs-name">meta</span> <span class="hljs-attr">name</span>=<span class="hljs-string">"description"</span> <span class="hljs-attr">content</span>=<span class="hljs-string">"CRS Consumer Credit Reports"</span> /&gt;</span>
           <span class="hljs-tag">&lt;<span class="hljs-name">meta</span>
             <span class="hljs-attr">name</span>=<span class="hljs-string">"viewport"</span>
             <span class="hljs-attr">content</span>=<span class="hljs-string">"minimum-scale=1, initial-scale=1, width=device-width"</span>
@@ -12641,9 +12641,9 @@ tags:
         <!-- tile_sample_score_only.html
         <html>
         <head>
-          <title>StitchCredit</title>
+          <title>eCredit Monitoring</title>
           <link rel="icon" href="/favicon.ico" />
-          <meta name="description" content="StitchCredit Consumer Credit Reports" />
+          <meta name="description" content="CRS Consumer Credit Reports" />
           <meta
             name="viewport"
             content="minimum-scale=1, initial-scale=1, width=device-width"
@@ -12769,7 +12769,7 @@ tags:
         All custom screens created using the API require Equifax approval (see the compliance guide for approval guidelines). (Option 3 - API Integration for Custom Web or Mobile App)
         </p>
         <p>
-        With this option, you can create your own user experience for connecting your users to their credit data by leveraging the same B2C API that the widget is utilizing.
+        With this option, you can create your own user experience for connecting your users to their credit data by leveraging the same eCredit Monitoring API that the widget is utilizing.
         </p>
         <h3>App Integration</h3>
         <h4>Sign-up / Registration Terms of Use</h4>
@@ -13058,14 +13058,14 @@ tags:
         You will find an installation guide and a getting started guide for the SDK: EcreditDirectApi - JavaScript client for ecredit-direct-api CRS API.
         </p>
         <p>
-        This is the the current SDK for <a href="https://github.com/StitchCredit/b2c-api-javascript" target="_blank"><em>javascript</em></a>
+        This is the current SDK for <a href="https://github.com/StitchCredit/b2c-api-javascript" target="_blank"><em>javascript</em></a>
         </p>
         <h3>python</h3>
         <p>
         You will find a description of requirements, an installation & usage guide, and a getting started guide for the SDK: ecreditapi - python client for ecredit-direct-api CRS API.
         </p>
         <p>
-        This is the the current SDK for <a href="https://github.com/StitchCredit/b2c-api-python" target="_blank"><em>python</em></a>
+        This is the current SDK for <a href="https://github.com/StitchCredit/b2c-api-python" target="_blank"><em>python</em></a>
         </p>
 
 - name: Consumer Credit API Setup
@@ -13638,7 +13638,7 @@ tags:
         {
           <span class="hljs-attr">"info"</span>: {
             <span class="hljs-attr">"_postman_id"</span>: <span class="hljs-string">"f65c1f1d-3127-4b15-9ee6-0b85182b16e5"</span>,
-            <span class="hljs-attr">"name"</span>: <span class="hljs-string">"StitchCredit - Getting Started - New User"</span>,
+            <span class="hljs-attr">"name"</span>: <span class="hljs-string">"CRS - Getting Started - New User"</span>,
             <span class="hljs-attr">"description"</span>: <span class="hljs-string">"Consumer API - Getting Started Instructions  \r\nUse the provided Postman Environment in conjunction with this collection of requests.  \r\nThe steps are provided in order to create a new user and retrieve the data.  \r\n\r\nThe Consumer Credit - Getting Started - New User.postman_collection.json will walk you through the Create New User steps in order"</span>,
             <span class="hljs-attr">"schema"</span>: <span class="hljs-string">"https://schema.getpostman.com/json/collection/v2.1.0/collection.json"</span>
           },
@@ -14360,7 +14360,7 @@ tags:
         {
           "info": {
             "_postman_id": "f65c1f1d-3127-4b15-9ee6-0b85182b16e5",
-            "name": "StitchCredit - Getting Started - New User",
+            "name": "CRS - Getting Started - New User",
             "description": "Consumer API - Getting Started Instructions  \r\nUse the provided Postman Environment in conjunction with this collection of requests.  \r\nThe steps are provided in order to create a new user and retrieve the data.  \r\n\r\nThe Consumer Credit - Getting Started - New User.postman_collection.json will walk you through the Create New User steps in order",
             "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
           },
@@ -15087,7 +15087,7 @@ tags:
         {
           <span class="hljs-attr">"info"</span>: {
             <span class="hljs-attr">"_postman_id"</span>: <span class="hljs-string">"f65c1f1d-3127-4b15-9ee6-0b85182b16e5"</span>,
-            <span class="hljs-attr">"name"</span>: <span class="hljs-string">"StitchCredit - Getting Started - Returning User"</span>,
+            <span class="hljs-attr">"name"</span>: <span class="hljs-string">"CRS - Getting Started - Returning User"</span>,
             <span class="hljs-attr">"description"</span>: <span class="hljs-string">"Consumer API - Getting Started Instructions  \r\nUse the provided Postman Environment in conjunction with this collection of requests.  \r\nThe steps are provided in order to handle a returning user and retrieve the data.  \r\n\r\nThe Consumer Credit - Getting Started - Returning User.postman_collection.json will walk you through the Returning User steps in order"</span>,
             <span class="hljs-attr">"schema"</span>: <span class="hljs-string">"https://schema.getpostman.com/json/collection/v2.1.0/collection.json"</span>
           },
@@ -15579,7 +15579,7 @@ tags:
         {
           "info": {
             "_postman_id": "f65c1f1d-3127-4b15-9ee6-0b85182b16e5",
-            "name": "StitchCredit - Getting Started - Returning User",
+            "name": "CRS - Getting Started - Returning User",
             "description": "Consumer API - Getting Started Instructions  \r\nUse the provided Postman Environment in conjunction with this collection of requests.  \r\nThe steps are provided in order to handle a returning user and retrieve the data.  \r\n\r\nThe Consumer Credit - Getting Started - Returning User.postman_collection.json will walk you through the Returning User steps in order",
             "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
           },
@@ -16076,7 +16076,7 @@ tags:
         {
           <span class="hljs-attr">"info"</span>: {
             <span class="hljs-attr">"_postman_id"</span>: <span class="hljs-string">"78ea84a5-dd24-48c3-872a-2654e894b062"</span>,
-            <span class="hljs-attr">"name"</span>: <span class="hljs-string">"StitchCredit - User API"</span>,
+            <span class="hljs-attr">"name"</span>: <span class="hljs-string">"CRS - User API"</span>,
             <span class="hljs-attr">"description"</span>: <span class="hljs-string">"User API calls must originate from the end-client.\r\n\r\nEquifax end-points are accessible by first using the User API /users/efx-config response data, and then the Equifax /oauth/token call.\r\n\r\nUser API and Equifax API calls are intended to be called from the end-client/user's device.\r\n\r\nThe Consumer Credit - User API.postman_collection.json provides all User-oriented APIs"</span>,
             <span class="hljs-attr">"schema"</span>: <span class="hljs-string">"https://schema.getpostman.com/json/collection/v2.1.0/collection.json"</span>
           },
@@ -16638,7 +16638,7 @@ tags:
         {
           "info": {
             "_postman_id": "78ea84a5-dd24-48c3-872a-2654e894b062",
-            "name": "StitchCredit - User API",
+            "name": "CRS - User API",
             "description": "User API calls must originate from the end-client.\r\n\r\nEquifax end-points are accessible by first using the User API /users/efx-config response data, and then the Equifax /oauth/token call.\r\n\r\nUser API and Equifax API calls are intended to be called from the end-client/user's device.\r\n\r\nThe Consumer Credit - User API.postman_collection.json provides all User-oriented APIs",
             "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
           },
@@ -17205,7 +17205,7 @@ tags:
         {
           <span class="hljs-attr">"info"</span>: {
             <span class="hljs-attr">"_postman_id"</span>: <span class="hljs-string">"1e3be246-0e2d-472e-8d8b-462f00852568"</span>,
-            <span class="hljs-attr">"name"</span>: <span class="hljs-string">"StitchCredit - Direct API"</span>,
+            <span class="hljs-attr">"name"</span>: <span class="hljs-string">"CRS - Direct API"</span>,
             <span class="hljs-attr">"description"</span>: <span class="hljs-string">"Direct API calls must originate from your server\r\n\r\nA token from /direct/login is required for all other Direct API end-points. It is a bearer authorization token.\r\n\r\nOnce you have a preauth token, returned from /direct/user-reg or /direct/preauth-token, pass it to the Web UI entry point in the embedded iFrame.\r\n\r\nBe sure to save the ID returned from /direct/user-reg or you won’t be able to reauthorize the user when they return.\r\n\r\n**The preauth token is only valid for 30 seconds\r\n\r\nThe Consumer Credit - Direct API.postman_collection.json will walk you through using the Direct API collection"</span>,
             <span class="hljs-attr">"schema"</span>: <span class="hljs-string">"https://schema.getpostman.com/json/collection/v2.1.0/collection.json"</span>
           },
@@ -17792,7 +17792,7 @@ tags:
         {
           "info": {
             "_postman_id": "1e3be246-0e2d-472e-8d8b-462f00852568",
-            "name": "StitchCredit - Direct API",
+            "name": "CRS - Direct API",
             "description": "Direct API calls must originate from your server\r\n\r\nA token from /direct/login is required for all other Direct API end-points. It is a bearer authorization token.\r\n\r\nOnce you have a preauth token, returned from /direct/user-reg or /direct/preauth-token, pass it to the Web UI entry point in the embedded iFrame.\r\n\r\nBe sure to save the ID returned from /direct/user-reg or you won’t be able to reauthorize the user when they return.\r\n\r\n**The preauth token is only valid for 30 seconds\r\n\r\nThe Consumer Credit - Direct API.postman_collection.json will walk you through using the Direct API collection",
             "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
           },
@@ -18384,7 +18384,7 @@ tags:
         {
           <span class="hljs-attr">"info"</span>: {
             <span class="hljs-attr">"_postman_id"</span>: <span class="hljs-string">"6a775eeb-7324-447c-9564-157940e7d587"</span>,
-            <span class="hljs-attr">"name"</span>: <span class="hljs-string">"StitchCredit - EFX API"</span>,
+            <span class="hljs-attr">"name"</span>: <span class="hljs-string">"CRS - EFX API"</span>,
             <span class="hljs-attr">"description"</span>: <span class="hljs-string">"Equifax API calls must originate from the end-client\r\n\r\nEquifax end-points are accessible by first using the User API /users/efx-config response data, and then the Equifax /oauth/token call. As mentioned above, User API and Equifax API calls are intended to be called from the end-client/user's device.\r\n\r\nThe Consumer Credit - EFX API.postman_collection.json has examples for all Equifax APIs"</span>,
             <span class="hljs-attr">"schema"</span>: <span class="hljs-string">"https://schema.getpostman.com/json/collection/v2.1.0/collection.json"</span>
           },
@@ -18829,7 +18829,7 @@ tags:
         {
           "info": {
             "_postman_id": "6a775eeb-7324-447c-9564-157940e7d587",
-            "name": "StitchCredit - EFX API",
+            "name": "CRS - EFX API",
             "description": "Equifax API calls must originate from the end-client\r\n\r\nEquifax end-points are accessible by first using the User API /users/efx-config response data, and then the Equifax /oauth/token call. As mentioned above, User API and Equifax API calls are intended to be called from the end-client/user's device.\r\n\r\nThe Consumer Credit - EFX API.postman_collection.json has examples for all Equifax APIs",
             "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
           },
@@ -19323,7 +19323,7 @@ tags:
         [{
             <span class="hljs-built_in">id</span>: <span class="hljs-string">"String - Webhook ID, UUID format"</span>,
             <span class="hljs-built_in">type</span>: <span class="hljs-string">"String - Webhook Type, see possible values below"</span>,
-            <span class="hljs-built_in">user_id</span>: <span class="hljs-string">"String - StitchCredit user ID, UUID format"</span>,
+            <span class="hljs-built_in">user_id</span>: <span class="hljs-string">"String - CRS user ID, UUID format"</span>,
             <span class="hljs-built_in">host_id</span>: <span class="hljs-string">"String - The host configuration generating the webhook, UUID format"</span>,
             <span class="hljs-built_in">time</span>: <span class="hljs-string">"long - Linux epoch, seconds since 1/1/1970"</span>,
             <span class="hljs-built_in">error_code</span>: <span class="hljs-string">"String - used to report host errors, future use at the moment"</span>,
@@ -20161,17 +20161,17 @@ tags:
           </ol>
 
 - name: customer-controller
-  x-displayName: Stitch Customer Management APIs (INTERNAL)
+  x-displayName: CRS Customer Management APIs (INTERNAL)
   description: |
       REST APIs for CRS to manage customers
 
 - name: admin-controller
-  x-displayName: Stitch Admin APIs (INTERNAL)
+  x-displayName: CRS Admin APIs (INTERNAL)
   description: |
       REST APIs for CRS to administer the setup
 
 - name: rqueue-rest-controller
-  x-displayName: Stitch RQueue APIs (INTERNAL)
+  x-displayName: CRS RQueue APIs (INTERNAL)
   description: |
       REST APIs for CRS 
 
@@ -20433,10 +20433,10 @@ tags:
 
 - name: Sandbox
   description: |
-        <p>The Sandbox is a free and fully-featured environment for application development and testing. All functionality of the CRS B2C APIs is supported in the Sandbox environment. A variety of scenarios are available to test against, and you can create an unlimited number of test items.</p>
+        <p>The Sandbox is a free and fully-featured environment for application development and testing. All functionality of the eCredit Monitoring APIs is supported in the Sandbox environment. A variety of scenarios are available to test against, and you can create an unlimited number of test items.</p>
         <p>Sandbox API information has been provided to you as a Postman Collection.</p>
         <h2>Usage</h2>
-        <p><a href="/tag/Postman-Collections">Postman Collections</a> for CRS B2C APIs include pre-defined API calls to help you understand and develop your solution. </p>
+        <p><a href="/tag/Postman-Collections">Postman Collections</a> for eCredit Monitoring APIs include pre-defined API calls to help you understand and develop your solution. </p>
         <p>To quickly grasp the token flow and sequence of API calls, download and import the "Getting Started" <a href="/tag/Postman-Collections">Postman Collections</a> from the <a href="https://drive.google.com/drive/folders/1VU0awRVnOswE1e9srB_tJ7nBxqUZFN2-?usp=sharing" target="_blank">Google Drive</a> and the Postman environment we provided to you.<br>
         The <a href="https://drive.google.com/drive/folders/1VU0awRVnOswE1e9srB_tJ7nBxqUZFN2-?usp=sharing" target="_blank">Google Drive</a> and this documentation contain <a href="/tag/Postman-Collections">Postman Collections</a> for each API.</p>
         <p>
@@ -20495,7 +20495,7 @@ x-tagGroups:
       - user-controller
       - Equifax API
       - test-controller
-      # INTERNAL for Stitch
+      # INTERNAL for CRS
       # - customer-controller 
       # - admin-controller
       # - rqueue-rest-controller
