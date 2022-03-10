@@ -4,11 +4,18 @@ info:
   version: v2
   contact:
     name: API Support
-    email: supportapi@crscreditapi.com
+    email: support@crscreditapi.com
 
   description: |
-      <span class="docs-time">Last updated: 2022-03-03</span></h1>
+      <span class="docs-time">Last updated: 2022-03-03</span>
+      <br>&nbsp;<br>
+      <hr>
+      <br>
       <p>This guide is to assist you in integrating the eCredit Monitoring API into your environment.</p>
+      <p>We recommend that you start with the <a href="/tag/Quickstart">Quickstart Guide</a> that you with the information to start your integration.</p>
+      <p>Feel free to explore the rest of the documentation as the need arises.</p>
+      <br>
+      <hr>
 
   x-logo:
     url: 'https://gist.githubusercontent.com/jedisonbru/f8eb1437878b3047591a505b22d6ff58/raw/2a85cd4b5dff25086d47041f4259270c7837100d/crs_b2c.svg'
@@ -11313,11 +11320,11 @@ components:
           type: string
           format: url
           example: https://example-efx-url.com/person/consumer-credsuite
-  securitySchemes:
-    accessToken:
-      type: http
-      scheme: bearer
-      bearerFormat: JWT
+  # securitySchemes:
+  #   accessToken:
+  #     type: http
+  #     scheme: bearer
+  #     bearerFormat: JWT
 
 tags:
 #DOCUMENTATION ===============================================
