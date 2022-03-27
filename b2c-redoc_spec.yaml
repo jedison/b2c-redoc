@@ -18,7 +18,8 @@ info:
       <hr>
 
   x-logo:
-    url: 'https://gist.githubusercontent.com/jedisonbru/f8eb1437878b3047591a505b22d6ff58/raw/2a85cd4b5dff25086d47041f4259270c7837100d/crs_b2c.svg'
+    url: 'https://api.redocly.com/registry/assets/crs-group/B2C/v1/assets%2Fimgs%2Fcrs_b2c.svg'
+    # url: 'https://gist.githubusercontent.com/jedisonbru/f8eb1437878b3047591a505b22d6ff58/raw/2a85cd4b5dff25086d47041f4259270c7837100d/crs_b2c.svg'
     altText: CRS logo
     href: /
 
@@ -11623,73 +11624,73 @@ tags:
         </p>
         <div class="row crop" style="display: flex">
           <div class="column" style="flex: 50%; padding: 5px;">
-            <img src="https://user-images.githubusercontent.com/76128486/105094648-96573000-5a72-11eb-9429-6b84ba036804.png" alt="Image of page example for Sign Up" style="width:100%" class="crop" />
+            <img src="https://api.redoc.ly/registry/assets/crs-group/B2C/v2/assets%2fimgs%2f105094648-96573000-5a72-11eb-9429-6b84ba036804.png" alt="Image of page example for Sign Up" style="width:100%" class="crop" />
           </div>
           <div class="column" style="flex: 50%; padding: 5px;">
-            <img src="https://user-images.githubusercontent.com/76128486/105094606-83446000-5a72-11eb-83c7-df5d4ba541ae.png" alt="Image of page example for Registering Terms of Use" style="width:100%" class="crop" />
+            <img src="https://api.redoc.ly/registry/assets/crs-group/B2C/v2/assets%2fimgs%2f105094606-83446000-5a72-11eb-83c7-df5d4ba541ae.png" alt="Image of page example for Registering Terms of Use" style="width:100%" class="crop" />
           </div>
         </div>
         <h4>Login</h4>
         <div class="row crop" style="display: flex">
           <div class="column" style="flex: 50%; padding: 5px;">
-            <img src="https://user-images.githubusercontent.com/76128486/105094441-4aa48680-5a72-11eb-86c9-9a9e7a64ed90.png" alt="Image of credit report page example" style="width:50%; margin-top: -12%;" class="crop" />
+            <img src="https://api.redoc.ly/registry/assets/crs-group/B2C/v2/assets%2fimgs%2f105094441-4aa48680-5a72-11eb-86c9-9a9e7a64ed90.png" alt="Image of login page example" style="width:50%; margin-top: -12%;" class="crop" />
           </div>
         </div>
         <h4>Identity</h4>
         <div class="row crop" style="display: flex" class="crop">
         <div class="column" style="flex: 50%; padding: 5px;">
-          <img src="https://user-images.githubusercontent.com/76128486/105093444-c0a7ee00-5a70-11eb-85ef-b4a17e4c2b45.png" alt="Image of identity page example" style="width:100%" class="crop" />
+          <img src="https://api.redoc.ly/registry/assets/crs-group/B2C/v2/assets%2fimgs%2f105093444-c0a7ee00-5a70-11eb-85ef-b4a17e4c2b45.png" alt="Image of identity page example" style="width:100%" class="crop" />
         </div>
         <div class="column" style="flex: 50%; padding: 5px;">
-          <img src="https://user-images.githubusercontent.com/76128486/105093564-edf49c00-5a70-11eb-8d03-c46d83010b07.png" alt="Image of page example for consumer consent language" style="width:100%" class="crop" />
+          <img src="https://api.redoc.ly/registry/assets/crs-group/B2C/v2/assets%2fimgs%2f105093564-edf49c00-5a70-11eb-8d03-c46d83010b07.png" alt="Image of page example for consumer consent language" style="width:100%" class="crop" />
         </div>
         </div>
         <h4>Identification (option 1): mobile</h4>
         <div class="row crop" style="display: flex">
           <div class="column" style="flex: 50%; padding: 5px;">
-            <img src="https://user-images.githubusercontent.com/76128486/105093896-6f4c2e80-5a71-11eb-9185-1a2b78596470.png" alt="Image of page for sending code via SMS to verify identity" style="width:100%" class="crop" />
+            <img src="https://api.redoc.ly/registry/assets/crs-group/B2C/v2/assets%2fimgs%2f105093896-6f4c2e80-5a71-11eb-9185-1a2b78596470.png" alt="Image of page for sending code via SMS to verify identity" style="width:100%" class="crop" />
           </div>
           <div class="column" style="flex: 50%; padding: 5px;">
-            <img src="https://user-images.githubusercontent.com/76128486/105093817-504d9c80-5a71-11eb-8334-7e2ecb8d0129.png" alt="Image of page for entering identity verifying code via SMS" style="width:100%" class="crop" />
+            <img src="https://api.redoc.ly/registry/assets/crs-group/B2C/v2/assets%2fimgs%2f105093817-504d9c80-5a71-11eb-8334-7e2ecb8d0129.png" alt="Image of page for entering identity verifying code via SMS" style="width:100%" class="crop" />
           </div>
         </div>
         <h4>Identification (option 2): quiz</h4>
         <div class="row crop" style="display: flex">
           <div class="column" style="flex: 50%; padding: 5px;">
-            <img src="https://user-images.githubusercontent.com/76128486/105093707-2ac09300-5a71-11eb-9abd-8c89bd399057.png" alt="Image of page for identification quiz" style="width:100%" class="crop" />
+            <img src="https://api.redoc.ly/registry/assets/crs-group/B2C/v2/assets%2fimgs%2f105093707-2ac09300-5a71-11eb-9abd-8c89bd399057.png" alt="Image of page for identification quiz" style="width:100%" class="crop" />
           </div>
           <div class="column" style="flex: 50%; padding: 5px;">
-            <img src="https://user-images.githubusercontent.com/76128486/105093655-17adc300-5a71-11eb-96e3-d8a3162a2349.png" alt="Image of page for successful sign up as a result of successful identification" style="width:100%" class="crop" />
+            <img src="https://api.redoc.ly/registry/assets/crs-group/B2C/v2/assets%2fimgs%2f105093655-17adc300-5a71-11eb-96e3-d8a3162a2349.png" alt="Image of page for successful sign up as a result of successful identification" style="width:100%" class="crop" />
           </div>
         </div>
         <h4>Credit Score - Dashboard</h4>
         <div class="row crop" style="display: flex">
           <div class="column" style="flex: 50%; padding: 5px;">
-            <img src="https://user-images.githubusercontent.com/76128486/105093416-b4239580-5a70-11eb-8e00-193613850be6.png" alt="Image of page for showing dashboard of scores returned by various bureaus" style="width:100%" class="crop" />
+            <img src="https://api.redoc.ly/registry/assets/crs-group/B2C/v2/assets%2fimgs%2f105093416-b4239580-5a70-11eb-8e00-193613850be6.png" alt="Image of page for showing dashboard of scores returned by various bureaus" style="width:100%" class="crop" />
           </div>
           <div class="column" style="flex: 50%; padding: 5px;">
-            <img src="https://user-images.githubusercontent.com/76128486/105093301-80e10680-5a70-11eb-99a3-e4b868dce698.png" alt="Image of page for showing score returned by a single bureaus" style="width:100%" class="crop" />
+            <img src="https://api.redoc.ly/registry/assets/crs-group/B2C/v2/assets%2fimgs%2f105093301-80e10680-5a70-11eb-99a3-e4b868dce698.png" alt="Image of page for showing score returned by a single bureaus" style="width:100%" class="crop" />
           </div>
         </div>
         <h4>Credit Report</h4>
         <div class="row crop" style="display: flex">
           <div class="column" style="flex: 50%; padding: 5px;">
-            <img src="https://user-images.githubusercontent.com/76128486/105094067-b508f700-5a71-11eb-94f0-5b72489546fe.png" alt="Image of page for showing report summary" style="width:100%" class="crop" />
+            <img src="https://api.redoc.ly/registry/assets/crs-group/B2C/v2/assets%2fimgs%2f105094067-b508f700-5a71-11eb-94f0-5b72489546fe.png" alt="Image of page for showing report summary" style="width:100%" class="crop" />
           </div>
           <div class="column" style="flex: 50%; padding: 5px;">
-            <img src="https://user-images.githubusercontent.com/76128486/105094037-a6224480-5a71-11eb-8f45-31cf52bd78a2.png" alt="Image of page for showing score credit accounts" style="width:100%" class="crop" />
+            <img src="https://api.redoc.ly/registry/assets/crs-group/B2C/v2/assets%2fimgs%2f105094037-a6224480-5a71-11eb-8f45-31cf52bd78a2.png" alt="Image of page for showing score credit accounts" style="width:100%" class="crop" />
           </div>
         </div>
         <h4>Credit Monitoring</h4>
         <div class="row crop" style="display: flex">
           <div class="column" style="flex: 50%; padding: 5px;">
-            <img src="https://user-images.githubusercontent.com/76128486/105093951-83902b80-5a71-11eb-8989-31bacb070fa2.png" alt="Image of page showing credit monitoring" style="width:50%; margin-top: -8%;" class="crop" />
+            <img src="https://api.redoc.ly/registry/assets/crs-group/B2C/v2/assets%2fimgs%2f105093951-83902b80-5a71-11eb-8989-31bacb070fa2.png" alt="Image of page showing credit monitoring" style="width:50%; margin-top: -8%;" class="crop" />
           </div>
         </div>
         <h4>Identity Restoration</h4>
         <div class="row crop" style="display: flex">
           <div class="column" style="flex: 50%; padding: 5px;">
-            <img src="https://user-images.githubusercontent.com/76128486/105093759-3b710900-5a71-11eb-9f72-e67e6bba79d9.png" alt="Image of page showing ID restoration" style="width:50%; margin-top: -8%;" class="crop" />
+            <img src="https://api.redoc.ly/registry/assets/crs-group/B2C/v2/assets%2fimgs%2f105093759-3b710900-5a71-11eb-9f72-e67e6bba79d9.png" alt="Image of page showing ID restoration" style="width:50%; margin-top: -8%;" class="crop" />
           </div>
         </div>
         <hr>
@@ -12794,16 +12795,16 @@ tags:
         NOTE: linking to the above Terms of Use and Privacy Policy is advised to maintain the latest verbiage
         <div class="row crop" style="display: flex">
           <div class="column" style="flex: 50%; padding: 5px;">
-            <img src="https://user-images.githubusercontent.com/76128486/105094648-96573000-5a72-11eb-9429-6b84ba036804.png" alt="Image of page example for Sign Up" style="width:100%" class="crop" />
+            <img src="https://api.redoc.ly/registry/assets/crs-group/B2C/v2/assets%2fimgs%2f105094648-96573000-5a72-11eb-9429-6b84ba036804.png" alt="Image of page example for Sign Up" style="width:100%" class="crop" />
           </div>
           <div class="column" style="flex: 50%; padding: 5px;">
-            <img src="https://user-images.githubusercontent.com/76128486/105094606-83446000-5a72-11eb-83c7-df5d4ba541ae.png" alt="Image of page example for Registering Terms of Use" style="width:100%" class="crop" />
+            <img src="https://api.redoc.ly/registry/assets/crs-group/B2C/v2/assets%2fimgs%2f105094606-83446000-5a72-11eb-83c7-df5d4ba541ae.png" alt="Image of page example for Registering Terms of Use" style="width:100%" class="crop" />
           </div>
         </div>
         <h4>Login</h4>
         <div class="row crop" style="display: flex">
           <div class="column" style="flex: 50%; padding: 5px;">
-            <img src="https://user-images.githubusercontent.com/76128486/105094441-4aa48680-5a72-11eb-86c9-9a9e7a64ed90.png" alt="Image of credit report page example" style="width:50%; margin-top: -12%;" class="crop" />
+            <img src="https://api.redoc.ly/registry/assets/crs-group/B2C/v2/assets%2fimgs%2f105094441-4aa48680-5a72-11eb-86c9-9a9e7a64ed90.png" alt="Image of credit report page example" style="width:50%; margin-top: -12%;" class="crop" />
           </div>
         </div>
         <h4>Identity</h4>
@@ -12814,10 +12815,10 @@ tags:
         </blockquote>
         <div class="row crop" style="display: flex" class="crop">
         <div class="column" style="flex: 50%; padding: 5px;">
-          <img src="https://user-images.githubusercontent.com/76128486/105093444-c0a7ee00-5a70-11eb-85ef-b4a17e4c2b45.png" alt="Image of identity page example" style="width:100%" class="crop" />
+          <img src="https://api.redoc.ly/registry/assets/crs-group/B2C/v2/assets%2fimgs%2f105093444-c0a7ee00-5a70-11eb-85ef-b4a17e4c2b45.png" alt="Image of identity page example" style="width:100%" class="crop" />
         </div>
         <div class="column" style="flex: 50%; padding: 5px;">
-          <img src="https://user-images.githubusercontent.com/76128486/105093564-edf49c00-5a70-11eb-8d03-c46d83010b07.png" alt="Image of page example for consumer consent language" style="width:100%" class="crop" />
+          <img src="https://api.redoc.ly/registry/assets/crs-group/B2C/v2/assets%2fimgs%2f105093564-edf49c00-5a70-11eb-8d03-c46d83010b07.png" alt="Image of page example for consumer consent language" style="width:100%" class="crop" />
         </div>
         </div>
         <h4>Identification (option 1): mobile</h4>
@@ -12833,10 +12834,10 @@ tags:
         </blockquote>
         <div class="row crop" style="display: flex">
           <div class="column" style="flex: 50%; padding: 5px;">
-            <img src="https://user-images.githubusercontent.com/76128486/105093896-6f4c2e80-5a71-11eb-9185-1a2b78596470.png" alt="Image of page for sending code via SMS to verify identity" style="width:100%" class="crop" />
+            <img src="https://api.redoc.ly/registry/assets/crs-group/B2C/v2/assets%2fimgs%2f105093896-6f4c2e80-5a71-11eb-9185-1a2b78596470.png" alt="Image of page for sending code via SMS to verify identity" style="width:100%" class="crop" />
           </div>
           <div class="column" style="flex: 50%; padding: 5px;">
-            <img src="https://user-images.githubusercontent.com/76128486/105093817-504d9c80-5a71-11eb-8334-7e2ecb8d0129.png" alt="Image of page for entering identity verifying code via SMS" style="width:100%" class="crop" />
+            <img src="https://api.redoc.ly/registry/assets/crs-group/B2C/v2/assets%2fimgs%2f105093817-504d9c80-5a71-11eb-8334-7e2ecb8d0129.png" alt="Image of page for entering identity verifying code via SMS" style="width:100%" class="crop" />
           </div>
         </div>
         <h4>Identification (option 2): quiz</h4>
@@ -12845,10 +12846,10 @@ tags:
         </p>
         <div class="row crop" style="display: flex">
           <div class="column" style="flex: 50%; padding: 5px;">
-            <img src="https://user-images.githubusercontent.com/76128486/105093707-2ac09300-5a71-11eb-9abd-8c89bd399057.png" alt="Image of page for identification quiz" style="width:100%" class="crop" />
+            <img src="https://api.redoc.ly/registry/assets/crs-group/B2C/v2/assets%2fimgs%2f105093707-2ac09300-5a71-11eb-9abd-8c89bd399057.png" alt="Image of page for identification quiz" style="width:100%" class="crop" />
           </div>
           <div class="column" style="flex: 50%; padding: 5px;">
-            <img src="https://user-images.githubusercontent.com/76128486/105093655-17adc300-5a71-11eb-96e3-d8a3162a2349.png" alt="Image of page for successful sign up as a result of successful identification" style="width:100%" class="crop" />
+            <img src="https://api.redoc.ly/registry/assets/crs-group/B2C/v2/assets%2fimgs%2f105093655-17adc300-5a71-11eb-96e3-d8a3162a2349.png" alt="Image of page for successful sign up as a result of successful identification" style="width:100%" class="crop" />
           </div>
         </div>
         <h4>Credit Score - Dashboard</h4>
@@ -12858,10 +12859,10 @@ tags:
         </p>
         <div class="row crop" style="display: flex">
           <div class="column" style="flex: 50%; padding: 5px;">
-            <img src="https://user-images.githubusercontent.com/76128486/105093416-b4239580-5a70-11eb-8e00-193613850be6.png" alt="Image of page for showing dashboard of scores returned by various bureaus" style="width:100%" class="crop" />
+            <img src="https://api.redoc.ly/registry/assets/crs-group/B2C/v2/assets%2fimgs%2f105093416-b4239580-5a70-11eb-8e00-193613850be6.png" alt="Image of page for showing dashboard of scores returned by various bureaus" style="width:100%" class="crop" />
           </div>
           <div class="column" style="flex: 50%; padding: 5px;">
-            <img src="https://user-images.githubusercontent.com/76128486/105093301-80e10680-5a70-11eb-99a3-e4b868dce698.png" alt="Image of page for showing score returned by a single bureaus" style="width:100%" class="crop" />
+            <img src="https://api.redoc.ly/registry/assets/crs-group/B2C/v2/assets%2fimgs%2f105093301-80e10680-5a70-11eb-99a3-e4b868dce698.png" alt="Image of page for showing score returned by a single bureaus" style="width:100%" class="crop" />
           </div>
         </div>
         <h4>Credit Report</h4>
@@ -12870,10 +12871,10 @@ tags:
         </p>
         <div class="row crop" style="display: flex">
           <div class="column" style="flex: 50%; padding: 5px;">
-            <img src="https://user-images.githubusercontent.com/76128486/105094067-b508f700-5a71-11eb-94f0-5b72489546fe.png" alt="Image of page for showing report summary" style="width:100%" class="crop" />
+            <img src="https://api.redoc.ly/registry/assets/crs-group/B2C/v2/assets%2fimgs%2f105094067-b508f700-5a71-11eb-94f0-5b72489546fe.png" alt="Image of page for showing report summary" style="width:100%" class="crop" />
           </div>
           <div class="column" style="flex: 50%; padding: 5px;">
-            <img src="https://user-images.githubusercontent.com/76128486/105094037-a6224480-5a71-11eb-8f45-31cf52bd78a2.png" alt="Image of page for showing score credit accounts" style="width:100%" class="crop" />
+            <img src="https://api.redoc.ly/registry/assets/crs-group/B2C/v2/assets%2fimgs%2f105094037-a6224480-5a71-11eb-8f45-31cf52bd78a2.png" alt="Image of page for showing score credit accounts" style="width:100%" class="crop" />
           </div>
         </div>
         <h4>Credit Monitoring</h4>
@@ -12882,7 +12883,7 @@ tags:
         </p>
         <div class="row crop" style="display: flex">
           <div class="column" style="flex: 50%; padding: 5px;">
-            <img src="https://user-images.githubusercontent.com/76128486/105093951-83902b80-5a71-11eb-8989-31bacb070fa2.png" alt="Image of page showing credit monitoring" style="width:50%; margin-top: -8%;" class="crop" />
+            <img src="https://api.redoc.ly/registry/assets/crs-group/B2C/v2/assets%2fimgs%2f105093951-83902b80-5a71-11eb-8989-31bacb070fa2.png" alt="Image of page showing credit monitoring" style="width:50%; margin-top: -8%;" class="crop" />
           </div>
         </div>
         <h4>Identity Restoration</h4>
@@ -12901,7 +12902,7 @@ tags:
         </p>
         <div class="row crop" style="display: flex">
           <div class="column" style="flex: 50%; padding: 5px;">
-            <img src="https://user-images.githubusercontent.com/76128486/105093759-3b710900-5a71-11eb-9f72-e67e6bba79d9.png" alt="Image of page showing ID restoration" style="width:50%; margin-top: -8%;" class="crop" />
+            <img src="https://api.redoc.ly/registry/assets/crs-group/B2C/v2/assets%2fimgs%2f105093759-3b710900-5a71-11eb-9f72-e67e6bba79d9.png" alt="Image of page showing ID restoration" style="width:50%; margin-top: -8%;" class="crop" />
           </div>
         </div>
         <h3>API Process Flow</h3>
