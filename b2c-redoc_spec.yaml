@@ -18,7 +18,7 @@ info:
       <hr>
 
   x-logo:
-    url: 'https://api.redocly.com/registry/assets/crs-group/B2C/v1/assets%2Fimgs%2Fcrs_b2c.svg'
+    url: 'https://api.redocly.com/registry/assets/crs-group/B2C/v2/assets/imgs/crs_b2c.svg'
     # url: 'https://gist.githubusercontent.com/jedisonbru/f8eb1437878b3047591a505b22d6ff58/raw/2a85cd4b5dff25086d47041f4259270c7837100d/crs_b2c.svg'
     altText: CRS logo
     href: /
